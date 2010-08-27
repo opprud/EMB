@@ -32,7 +32,6 @@ void delay(int d){
   for(; d; --d);
 }
 
-
 /* main loop
  * basic CPU initialization is done here.
  */
@@ -47,7 +46,8 @@ int main(void)
 	ledInit();
 
 	/* now flash led */
-	while (1){
+	while (1)
+	{
 		ledOn(1<<10);
 		delay(DELAY_SEC);
 		ledOff(1<<10);

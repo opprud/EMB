@@ -39,13 +39,14 @@ void delay(int d){
  */
 int main(void)
 {
-	char c = 'a';
+	char c = 0;
+	char str[40] = {"Hello EMB world, from EA2478 \n"};
 
 	/* init low level stuff */
-	eaInit();
+	lowLevelInit();
 
 	/*initialize uart #1: 9600 bps, 8N1*/
-	initUart1(B9600(Fpclk), UART_8N1);
+	initUart0(B9600(Fpclk), UART_8N1);
 
 	/* init led */
 	ledInit();
@@ -57,7 +58,12 @@ int main(void)
 		delay(DELAY_SEC);
 		ledOff(1<<10);
 		delay(DELAY_SEC);
-		sendchar(c++);
+
+		if(c<40)
+		{
+			sendchar(str[c]);
+			c++;
+		}
 	}
 	return 0;
 }

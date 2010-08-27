@@ -69,8 +69,39 @@
 #define MAM_MAP 2                       /* When executing from RAM, MAM_MAP should always be 2 */
 #endif
 
+/* setup stack sizes */
+#define stackSize_SYS    600
+#define stackSize_SVC     64
+#define stackSize_UND     64
+#define stackSize_ABT     64
+#define stackSize_IRQ   1024
+#define stackSize_FIQ     64
 
+/* define consol settings */
+#define CONSOL_UART              0
+#define CONSOL_BITRATE       38400
+/*#define USE_UART_FIFO             FALSE  */      /* Will be added in a future release */
+/*#define UART_API_NONBLOCKING      FALSE  */      /* Will be added in a future release */
+/*#define UART_API_NONBLOCKING_SIZE   512  */      /* Will be added in a future release */
+#define CONSOL_STARTUP_DELAY                       /* Short startup delay in order to remove
+                                                      risk for false startbit detection,
+                                                      timer #1 will be used in polled mode */
+#define CONSOL_STARTUP_DELAY_LENGTH 1000           /* 100 us is slightly more than one character at 115200 bps */
+
+
+#define USE_NEWLIB           0   /* 0 = do not use newlib (= save about 22k FLASH),
+                                    1 = use newlib = full implementation of printf(), scanf(), and malloc() */
+#define CONSOLE_API_PRINTF   1   /* 0 = printf() = sendString,
+                                    1 = simple, own implementation of printf() */
+#define CONSOLE_API_SCANF    1   /* 0 = none,
+                                    1 = simple, own implementation of scanf() */
+
+/* define SRAM size */
 #define SRAM_SIZE  (64 * 1024)   /* LPC2468 */
+
+#else
+#error CPU_VARIANT not defined in the makefile, or illegal value 
+#endif
 
 #define SRAM_SADDR   0x40000000               /* SRAM starting address */
 #define SRAM_TOP     (SRAM_SADDR+SRAM_SIZE)   /* SRAM end address + 1 */

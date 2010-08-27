@@ -5,6 +5,8 @@
 
 //bit definitions in LCR and FCR registers in the UART
 #define ULCR_CHAR_8   0x03
+#define ULCR_PAR_NO   0x00
+#define ULCR_STOP_1   0x00
 
 //define for determning the correct uart clock division factor
 //Note that the expressions should always be constants and fully evaluated at
@@ -21,7 +23,7 @@
 #define B115200(pclk)       UART_BPS(pclk,115200)
 
 //definitions for mode settings
-#define UART_8N1      (unsigned char)(ULCR_CHAR_8 + ULCR_PAR_NO   + ULCR_STOP_1)
+#define UART_8N1      (unsigned char)(ULCR_CHAR_8 + ULCR_PAR_NO + ULCR_STOP_1)
 
 // prototypes
 void initUart0(unsigned short div_factor, unsigned char mode);

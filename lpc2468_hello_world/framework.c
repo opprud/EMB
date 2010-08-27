@@ -38,9 +38,7 @@ unsigned char *pHeapEnd;
 /******************************************************************************
  * Public functions
  *****************************************************************************/
-void pllInit(void);
-void lowLevelInit(void);
-void eaInit(void);
+
 
 /******************************************************************************
  * Implementation of public functions
