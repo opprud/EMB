@@ -12,16 +12,13 @@
  * Includes
  *****************************************************************************/
 
-
 #include <stdlib.h> 
 #include <string.h>
 
 #include "touch.h"
 #include "calibrate.h"
-//#include "lpc24xx.h"
 #include <lpc2468.h>
 #include "config.h"
-
 
 /******************************************************************************
  * Defines, macros, and typedefs
@@ -29,9 +26,9 @@
 
 typedef struct
 {
-  tU32 validatePattern1;
-  MATRIX storedMatrix;
-  tU32 validatePattern2;
+	tU32 validatePattern1;
+	MATRIX storedMatrix;
+	tU32 validatePattern2;
 } tStoredCalData;
 
 #define CS_PIN            0x00100000        //P0.20
@@ -41,48 +38,19 @@ typedef struct
  * Public variables
  *****************************************************************************/
 
-
 /******************************************************************************
  * Local variables
  *****************************************************************************/
 static tStoredCalData storedCalData;
 static tBool calibrated;
 
+static unsigned short (*spifunc)(unsigned short c);
 
 /******************************************************************************
  * Local functions
  *****************************************************************************/
 
-static unsigned char
-spiSend(tU8 indata)
-{
-	unsigned int failsafe;
-	
-  S0SPDR = indata;
-  failsafe = 0;
-  while(((S0SPSR & 0x80) == 0) && (failsafe < 5000))
-    failsafe++;
-  
-  if (failsafe >= 5000)
-  {
-    S0SPCCR = SPI_CLOCK_DIVIDER;
-    S0SPCR  = 0x38;
-  }
-  return S0SPDR;
-}
 
-static void
-spiInit(void)
-{
-  //init SPI #0
-  PINSEL0 |= 0xc0000000;
-  PINSEL1 |= 0x0000003c;
-  IODIR0  |= CS_PIN;
-  IOSET0   = CS_PIN;
-  S0SPCCR = SPI_CLOCK_DIVIDER;    
-  S0SPCR  = 0x38;
-}
- 
 /***********************************************************************
  *
  * Function: touch_cs_low
@@ -98,7 +66,7 @@ spiInit(void)
  **********************************************************************/
 static void touch_cs_low(void)
 {
-  IOCLR0 = CS_PIN;
+	IOCLR0 = CS_PIN;
 }
 
 /***********************************************************************
@@ -116,7 +84,7 @@ static void touch_cs_low(void)
  **********************************************************************/
 static void touch_cs_high(void)
 {
-  IOSET0 = CS_PIN;
+	IOSET0 = CS_PIN;
 }
 
 /***********************************************************************
@@ -140,20 +108,18 @@ static void touch_cs_high(void)
  * Notes: Do not use this function to transfer more than 8 bytes!
  *
  **********************************************************************/
-static void tp_xfer(tU8 *out,
-                    tU8 *in,
-                    int bytes)
+static void tp_xfer(tU8 *out, tU8 *in, int bytes)
 {
-  int rbytes = 0;
+	int rbytes = 0;
 
-  while (rbytes < bytes)
-  {
-    in[rbytes] = spiSend(out[rbytes]);
-    rbytes++;
-    //rbytes += spi_read(dev_spi, &in [rbytes], 1);
-  }
+	while (rbytes < bytes)
+	{
+		// transfer, and cast to chars since we only use bytes
+		//in[rbytes] = (char)SpiXfer((char)out[rbytes]);
+		in[rbytes] = (char)spifunc((char)out[rbytes]);
+		rbytes++;
+	}
 }
-
 
 /***********************************************************************
  *
@@ -171,18 +137,18 @@ static void tp_xfer(tU8 *out,
  **********************************************************************/
 static tU16 spi_read_tp(tU8 command)
 {
-  tU8 datao [6];
-  tU8 result[6];
+	tU8 datao[6];
+	tU8 result[6];
 
-  datao[0] = command;
-  datao[1] = 0;
-  datao[2] = 0;
+	datao[0] = command;
+	datao[1] = 0;
+	datao[2] = 0;
 
-  touch_cs_low();
-  tp_xfer(datao, &result[0], 3);
-  touch_cs_high();
+	touch_cs_low();
+	tp_xfer(datao, &result[0], 3);
+	touch_cs_high();
 
-  return (((tU16)result[1]) << 8) | (tU16)result[2];
+	return (((tU16) result[1]) << 8) | (tU16) result[2];
 }
 
 /******************************************************************************
@@ -202,31 +168,30 @@ static tU16 spi_read_tp(tU8 command)
  * Returns: None
  *
  **********************************************************************/
-void touch_calibrate(tTouchPoint ref1, tTouchPoint ref2, tTouchPoint ref3, 
-  tTouchPoint scr1, tTouchPoint scr2, tTouchPoint scr3)
+void touch_calibrate(tTouchPoint ref1, tTouchPoint ref2, tTouchPoint ref3, tTouchPoint scr1, tTouchPoint scr2,
+		tTouchPoint scr3)
 {
-  POINT disp[3];
-  POINT scr[3];
-  
-  disp[0].x = ref1.x;
-  disp[0].y = ref1.y;
-  disp[1].x = ref2.x;
-  disp[1].y = ref2.y;
-  disp[2].x = ref3.x;
-  disp[2].y = ref3.y;
-  
-  scr[0].x = scr1.x;
-  scr[0].y = scr1.y;
-  scr[1].x = scr2.x;
-  scr[1].y = scr2.y;
-  scr[2].x = scr3.x;
-  scr[2].y = scr3.y;  
-  
-  setCalibrationMatrix(disp, scr,
-                       &storedCalData.storedMatrix);
+	POINT disp[3];
+	POINT scr[3];
 
-  calibrated = TRUE;
-  
+	disp[0].x = ref1.x;
+	disp[0].y = ref1.y;
+	disp[1].x = ref2.x;
+	disp[1].y = ref2.y;
+	disp[2].x = ref3.x;
+	disp[2].y = ref3.y;
+
+	scr[0].x = scr1.x;
+	scr[0].y = scr1.y;
+	scr[1].x = scr2.x;
+	scr[1].y = scr2.y;
+	scr[2].x = scr3.x;
+	scr[2].y = scr3.y;
+
+	setCalibrationMatrix(disp, scr, &storedCalData.storedMatrix);
+
+	calibrated = TRUE;
+
 }
 
 /***********************************************************************
@@ -247,42 +212,41 @@ void touch_calibrate(tTouchPoint ref1, tTouchPoint ref2, tTouchPoint ref3,
  **********************************************************************/
 void touch_xyz(tS32 *x, tS32* y, tS32* z)
 {
-  tS32 ix, iy, iz1, iz2 = 0;
-  POINT displayPoint, screenSample;
+	tS32 ix, iy, iz1, iz2 = 0;
+	POINT displayPoint, screenSample;
 
-  ix = spi_read_tp(0x83 | 0x50 | 0x00);
-  ix >>= 3;
+	ix = spi_read_tp(0x83 | 0x50 | 0x00);
+	ix >>= 3;
 
-  //Read Y value
-  iy = spi_read_tp(0x83 | 0x10 | 0x00);
-  iy >>= 3;
+	//Read Y value
+	iy = spi_read_tp(0x83 | 0x10 | 0x00);
+	iy >>= 3;
 
-  //Read Z1 value
-  iz1 = spi_read_tp(0x83 | 0x30 | 0x00);
-  iz1 >>= 3;
+	//Read Z1 value
+	iz1 = spi_read_tp(0x83 | 0x30 | 0x00);
+	iz1 >>= 3;
 
-  //Read Z2 value
-  iz2 = spi_read_tp(0x83 | 0x40 | 0x00);
-  iz2 >>= 3;
+	//Read Z2 value
+	iz2 = spi_read_tp(0x83 | 0x40 | 0x00);
+	iz2 >>= 3;
 
-  *z = (ix*iz2 - iz1) / iz1;
-  if (*z > 40000)
-    *z = 0;    
+	*z = (ix * iz2 - iz1) / iz1;
+	if (*z > 40000)
+		*z = 0;
 
-  if (calibrated) 
-  {
-      screenSample.x = ix;
-      screenSample.y = iy;
-      getDisplayPoint( &displayPoint, &screenSample, 
-        &(storedCalData.storedMatrix) ) ;
-      *x = displayPoint.x;
-      *y = displayPoint.y;
-  } 
-  else 
-  {
-    *x = ix;
-    *y = iy;
-  }  
+	if (calibrated)
+	{
+		screenSample.x = ix;
+		screenSample.y = iy;
+		getDisplayPoint(&displayPoint, &screenSample, &(storedCalData.storedMatrix));
+		*x = displayPoint.x;
+		*y = displayPoint.y;
+	}
+	else
+	{
+		*x = ix;
+		*y = iy;
+	}
 }
 
 /***********************************************************************
@@ -301,17 +265,17 @@ void touch_xyz(tS32 *x, tS32* y, tS32* z)
 tU32 touch_temp(void)
 {
 
-  tU32 t0 = 0;
-  tU32 t1 = 0;
+	tU32 t0 = 0;
+	tU32 t1 = 0;
 
-  t0 = spi_read_tp(0x83 | 0x00 | 0x04);
-  t0 >>= 3;
+	t0 = spi_read_tp(0x83 | 0x00 | 0x04);
+	t0 >>= 3;
 
-  t1  = spi_read_tp(0x83 | 0x70 | 0x04);
-  t1 >>= 3;
-  t0 = (2573*(t1-t0) - 273000)/1000;
+	t1 = spi_read_tp(0x83 | 0x70 | 0x04);
+	t1 >>= 3;
+	t0 = (2573 * (t1 - t0) - 273000) / 1000;
 
-  return t0;
+	return t0;
 }
 
 /***********************************************************************
@@ -327,8 +291,13 @@ tU32 touch_temp(void)
  * Returns: None
  *
  **********************************************************************/
-void touch_init(void)
+//void touch_init(void)
+void touch_init(unsigned short (*pSpifunc)(unsigned short c))
 {
-  spiInit();  
+	/* assign spi function */
+	spifunc = pSpifunc;
+	/* init SPI CS pin */
+	IODIR0 |= CS_PIN;
+	IOSET0 = CS_PIN;
 }
 

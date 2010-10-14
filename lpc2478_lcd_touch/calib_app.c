@@ -16,6 +16,7 @@
 #include "drivers\lcd\lpc_lcd_params.h"      /* LCD panel parameters */
 #include "drivers\touch.h"
 #include "drivers\timer_delay.h"
+#include "drivers\spi.h"
 
 /******************************************************************************
  * Defines, macros, and typedefs
@@ -105,6 +106,7 @@ static void init_lcd(void)
 	sprintf(str, "Calibrating, touch boxes");
 	swim_set_xy(&win1, 15, 30);
 	swim_put_text(&win1, str);
+
 }
 
 void lcd_test(void)
@@ -133,6 +135,14 @@ void calibrateStart(void)
 
 	// create a SWIM vindow on the LCD
 	init_lcd();
+
+
+	/* tsc2046:fclk max 2.5MHz, clk LO idle, MSB first
+	* SPIInit(wClock, nFramesize, bCPHA, bCPOL, bLSBF)*/
+	SPIInit(CLK2M5, 8, 0, 0, 0);
+
+	/* init touch driver with spi function */
+	touch_init(SpiXfer);
 
 	// draw point 1
 	drawCalibPoint(refPoint1.x, refPoint1.y);

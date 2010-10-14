@@ -91,6 +91,7 @@ C_OBJECTS += framework.o \
              rtc.o \
              timer_delay.o \
              touch.o \
+             spi.o \
              calibrate.o \
              syscalls.o
 #Swim

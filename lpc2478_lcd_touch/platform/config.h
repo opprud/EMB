@@ -15,7 +15,7 @@
  *****************************************************************************/
 #define	USE_USB					1
 
-#define USE_32_BIT_DATABUS
+//#define USE_32_BIT_DATABUS
 
 #if USE_USB		/* 1 is USB, 0 is non-USB related */  
 /* Fcck = 57.6Mhz, Fosc = 288Mhz, and USB 48Mhz */

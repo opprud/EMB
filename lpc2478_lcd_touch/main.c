@@ -14,6 +14,7 @@
 #include "irq.h"
 #include "rtc.h"
 #include "calib_app.h"
+#include "calib_app.h"
 
 /* LCD includes */
 #include "drivers/lcd/ex_sdram.h"
@@ -56,9 +57,6 @@ void open_lcd()
 
 	/* Turn on LCD */
 	lcd_ioctl(dev_lcd, LCD_PWR_ON, 1);
-
-	/*init SPI touch*/
-	touch_init();
 
 }
 

@@ -34,7 +34,9 @@ typedef struct
 
 void touch_xyz(tS32 *x, tS32* y, tS32* z);
 tU32 touch_temp(void);
-void touch_init(void);
+//void touch_init(void);
+void touch_init(unsigned short (*pSpifunc)(unsigned short c));
+
 void touch_calibrate(tTouchPoint ref1, tTouchPoint ref2, tTouchPoint ref3, 
   tTouchPoint scr1, tTouchPoint scr2, tTouchPoint scr3);
 

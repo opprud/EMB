@@ -91,7 +91,7 @@ if &FlashType!=0.
 
   ; -- Here you can set the path to avoid the dialog box... --
   ; &filename="C:\workspace\bgcf\build\bgcf-pt-redboot\ecos\install\bin\redboot.hex"
-  &filename="rtc-ea_oem-lpc2478-rom.elf"
+  &filename="../swim-ea_oem-lpc2478-rom.elf"
   ;y.SOURCEPATH.SETRECURSEDIR ../startup
   ;y.SOURCEPATH.SETRECURSEDIR ../source
   
@@ -285,6 +285,8 @@ FlashDeclaration:
   )
   
   RETURN
+
+
 
 
 
