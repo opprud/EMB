@@ -130,7 +130,7 @@ package body arm_emc_package is
                          	   ) is
       variable data : std_logic_vector(15 downto 0);
     begin
---        print (log, "EMC read: 0x" & hstr(addr) & " : 0x" & hstr(data));
+        print (log, "EMC write: 0x" & hstr(addr) & " : 0x" & hstr(data));
 		-- start cycle;
         -- assert CS
         uio.nCpuCs_i <= '0'; 
@@ -142,8 +142,7 @@ package body arm_emc_package is
         uio.CpuA_i <= addr;
         wait for (Tr_OELOEH-Tr_CSHOEH);
         --sample data
-        --data  <= uio.CpuD;
-        --print (log, "EMC read: 0x" & hstr(addr) & " : 0x" & hstr(uio.CpuD));
+        --TODO data  <= uio.CpuD;
         --deassert CS
         uio.nCpuCs_i <= '1';
         wait for Tr_CSHOEH;

@@ -26,15 +26,15 @@ USE IEEE.std_logic_1164.all;
 use std.textio.all;
 --use work.uart_package.all;
 use work.arm_emc_package.all;
-use work.def_p.all;
+--use work.def_p.all;
 use work.txt_util.all;
 
 entity tb_bfm is
     generic (
 --                stim_file    : string := "./uart_stim.dat";    -- Stimulus input file
 --                log_file     : string := "./uart_log.txt"      -- Log file
-                stim_file    : string := "./arm7_bfm_stim.dat";    -- Stimulus input file
-                log_file     : string := "./arm7_bfm_log.txt"      -- Log file
+                stim_file    : string := "../sim/stim/arm7_bfm_stim.dat";    -- Stimulus input file
+                log_file     : string := "../sim/log/arm7_bfm_log.txt"      -- Log file
 
             );
 end tb_bfm;
@@ -64,13 +64,13 @@ architecture tb of tb_bfm is
    --Inputs
    signal Clock : std_logic := '0';
    signal Rst_i : std_logic := '0';
-   signal nCpuCs_i : std_logic := '0';
-   signal nCpuRd_i : std_logic := '0';
-   signal nCpuWr_i : std_logic := '0';
-   signal CpuA_i : std_logic_vector(9 downto 0) := (others => '0');
-
-	--BiDirs
-   signal CpuD : std_logic_vector(15 downto 0);
+--    signal nCpuCs_i : std_logic := '0';
+--    signal nCpuRd_i : std_logic := '0';
+--    signal nCpuWr_i : std_logic := '0';
+--    signal CpuA_i : std_logic_vector(9 downto 0) := (others => '0');
+-- 
+-- 	--BiDirs
+--    signal CpuD : std_logic_vector(15 downto 0);
 
  	--Outputs
    signal Port_o : std_logic_vector(3 downto 0);
@@ -91,14 +91,14 @@ BEGIN
    uut: Wrapper PORT MAP (
           Clock => Clock,
           Rst_i => Rst_i,
-          nCpuCs_i => nCpuCs_i,
-          nCpuRd_i => nCpuRd_i,
-          nCpuWr_i => nCpuWr_i,
-          CpuA_i => CpuA_i,
-          CpuD => CpuD,
-          Port_o => Port_o,
-          Dbus_En => Dbus_En,
-          Abus_En => Abus_En
+          nCpuCs_i => arm_bus_if.nCpuCs_i,
+          nCpuRd_i => arm_bus_if.nCpuRd_i,
+          nCpuWr_i => arm_bus_if.nCpuWr_i,
+          CpuA_i   => arm_bus_if.CpuA_i(9 downto 0),
+          CpuD     => arm_bus_if.CpuD,
+          Port_o   => Port_o,
+          Dbus_En  => Dbus_En,
+          Abus_En  => Abus_En
         );
 
    -- Clock process definitions
@@ -116,21 +116,22 @@ BEGIN
     -- Main transaction process
     TRANPROC: process
         variable s          : string(1 to 100);
-        variable address    : std_logic_vector(7 downto 0);
+        variable address    : std_logic_vector(15 downto 0);
         variable data       : std_logic_vector(15 downto 0);
         variable data2      : std_logic_vector(15 downto 0);
     begin
         -- Default values
         
-          Rst_i  <=  '1';
-          arm_bus_if.nCpuCs_i  <=  '1';
-          arm_bus_if.nCpuRd_i  <=  '1';
-          arm_bus_if.nCpuWr_i  <=  '1';
-          arm_bus_if.CpuA_i    <=   (others => '0');
+		Rst_i  <=  '1';
+		arm_bus_if.nCpuCs_i  <=  '1';
+		arm_bus_if.nCpuRd_i  <=  '1';
+		arm_bus_if.nCpuWr_i  <=  '1';
+--		arm_bus_if.CpuA_i    <=   (others => '0');
 --          CpuD =>  (others => '0'),
 
         wait until falling_edge(Clock);
-
+		Rst_i  <=  '0';
+				
         -- Get commands from stimulus file
         while not endfile(stimulus) loop
             str_read(stimulus, s);                                  -- Read line into string
@@ -139,7 +140,7 @@ BEGIN
                  wait for integer'value(s(7 to 12))*cycle;
             elsif (s(1 to 3) = "#RD") then                          -- Read from UART and compare
                 address := to_std_logic_vector(s(5 to 20));
-				arm_16bit_read (Clock, arm_bus_if, address, log);
+								arm_16bit_read (Clock, arm_bus_if, address, log);
                 --data := to_std_logic_vector(s(14 to 29));
                 
                 --uart_read (clk,uart_if_in, uart_if_out, address, data2, log);
