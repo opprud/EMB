@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435202468
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435208718
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1283435213437
+activated,editor,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.editor",1283435219171
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1283435228093
+activated,view,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.ui.views.MakeView",1283435229453
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1283435234609
+error,log,,,"Cannot find builtin/gnu.mk",1283435238203
+activated,editor,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.editor",1283435240750
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435266265
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435392156
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435411828
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435436453
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435438578
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435528937
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1283435543484
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1283435574765
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1283435576093
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1283435582218
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1283435606453
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1283435619781
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1283435619984
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1283435632828
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.lineEnd",1283435636578
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1283435637359

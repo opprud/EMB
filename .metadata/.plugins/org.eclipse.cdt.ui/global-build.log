@@ -1,0 +1,36 @@
+09:04:17 **** Build of configuration Default for project Codesign_FPGA_IP ****
+make flash 
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -c -Wall -I.  -mcpu=arm7tdmi -nostartfiles -T2468_rom.ld -Wcast-align -g -O0  main.c -o main.o
+main.c: In function 'myCallback':
+main.c:45:2: warning: implicit declaration of function 'readAdc'
+main.c: In function 'main':
+main.c:73:2: warning: passing argument 1 of 'rprintfInit' from incompatible pointer type
+rprintf.h:66:6: note: expected 'void (*)(unsigned char)' but argument is of type 'int (*)(int)'
+main.c:92:2: warning: implicit declaration of function 'initAdc'
+main.c:54:7: warning: unused variable 'Lval'
+main.c:53:8: warning: unused variable 'Sval'
+main.c: In function 'myCallback':
+main.c:36:3: warning: 'i' is used uninitialized in this function
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -c -Wall -I.  -mcpu=arm7tdmi -nostartfiles -T2468_rom.ld -Wcast-align -g -O0  timer.c -o timer.o
+timer.c: In function 'getTimerTicks':
+timer.c:217:1: warning: control reaches end of non-void function
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -c -Wall -I.  -mcpu=arm7tdmi -nostartfiles -T2468_rom.ld -Wcast-align -g -O0  adc.c -o adc.o
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -Wall -I.  -mcpu=arm7tdmi -nostartfiles -T2468_rom.ld -Wcast-align -g -O0    boot.o main.o uart.o rprintf.o framework.o keys.o irq.o VIClowlevel.o timer.o adc.o -o main.elf
+/Users/MortenOJ/sat/bin//arm-none-eabi-objcopy -O ihex main.elf main.hex
+/Users/MortenOJ/workspace/Kode/lpc21isp/lpc21isp main.hex /dev/tty.usbserial-A600a7NE 230400 12000
+lpc21isp version 1.83
+File main.hex:
+	loaded...
+	converted to binary format...
+	image size : 7640
+Image size : 7640
+Synchronizing (ESC to abort). OK
+Read bootcode version: 4
+3
+Read part ID: LPC2478, 512 kiB ROM / 98 kiB SRAM (0x1701FF35)
+Will start programming at Sector 1 if possible, and conclude with Sector 0 to ensure that checksum is written last.
+Erasing sector 0 first, to invalidate checksum. OK 
+Sector 1: ...................................................................................
+Sector 0: ..............................................................................................
+Download Finished... taking 4 seconds
+Now launching the brand new code

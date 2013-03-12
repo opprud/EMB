@@ -62,7 +62,7 @@ INCLUDES += -I$(DRIVERS)
 CFLAGS  = -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type
 CFLAGS += -g $(OPTIMIZATION) $(INCLUDES) -mcpu=$(CPU) -D$(CHIP) -DTRACE_LEVEL=$(TRACE_LEVEL)
 ASFLAGS = -g $(OPTIMIZATION) $(INCLUDES) -mcpu=$(CPU) -D$(CHIP) -D__ASSEMBLY__ 
-LDFLAGS = -g $(OPTIMIZATION) -mcpu=$(CPU) -nostartfiles -Wall -Wcast-align 
+LDFLAGS = -g $(OPTIMIZATION) -mcpu=$(CPU) -nostartfiles -Wall -Wcast-align -lgcc 
 
 #-------------------------------------------------------------------------------
 #		Files
@@ -83,7 +83,7 @@ VPATH += $(DRIVERS_SWIM)
 
 # Objects built from C source files
 C_OBJECTS = main.o
-C_OBJECTS += framework.o uart.o rprintf.o irq.o VIClowlevel.o rtc.o
+C_OBJECTS += framework.o uart.o rprintf.o irq.o VIClowlevel.o rtc.o syscalls.o
 #Swim
 C_OBJECTS += lpc_colors.o \
           lpc_fonts.o \

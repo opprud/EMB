@@ -11,5 +11,6 @@
 
 void calibrateStart(void);
 void lcd_test(void);
+int open_lcd();
 
 #endif /* CALIB_APP_H_ */

@@ -6,17 +6,20 @@
  */
 #include <stdio.h>
 /* LCD includes */
-#include "drivers\swim\lpc_types.h"
-#include "drivers\swim\lpc_swim.h"
-#include "drivers\swim\lpc_swim_font.h"
-#include "drivers\swim\lpc_swim.h"
-#include "drivers\swim\lpc_rom8x16.h"
-#include "drivers\swim\lpc_winfreesystem14x16.h"
-#include "drivers\swim\lpc_x6x13.h"
-#include "drivers\lcd\lpc_lcd_params.h"      /* LCD panel parameters */
-#include "drivers\touch.h"
-#include "drivers\timer_delay.h"
-#include "drivers\spi.h"
+#include "drivers/swim/lpc_types.h"
+#include "drivers/swim/lpc_swim.h"
+#include "drivers/swim/lpc_swim_font.h"
+#include "drivers/swim/lpc_swim.h"
+#include "drivers/swim/lpc_rom8x16.h"
+#include "drivers/swim/lpc_winfreesystem14x16.h"
+#include "drivers/swim/lpc_x6x13.h"
+#include "drivers/lcd/lpc_lcd_params.h"      /* LCD panel parameters */
+#include "drivers/lcd/lcd_driver.h"
+#include "drivers/touch.h"
+#include "drivers/timer_delay.h"
+#include "drivers/spi.h"
+#include "drivers/lcd/ex_sdram.h"
+#include "type.h"
 
 /******************************************************************************
  * Defines, macros, and typedefs
@@ -46,7 +49,11 @@ static tBool releaseNeeded = FALSE;
 static tBool touchReleased = FALSE;
 
 /* external references */
-extern long dev_lcd;
+//extern long dev_lcd;
+
+/*  lcd defs */
+//#define LCD_DISPLAY truly_tft_g240320ltsw_118w_e_portrait	// EA2478 built-in display
+long dev_lcd;
 
 /* DEFINES */
 #define EA2478_LCD_FRAME_BUF 0xA0000000
@@ -109,6 +116,31 @@ static void init_lcd(void)
 
 }
 
+int open_lcd()
+{
+
+	/* Open LCD */
+	if ((dev_lcd = lcd_open(CLCDC, (long) &LCD_DISPLAY)) == 0x0)
+	{
+		return FAIL;
+	}
+
+	/* pass SPI function to the LCD driver */
+	lcd_ioctl(dev_lcd, LCD_SET_SPIFUNC, SpiXfer);
+
+	/* Set LCD display pointer */
+	lcd_ioctl(dev_lcd, LCD_SET_BUFFER, (long) SDRAM_BASE_ADDR);
+
+	/* Enable LCD */
+	lcd_ioctl(dev_lcd, LCD_ENABLE, 1);
+
+	/* Turn on LCD */
+	lcd_ioctl(dev_lcd, LCD_PWR_ON, 1);
+
+	return OK;
+
+}
+
 void lcd_test(void)
 {
 	signed int x, y, z = 0;
@@ -133,9 +165,16 @@ void calibrateStart(void)
 	releaseNeeded = FALSE;
 	calibPoint = 0;
 
-	// create a SWIM vindow on the LCD
-	init_lcd();
 
+	/* SSD1289 fclk max 13MHz, clk HI idle, MSB first */
+	/* SPIInit(wClock, nFramesize, bCPHA, bCPOL, bLSBF)*/
+	SPIInit(CLK5M, 8, 0, 1, 0);
+
+	/* open and init LCD */
+	open_lcd();
+
+	// create a SWIM window on the LCD
+	init_lcd();
 
 	/* tsc2046:fclk max 2.5MHz, clk LO idle, MSB first
 	* SPIInit(wClock, nFramesize, bCPHA, bCPOL, bLSBF)*/

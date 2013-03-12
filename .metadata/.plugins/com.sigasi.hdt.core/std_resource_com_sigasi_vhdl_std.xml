@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<preprocessedCompilationUnits>
+    <version>1</version>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/std/textio.vhd</uri>
+        <designUnits>
+            <packageBody lib="std" name="textio"/>
+            <primaryUnit lib="std" name="TEXTIO"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="std" name="textio"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/std/standard.vhd</uri>
+        <designUnits>
+            <primaryUnit lib="std" name="standard"/>
+        </designUnits>
+        <designUnitDependencies/>
+    </preprocessedCompilationUnit>
+</preprocessedCompilationUnits>

@@ -47,7 +47,8 @@ OBJ = obj
 #-------------------------------------------------------------------------------
 
 # Tool suffix when cross-compiling
-CROSS_COMPILE = arm-none-eabi-
+#CROSS_COMPILE = arm-none-eabi-
+CROSS_COMPILE = /Users/MortenOJ/sat/bin/arm-none-eabi-
 
 # Compilation tools
 CC = $(CROSS_COMPILE)gcc

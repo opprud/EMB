@@ -91,8 +91,8 @@ typedef enum {
   LCD_CRSR_CLR_INTERRUPT, /* Set cursor interrupt clear register*/
   LCD_CRSR_XY,            /* Set LCD cursor xy position register */
   LCD_CRSR_CLIP,          /* Set LCD cursor clip position register */
-  LCD_GET_STATUS          /* Get a lcd status, use an argument type of
-                             LCD_IOCTL_STS_T as the argument to return the correct status */
+  LCD_GET_STATUS,         /* Get a lcd status, use an argument type of */
+  LCD_SET_SPIFUNC         /* LCD_IOCTL_STS_T as the argument to return the correct status */
 } LCD_IOCTL_CMD_T;
 
 /* LCD device arguments for LCD_GET_STATUS command (IOCTL arguments) */

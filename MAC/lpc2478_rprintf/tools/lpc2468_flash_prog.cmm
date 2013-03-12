@@ -1,0 +1,302 @@
+;
+; Example for flash declaration of Philips LPC2xxx internal flash.
+;
+; CPU-Type  FlashSize  FlashType  UserFlash  RamSize
+;              (KB)                 (KB)      (KB)
+; ------------------------------------------------------
+; LPC2468      512.       2.        500.       64.
+; 
+; Supported flash types:
+;
+; FlashType  SmallBlock  MainBlock  BootFlash  Alignment 
+; ------------------------------------------------------
+;     0.        no processor internal flash
+;     1.        8 kB       64 kB      8 kB      512 B    
+;     2.        4 kB       32 kB     12 kB      256 B    
+;     3.        4 kB       32 kB      8 kB      256 B    
+;
+; HINTS:
+;
+;   Flash module input clock has to be set with FLASH.CLOCK command.
+;   This example script is setting flash.clock to 10MHz. Please adjust 
+;   the value to your requirements. Flash.clock has to match System 
+;   Clock Frequency (CCLK)
+;
+;   Boot flash cannot be programmed or erased with builtin flash 
+;   algorithm. 
+;
+;   Data has to be loaded to flash in multiples of alignment size to 
+;   alignment boundaries. This can be done with download via virtual 
+;   memory or using option /ALIGN <value> for download command or 
+;   executing flash programming using FLASH.AUTO.
+;
+;   Vector table checksum generation is done by script, so that it 
+;   can be used or switched off, as needed.
+;
+; WRD - 21.01.2005
+;
+
+;========================================================================
+; Set configuration values out of the CPU table above. If your CPU 
+; derivate is not listed please check the data sheet for matching 
+; flash configuration.
+
+local &CpuType
+local &FlashSize
+local &FlashType
+local &RAMSize
+local &filename
+
+; Example for LPC2106
+&CpuType="LPC2468"
+&FlashSize=512.
+&FlashType=2.
+&RAMSize=64.
+
+;========================================================================
+; Start debugging
+
+SYStem.RESet
+SYStem.CPU &CpuType
+SYStem.JtagClock RTCK
+SYStem.Option ResBreak OFF
+SYStem.Option NOIRCHECK ON
+SYStem.Option BUGFIXV4 ON
+SYStem.Up
+;sys.mode.attach
+
+IF RUN()
+(
+ BREAK
+)
+
+
+  
+;========================================================================
+; Flash declaration
+
+;GOSUB SetupCpu
+FLASH.RESet
+;FLASH.CLOCK 12MHz
+FLASH.CLOCK 4MHz
+GOSUB FlashDeclaration &FlashSize &FlashType &RAMSize
+
+;========================================================================
+; Flash programming example
+if &FlashType!=0.
+(
+  ; Example for download 
+  FLASH.Erase.ALL
+  FLASH.AUTO.ALL
+
+  ; -- Here you can set the path to avoid the dialog box... --
+  ; &filename="C:\workspace\bgcf\build\bgcf-pt-redboot\ecos\install\bin\redboot.hex"
+  &filename="rtc.elf"
+  ;y.SOURCEPATH.SETRECURSEDIR ../startup
+  ;y.SOURCEPATH.SETRECURSEDIR ../source
+  
+  ; If the filename has not been selected, do it now!
+  if ("&filename"=="") 
+  (
+    dialog.file *.*
+    entry &filename
+  )
+  ;  Data.Load.IntelHex &filename
+  Data.Load &filename /verify
+
+  
+  ; 2. Checksum generation
+  Data.Set 0x14 %long 0x0          ;Zero the reserved vector's spot
+  Data.SUM 0x0--0x1f /long         ;Calculate checksum of all (other) vectors
+  Data.Set 0x14 %Long -data.sum()  ;Write back the 2's compliment in reserved vector's spot
+  ; 3. Flash programming
+  FLASH.AUTO.OFF
+
+)
+
+; Reset target to make new vector table visible
+if &FlashType==2.||&FlashType==3.
+(
+  SYStem.Up
+  r.s pc main
+)
+
+ENDDO
+
+;========================================================================
+; Setup the cpu to use crystal oscillator and PLL, instead of RC osc.
+SetupCpu:
+
+;Data.Set <address> %LONG  <value>
+
+; -- 1. Disconnect the PLL with one feed sequence if PLL is already connected. --
+;  - PLLCON = 1
+Data.Set 0xE01FC080 %LONG  0x00000001
+;  - PLLFEED sequence -
+Data.Set 0xE01FC08C %LONG  0x000000AA
+Data.Set 0xE01FC08C %LONG  0x00000055
+
+; -- 2. Disable the PLL with one feed sequence. --
+;  - PLLCON = 0
+Data.Set 0xE01FC080 %LONG  0x00000000
+;  - PLLFEED sequence -
+Data.Set 0xE01FC08C %LONG  0x000000AA
+Data.Set 0xE01FC08C %LONG  0x00000055
+
+; -- 3. Enable main oscillator. -- 
+;  - SCS = 0x20 (OSCEN = 1)
+Data.Set 0xE01FC1A0 %LONG  0x00000020
+
+
+; -- 4. Write to the Clock Source Selection Control register to change the clock source. -- 
+;  - CLKSRCSEL = 1
+Data.Set 0xE01FC10C %LONG  0x00000001
+
+; -- 5. Write to the PLLCFG and make it effective with one feed sequence. The PLLCFG can
+;      only be updated when the PLL is disabled. --
+;  - PLLCFG = M is set to 1 N is set to 12
+Data.Set 0xE01FC084 %LONG  0x0000000B
+;  - PLLFEED sequence -
+Data.Set 0xE01FC08C %LONG  0x000000AA
+Data.Set 0xE01FC08C %LONG  0x00000055
+
+; -- 6. Enable the PLL with one feed sequence. --
+;  - PLLCON = 1
+Data.Set 0xE01FC080 %LONG  0x00000001
+;  - PLLFEED sequence -
+Data.Set 0xE01FC08C %LONG  0x000000AA
+Data.Set 0xE01FC08C %LONG  0x00000055
+
+; -- 7. Change the CPU Clock Divider setting for the operation with the PLL. It's critical to do
+;      this before connecting the PLL. --
+;  - CCLKCFG = 5  (Fcpu = 288/6 = 48MHz )
+Data.Set 0xE01FC104 %LONG  0x00000005
+;Data.Set 0xE01FC104 %LONG  0x00000003
+
+; -- 8. Wait for the PLL to lock
+wait 200.ms
+
+; -- 9. Connect PLL with One Feed Seq --
+;  -  PLLCON = 3
+Data.Set 0xE01FC080 %LONG  0x00000003
+;  - PLLFEED sequence -
+Data.Set 0xE01FC08C %LONG  0x000000AA
+Data.Set 0xE01FC08C %LONG  0x00000055
+
+; -- 10. Wait for the PLL to connect 
+wait 30.ms
+
+RETURN
+
+
+;========================================================================
+; Flash declaration depending on configuration 
+
+FlashDeclaration:
+  ENTRY  &FlashSize  &FlashType &RAMSize
+  
+  IF &FlashType==1.
+  (
+    IF &FlashSize==64.
+    (
+      FLASH.Create 1. 0x00000--0x0dfff 0x02000 TARGET Long
+    )
+    ELSE IF &FlashSize==128.
+    (
+      FLASH.Create 1. 0x00000--0x1dfff 0x02000 TARGET Long
+    )
+    ELSE IF &FlashSize==256.
+    (
+      FLASH.Create 1. 0x00000--0x0ffff 0x02000 TARGET Long
+      FLASH.Create 1. 0x10000--0x2ffff 0x10000 TARGET Long 0x10000
+      FLASH.Create 1. 0x30000--0x3dfff 0x02000 TARGET Long
+    )
+    ELSE
+    (
+      PRINT %ERROR "FLASH configuration is not supported by the script"
+      ENDDO
+    )
+    
+    FLASH.TARGET 0x40000000 0x40000800 0x1000 ~~/demo/arm/flash/long/lpc2100.bin
+  )
+  ELSE IF &FlashType==2.
+  (
+    IF &FlashSize==32.
+    (
+      FLASH.Create 1. 0x00000--0x07fff 0x1000 TARGET Long
+    )
+    ELSE IF &FlashSize==64.
+    (
+      FLASH.Create 1. 0x00000--0x07fff 0x1000 TARGET Long
+      FLASH.Create 1. 0x08000--0x0ffff 0x8000 TARGET Long 0x8000
+    )
+    ELSE IF &FlashSize==128.
+    (
+      FLASH.Create 1. 0x00000--0x07fff 0x1000 TARGET Long
+      FLASH.Create 1. 0x08000--0x1ffff 0x8000 TARGET Long 0x8000
+    )
+    ELSE IF &FlashSize==256.
+    (
+      FLASH.Create 1. 0x00000--0x07fff 0x1000 TARGET Long
+      FLASH.Create 1. 0x08000--0x3ffff 0x8000 TARGET Long 0x8000
+    )
+    ELSE IF &FlashSize==512.
+    (
+      FLASH.Create 1. 0x00000--0x07fff 0x1000 TARGET Long
+      FLASH.Create 1. 0x08000--0x77fff 0x8000 TARGET Long 0x8000
+      FLASH.Create 1. 0x78000--0x7cfff 0x1000 TARGET Long
+    )
+    ELSE
+    (
+      PRINT %ERROR "FLASH configuration is not supported by the script"
+      ENDDO
+    )
+
+    FLASH.TARGET 0x40000000 0x40000800 0x1000 ~~/demo/arm/flash/long/lpc2130.bin
+  )
+  ELSE IF &FlashType==3.
+  (
+    IF &FlashSize==8.
+    (
+      FLASH.Create 1. 0x00000--0x1fff 0x01000 TARGET Long
+    )
+    ELSE IF &FlashSize==16.
+    (
+      FLASH.Create 1. 0x00000--0x3fff 0x01000 TARGET Long
+    )
+    ELSE IF &FlashSize==32.
+    (
+      FLASH.Create 1. 0x00000--0x07fff 0x1000 TARGET Long
+    )
+    ELSE
+    (
+      PRINT %ERROR "FLASH configuration is not supported by the script"
+      ENDDO
+    )
+
+    IF &RAMSize>=4.
+    (
+      FLASH.TARGET 0x40000000 0x40000600 0x800 ~~/demo/arm/flash/long/lpc2103.bin
+    ) 
+    ELSE IF &RAMSize>=2.
+    (
+      FLASH.TARGET 0x40000000 0x40000480 0x200 ~~/demo/arm/flash/long/lpc2103.bin
+    ) 
+  )
+  
+  RETURN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

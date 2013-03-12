@@ -6,7 +6,7 @@
 #include "lpc2468.h"
 
 /* Constant that gives app. 500msec delay, when using IRC as clock source */
-#define DELAY_SEC	160000
+#define DELAY_SEC	160001
 
 /* init GPIO for LED, set P2.10 as output */
 static void ledInit(){

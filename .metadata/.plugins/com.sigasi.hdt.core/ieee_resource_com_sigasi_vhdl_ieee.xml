@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<preprocessedCompilationUnits>
+    <version>1</version>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/std_logic_textio.vhd</uri>
+        <designUnits>
+            <packageBody lib="ieee" name="STD_LOGIC_TEXTIO"/>
+            <primaryUnit lib="ieee" name="STD_LOGIC_TEXTIO"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="IEEE" name="std_logic_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="STD" name="textio"/>
+            <primaryUnit lib="ieee" name="STD_LOGIC_TEXTIO"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/numeric_bit.vhd</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="NUMERIC_BIT"/>
+            <packageBody lib="ieee" name="NUMERIC_BIT"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="ieee" name="NUMERIC_BIT"/>
+            <primaryUnit lib="std" name="standard"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/std_logic_arith.vhd</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="std_logic_arith"/>
+            <packageBody lib="ieee" name="std_logic_arith"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="IEEE" name="std_logic_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="ieee" name="std_logic_arith"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/numeric_std.vhd</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="NUMERIC_STD"/>
+            <packageBody lib="ieee" name="NUMERIC_STD"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="ieee" name="NUMERIC_STD"/>
+            <primaryUnit lib="IEEE" name="STD_LOGIC_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/std_logic_signed.vhd</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="STD_LOGIC_SIGNED"/>
+            <packageBody lib="ieee" name="STD_LOGIC_SIGNED"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="IEEE" name="std_logic_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="ieee" name="STD_LOGIC_SIGNED"/>
+            <primaryUnit lib="IEEE" name="std_logic_arith"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/std_logic_misc.vhd</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="std_logic_misc"/>
+            <packageBody lib="ieee" name="std_logic_misc"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="IEEE" name="STD_LOGIC_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="ieee" name="std_logic_misc"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/std_logic_1164.vhd</uri>
+        <designUnits>
+            <packageBody lib="ieee" name="std_logic_1164"/>
+            <primaryUnit lib="ieee" name="std_logic_1164"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="ieee" name="std_logic_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/math_complex.vhd</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="MATH_COMPLEX"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="std" name="standard"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/std_logic_unsigned.vhd</uri>
+        <designUnits>
+            <packageBody lib="ieee" name="STD_LOGIC_UNSIGNED"/>
+            <primaryUnit lib="ieee" name="STD_LOGIC_UNSIGNED"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="IEEE" name="std_logic_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="IEEE" name="std_logic_arith"/>
+            <primaryUnit lib="ieee" name="STD_LOGIC_UNSIGNED"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/ieee/math_real.vhd</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="MATH_REAL"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="std" name="standard"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+</preprocessedCompilationUnits>

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1283435077781
+java.vm.version,sysinfo,,,"16.0-b13",1283435077781
+started,bundle,org.eclipse.epp.usagedata.ui,1.1.0.R200906100410,"org.eclipse.epp.usagedata.ui",1283435078906
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435081312
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435083000
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1283435084359
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1283435084703
+opened,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1283435085937
+closed,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1283435085984
+started,bundle,org.eclipse.cdt.managedbuilder.ui,5.1.0.200909110608,"org.eclipse.cdt.managedbuilder.ui",1283435091093
+started,bundle,org.eclipse.cdt.managedbuilder.gnu.ui,5.0.100.200909110608,"org.eclipse.cdt.managedbuilder.gnu.ui",1283435091140
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435091234
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1283435094062
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435097593
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435101140
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435131609
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1283435135343
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1283435142906
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435145453
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283435150218
+no handler,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1283435174625
+opened,editor,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.editor",1283435181265
+activated,editor,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.editor",1283435181312
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1283435198968
+activated,view,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.ui.views.MakeView",1283435200250

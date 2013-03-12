@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Workspace/EMB/WB_shell/HDL/ise/tb_bfm_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="arm_emc_package" />
+            <top_module name="def_pkg" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_bfm" />
+            <top_module name="textio" />
+            <top_module name="txt_util" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/tb_bfm/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider16" type="divider">
+      <obj_property name="label">BFM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/port_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">port_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/dbus_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dbus_en</obj_property>
+      <obj_property name="ObjectShortName">dbus_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/abus_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">abus_en</obj_property>
+      <obj_property name="ObjectShortName">abus_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/arm_bus_if" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">arm_bus_if</obj_property>
+      <obj_property name="ObjectShortName">arm_bus_if</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/clock_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/stim_file" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">stim_file[1:29]</obj_property>
+      <obj_property name="ObjectShortName">stim_file[1:29]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/log_file" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">log_file[1:27]</obj_property>
+      <obj_property name="ObjectShortName">log_file[1:27]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider15" type="divider">
+      <obj_property name="label">DUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/ncpucs_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ncpucs_i</obj_property>
+      <obj_property name="ObjectShortName">ncpucs_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/ncpurd_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ncpurd_i</obj_property>
+      <obj_property name="ObjectShortName">ncpurd_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/ncpuwr_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ncpuwr_i</obj_property>
+      <obj_property name="ObjectShortName">ncpuwr_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/Host1/CPU/cpua_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cpua_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cpua_i[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/Host1/CPU/cpud_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cpud_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cpud_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/Host1/CPU/cpud_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cpud_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cpud_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/Host1/CPU/wr_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_o</obj_property>
+      <obj_property name="ObjectShortName">wr_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/Host1/CPU/rd_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_o</obj_property>
+      <obj_property name="ObjectShortName">rd_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider18" type="divider">
+      <obj_property name="label">S1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/S1/cyc_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cyc_i</obj_property>
+      <obj_property name="ObjectShortName">cyc_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/S1/stb_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stb_i</obj_property>
+      <obj_property name="ObjectShortName">stb_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/S1/we_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_i</obj_property>
+      <obj_property name="ObjectShortName">we_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/S1/stb_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stb_i</obj_property>
+      <obj_property name="ObjectShortName">stb_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/S1/dat_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dat_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dat_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/S1/adr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adr_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">adr_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/S1/ack_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ack_o</obj_property>
+      <obj_property name="ObjectShortName">ack_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/S1/dat_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dat_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dat_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_bfm/uut/S1/q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q[15:0]</obj_property>
+   </wvobject>
+</wave_config>

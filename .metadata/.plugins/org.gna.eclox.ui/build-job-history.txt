@@ -1,0 +1,3 @@
+/WB_shell/HDL/hdl_doxyfile.Doxyfile
+/eclox_test/eclox_test.doxyfile
+/lpc2478_CAN/doxyfile

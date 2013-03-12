@@ -1,0 +1,234 @@
+
+blink.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 startup       00000020  00000000  00000000  00008000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 prog          000001dc  00000020  00000020  00008020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .ARM.attributes 0000002e  00000000  00000000  000081fc  2**0
+                  CONTENTS, READONLY
+  3 .comment      00000011  00000000  00000000  0000822a  2**0
+                  CONTENTS, READONLY
+  4 .debug_abbrev 0000008d  00000000  00000000  0000823b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000000f0  00000000  00000000  000082c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   0000006e  00000000  00000000  000083b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  0000008c  00000000  00000000  00008428  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_loc    000000dc  00000000  00000000  000084b4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_pubnames 00000025  00000000  00000000  00008590  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_pubtypes 00000012  00000000  00000000  000085b5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_aranges 00000020  00000000  00000000  000085c7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_str    0000008b  00000000  00000000  000085e7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section startup:
+
+00000000 <startup>:
+   0:	ea000006 	b	20 <start>
+   4:	ea00001f 	b	88 <data_abort_exception>
+   8:	ea00001e 	b	88 <data_abort_exception>
+   c:	ea00001d 	b	88 <data_abort_exception>
+  10:	ea00001c 	b	88 <data_abort_exception>
+  14:	ea00001b 	b	88 <data_abort_exception>
+  18:	ea00001a 	b	88 <data_abort_exception>
+  1c:	ea000019 	b	88 <data_abort_exception>
+
+Disassembly of section prog:
+
+00000020 <start>:
+  20:	e59f3078 	ldr	r3, [pc, #120]	; a0 <data_abort_exception+0x18>
+  24:	e1a0d003 	mov	sp, r3
+  28:	e24dac02 	sub	sl, sp, #512	; 0x200
+  2c:	e3a01000 	mov	r1, #0
+  30:	e1a0b001 	mov	fp, r1
+  34:	e1a07001 	mov	r7, r1
+  38:	e59f104c 	ldr	r1, [pc, #76]	; 8c <data_abort_exception+0x4>
+  3c:	e59f304c 	ldr	r3, [pc, #76]	; 90 <data_abort_exception+0x8>
+  40:	e0533001 	subs	r3, r3, r1
+  44:	0a000003 	beq	58 <.end_clear_loop>
+  48:	e3a02000 	mov	r2, #0
+
+0000004c <.clear_loop>:
+  4c:	e4c12001 	strb	r2, [r1], #1
+  50:	e2533001 	subs	r3, r3, #1
+  54:	cafffffc 	bgt	4c <.clear_loop>
+
+00000058 <.end_clear_loop>:
+  58:	e59f1034 	ldr	r1, [pc, #52]	; 94 <data_abort_exception+0xc>
+  5c:	e59f2034 	ldr	r2, [pc, #52]	; 98 <data_abort_exception+0x10>
+  60:	e59f3034 	ldr	r3, [pc, #52]	; 9c <data_abort_exception+0x14>
+  64:	e0533001 	subs	r3, r3, r1
+  68:	0a000003 	beq	7c <.end_set_loop>
+
+0000006c <.set_loop>:
+  6c:	e4d24001 	ldrb	r4, [r2], #1
+  70:	e4c14001 	strb	r4, [r1], #1
+  74:	e2533001 	subs	r3, r3, #1
+  78:	cafffffb 	bgt	6c <.set_loop>
+
+0000007c <.end_set_loop>:
+  7c:	e3a00000 	mov	r0, #0
+  80:	e3a01000 	mov	r1, #0
+  84:	eb00003f 	bl	188 <main>
+
+00000088 <data_abort_exception>:
+  88:	eafffffe 	b	88 <data_abort_exception>
+  8c:	40000000 	.word	0x40000000
+  90:	40000000 	.word	0x40000000
+  94:	40000000 	.word	0x40000000
+  98:	400001fc 	.word	0x400001fc
+  9c:	40000000 	.word	0x40000000
+  a0:	4000fffc 	.word	0x4000fffc
+
+000000a4 <ledInit>:
+
+/* Constant that gives app. 500msec delay, when using IRC as clock source */
+#define DELAY_SEC	160001
+
+/* init GPIO for LED, set P2.10 as output */
+static void ledInit(){
+  a4:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
+  a8:	e28db000 	add	fp, sp, #0
+	PINSEL4  = 0;
+  ac:	e3a0320e 	mov	r3, #-536870912	; 0xe0000000
+  b0:	e283390b 	add	r3, r3, #180224	; 0x2c000
+  b4:	e2833010 	add	r3, r3, #16
+  b8:	e3a02000 	mov	r2, #0
+  bc:	e5832000 	str	r2, [r3]
+	FIO2DIR |= (1<<10);
+  c0:	e3a03101 	mov	r3, #1073741824	; 0x40000000
+  c4:	e2433dff 	sub	r3, r3, #16320	; 0x3fc0
+  c8:	e3a02101 	mov	r2, #1073741824	; 0x40000000
+  cc:	e2422dff 	sub	r2, r2, #16320	; 0x3fc0
+  d0:	e5922000 	ldr	r2, [r2]
+  d4:	e3822b01 	orr	r2, r2, #1024	; 0x400
+  d8:	e5832000 	str	r2, [r3]
+	FIO2CLR  = (1<<10);
+  dc:	e3e03dfe 	mvn	r3, #16256	; 0x3f80
+  e0:	e243318f 	sub	r3, r3, #-1073741789	; 0xc0000023
+  e4:	e3a02b01 	mov	r2, #1024	; 0x400
+  e8:	e5832000 	str	r2, [r3]
+}
+  ec:	e28bd000 	add	sp, fp, #0
+  f0:	e8bd0800 	pop	{fp}
+  f4:	e12fff1e 	bx	lr
+
+000000f8 <ledOn>:
+
+/* Turn on LED, writing to FIO2CLR register, LED is active LOW*/
+static void ledOn(int led)
+{
+  f8:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
+  fc:	e28db000 	add	fp, sp, #0
+ 100:	e24dd00c 	sub	sp, sp, #12
+ 104:	e50b0008 	str	r0, [fp, #-8]
+	FIO2CLR = led;
+ 108:	e3e03dfe 	mvn	r3, #16256	; 0x3f80
+ 10c:	e243318f 	sub	r3, r3, #-1073741789	; 0xc0000023
+ 110:	e51b2008 	ldr	r2, [fp, #-8]
+ 114:	e5832000 	str	r2, [r3]
+}
+ 118:	e28bd000 	add	sp, fp, #0
+ 11c:	e8bd0800 	pop	{fp}
+ 120:	e12fff1e 	bx	lr
+
+00000124 <ledOff>:
+
+/* Turn on LED, writing to FIO2SET register*/
+static void ledOff(int led)
+{
+ 124:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
+ 128:	e28db000 	add	fp, sp, #0
+ 12c:	e24dd00c 	sub	sp, sp, #12
+ 130:	e50b0008 	str	r0, [fp, #-8]
+	FIO2SET = led;
+ 134:	e3e03dfe 	mvn	r3, #16256	; 0x3f80
+ 138:	e243319f 	sub	r3, r3, #-1073741785	; 0xc0000027
+ 13c:	e51b2008 	ldr	r2, [fp, #-8]
+ 140:	e5832000 	str	r2, [r3]
+}
+ 144:	e28bd000 	add	sp, fp, #0
+ 148:	e8bd0800 	pop	{fp}
+ 14c:	e12fff1e 	bx	lr
+
+00000150 <delay>:
+
+/* very dumb delay */
+void delay(int d){     
+ 150:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
+ 154:	e28db000 	add	fp, sp, #0
+ 158:	e24dd00c 	sub	sp, sp, #12
+ 15c:	e50b0008 	str	r0, [fp, #-8]
+  for(; d; --d);
+ 160:	ea000002 	b	170 <delay+0x20>
+ 164:	e51b3008 	ldr	r3, [fp, #-8]
+ 168:	e2433001 	sub	r3, r3, #1
+ 16c:	e50b3008 	str	r3, [fp, #-8]
+ 170:	e51b3008 	ldr	r3, [fp, #-8]
+ 174:	e3530000 	cmp	r3, #0
+ 178:	1afffff9 	bne	164 <delay+0x14>
+}
+ 17c:	e28bd000 	add	sp, fp, #0
+ 180:	e8bd0800 	pop	{fp}
+ 184:	e12fff1e 	bx	lr
+
+00000188 <main>:
+
+/* main loop
+ * basic CPU initialization is done here.
+ */
+int main(void)
+{
+ 188:	e92d4800 	push	{fp, lr}
+ 18c:	e28db004 	add	fp, sp, #4
+	/* Flash memory setup */
+	MEMMAP = 1;
+ 190:	e3a0320e 	mov	r3, #-536870912	; 0xe0000000
+ 194:	e283397f 	add	r3, r3, #2080768	; 0x1fc000
+ 198:	e2833040 	add	r3, r3, #64	; 0x40
+ 19c:	e3a02001 	mov	r2, #1
+ 1a0:	e5832000 	str	r2, [r3]
+	MAMTIM = 3;
+ 1a4:	e3a0324e 	mov	r3, #-536870908	; 0xe0000004
+ 1a8:	e283397f 	add	r3, r3, #2080768	; 0x1fc000
+ 1ac:	e3a02003 	mov	r2, #3
+ 1b0:	e5832000 	str	r2, [r3]
+	MAMCR =  2;
+ 1b4:	e3a0320e 	mov	r3, #-536870912	; 0xe0000000
+ 1b8:	e283397f 	add	r3, r3, #2080768	; 0x1fc000
+ 1bc:	e3a02002 	mov	r2, #2
+ 1c0:	e5832000 	str	r2, [r3]
+
+	/* init led */
+	ledInit();
+ 1c4:	ebffffb6 	bl	a4 <ledInit>
+
+	/* now flash led */
+	while (1){
+		ledOn(1<<10);
+ 1c8:	e3a00b01 	mov	r0, #1024	; 0x400
+ 1cc:	ebffffc9 	bl	f8 <ledOn>
+		delay(DELAY_SEC);
+ 1d0:	e3a00a27 	mov	r0, #159744	; 0x27000
+ 1d4:	e2800c01 	add	r0, r0, #256	; 0x100
+ 1d8:	e2800001 	add	r0, r0, #1
+ 1dc:	ebffffdb 	bl	150 <delay>
+		ledOff(1<<10);
+ 1e0:	e3a00b01 	mov	r0, #1024	; 0x400
+ 1e4:	ebffffce 	bl	124 <ledOff>
+		delay(DELAY_SEC);
+ 1e8:	e3a00a27 	mov	r0, #159744	; 0x27000
+ 1ec:	e2800c01 	add	r0, r0, #256	; 0x100
+ 1f0:	e2800001 	add	r0, r0, #1
+ 1f4:	ebffffd5 	bl	150 <delay>
+	}
+ 1f8:	eafffff2 	b	1c8 <main+0x40>

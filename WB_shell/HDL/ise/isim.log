@@ -1,0 +1,21 @@
+ISim log file
+Running: C:\Workspace\EMB\WB_shell\HDL\ise\tb_bfm_isim_beh.exe -gui -tclbatch isim.cmd -view C:/Workspace/EMB/WB_shell/HDL/ise/dut.wcfg -wdb C:/Workspace/EMB/WB_shell/HDL/ise/tb_bfm_isim_beh.wdb 
+ISim M.53d (signature 0xb869381d)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+
+** Failure:*** Simulation END ***
+User(VHDL) Code Called Simulation Stop
+In process tb_ARM_BFM.vhd:TRANPROC 
+ 
+INFO: Simulator is stopped.

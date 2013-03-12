@@ -1,0 +1,22 @@
+10:59:22 **** Build of configuration Default for project lpc2478_uart_IRQ ****
+make hex 
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -c -Wall -I.  -mcpu=arm7tdmi -nostartfiles -Tlpc2468-rom.ld -Wcast-align -g  uart.c -o uart.o
+uart.c: In function 'Uart0_Handler':
+uart.c:26:11: warning: unused variable 'tx'
+uart.c: In function 'initUart':
+uart.c:80:7: warning: assignment from incompatible pointer type
+uart.c:90:3: warning: 'return' with no value, in function returning non-void
+uart.c:101:7: warning: assignment from incompatible pointer type
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -Wall -I.  -mcpu=arm7tdmi -nostartfiles -Tlpc2468-rom.ld -Wcast-align -g    boot.o main.o uart.o framework.o irq.o VIClowlevel.o -o main.elf
+uart.c:107:7: warning: assignment from incompatible pointer type
+uart.c:113:7: warning: assignment from incompatible pointer type
+uart.c: In function 'getkey':
+uart.c:175:6: warning: assignment makes pointer from integer without a cast
+uart.c: In function 'sendchar':
+uart.c:159:1: warning: control reaches end of non-void function
+uart.c: In function 'initUart':
+/Users/MortenOJ/sat/bin//arm-none-eabi-objcopy -O ihex main.elf main.hex
+uart.c:140:1: warning: control reaches end of non-void function
+
+10:59:22 Build Finished (took 112ms)
+

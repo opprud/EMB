@@ -1,0 +1,4 @@
+#Wed Nov 09 08:45:21 CET 2011
+eclipse.preferences.version=1
+doxygen.customs=eclox.core.doxygen.CustomDoxygen C\:\\Program Files\\doxygen\\bin\neclox.core.doxygen.CustomDoxygen /opt/local/bin\n
+doxygen.default=eclox.core.doxygen.CustomDoxygen /opt/local/bin

@@ -1,0 +1,8 @@
+14:49:56 **** Incremental Build of configuration Default for project lpc2478_rprintf ****
+make all 
+arm-none-eabi-gcc -g -O0 -mcpu=arm7tdmi -nostartfiles -Wall -Wcast-align  -T"platform/rom.lds" -o ././rtc-ea_oem-lpc2478-rom.elf obj/rom_boot.o obj/rom_main.o obj/rom_framework.o obj/rom_uart.o obj/rom_rprintf.o
+/bin/sh: arm-none-eabi-gcc: command not found
+make: *** [rom] Error 127
+
+14:49:56 Build Finished (took 128ms)
+

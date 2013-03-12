@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lpc2478_pwm_backlight/pwh.h&apos; to &apos;pwm.h&apos;" description="Rename resource &apos;pwh.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="pwh.h" name="pwm.h" stamp="1284629098218" updateReferences="true"/>
+</session>

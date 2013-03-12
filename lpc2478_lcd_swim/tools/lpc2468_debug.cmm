@@ -67,12 +67,12 @@ SYStem.Up
 
 symbol.reset
 
-&filename="../rtc-ea_oem-lpc2478-rom.elf"
+&filename="../swim-ea_oem-lpc2478-rom.elf"
 ;y.SOURCEPATH.SETRECURSEDIR ../startup
 ;y.SOURCEPATH.SETRECURSEDIR ../source
 
 
-data.load &filename /nocode
+;data.load &filename /nocode
 
 map.bonchip 0x80000000--0x801FFFFF
 map.bonchip 0x00000000--0x0007FFFF
@@ -84,6 +84,7 @@ IF RUN()
  BREAK
 )
   
+
 
 
 

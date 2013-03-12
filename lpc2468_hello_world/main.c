@@ -51,7 +51,7 @@ int main(void)
 	/* init led */
 	ledInit();
 
-	/* now flash led */
+	/* now flash led and write string on UART */
 	while (1)
 	{
 		ledOn(1<<10);

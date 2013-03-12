@@ -12,7 +12,7 @@
 #ifndef __LPC2478_H
 #define __LPC2478_H
 
-#include "..\swim\lpc_types.h"
+#include "../swim/lpc_types.h"
 
 /* LCD controller base address */
 #define LCD_BASE (0xFFE10000)

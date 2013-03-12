@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437336765
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437337531
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437338343
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437600171
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437600328
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437604031
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437606468
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.findReplace",1283437606468
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437610015
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1283437613250
+activated,editor,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.editor",1283437613484
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1283437625718
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1283437627265
+error,log,,,"Problems occurred refreshing the selected resources.",1283437627484
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437627718
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437629078
+opened,editor,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.editor",1283437632890
+activated,editor,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.editor",1283437632921
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.findNext",1283437646515
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437648296
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.findReplace",1283437648328
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437652578
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437655671
+activated,view,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search.ui.views.SearchView",1283437658593
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1283437658843

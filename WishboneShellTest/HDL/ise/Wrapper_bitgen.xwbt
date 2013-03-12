@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Workspace\EMB\WB_shell\HDL\ise\Wrapper.ncd
+OUTFILE=C:\Workspace\EMB\WB_shell\HDL\ise\Wrapper.bit
+FAMILY=Automotive Spartan3A
+PART=xa3s400a-4ftg256
+WORKINGDIR=C:\Workspace\EMB\WB_shell\HDL\ise
+LICENSE=ISE
+USER_INFO=174234211_176548074_205335233_125

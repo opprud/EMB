@@ -1,0 +1,6 @@
+14:24:30 **** Incremental Build of configuration Default for project lpc2478_timer_irq ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+14:24:30 Build Finished (took 72ms)
+

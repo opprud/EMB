@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Codesign_FPGA_IP/App/boot.s&apos; to &apos;boot.s_OLD&apos;" description="Rename resource &apos;boot.s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="App/boot.s" name="boot.s_OLD" stamp="1358864126037" updateReferences="true"/>
+</session>

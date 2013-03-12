@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="243" key="DIALOG_WIDTH"/>
+		<item value="4" key="DIALOG_Y_ORIGIN"/>
+		<item value="4" key="DIALOG_X_ORIGIN"/>
+		<item value="379" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="" key="selection"/>
+		<list key="findhistory">
+			<item value="U0IER"/>
+			<item value="#define&#x09;SSP1_INT&#x09;&#x09;11"/>
+			<item value="PINSEL4"/>
+			<item value="0xE002c000"/>
+			<item value="0xe0000000"/>
+			<item value="m_dat_i"/>
+			<item value="LPC24xxOEM_Board"/>
+			<item value="2478"/>
+		</list>
+		<list key="replacehistory">
+			<item value="int"/>
+			<item value="unsigned int"/>
+			<item value="static"/>
+			<item value="char"/>
+			<item value="unsigned char"/>
+			<item value="short"/>
+		</list>
+	</section>
+	<section name="org.eclipse.cdt.internal.ui.preferences.CTemplatePreferencePage$CEditTemplateDialog_dialogBounds">
+		<item value="509" key="DIALOG_WIDTH"/>
+		<item value="77" key="DIALOG_Y_ORIGIN"/>
+		<item value="287" key="DIALOG_HEIGHT"/>
+		<item value="116" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|0|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="405" key="DIALOG_Y_ORIGIN"/>
+		<item value="645" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

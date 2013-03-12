@@ -1,0 +1,6 @@
+10:28:34 **** Incremental Build of configuration Default for project lpc2468_blink ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+10:28:34 Build Finished (took 62ms)
+

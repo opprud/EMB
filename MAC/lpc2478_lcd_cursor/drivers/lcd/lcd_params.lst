@@ -1,0 +1,1832 @@
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 1
+
+
+   1              		.file	"lcd_params.c"
+   2              		.section	.debug_abbrev,"",%progbits
+   3              	.Ldebug_abbrev0:
+   4              		.section	.debug_info,"",%progbits
+   5              	.Ldebug_info0:
+   6              		.section	.debug_line,"",%progbits
+   7              	.Ldebug_line0:
+   8 0000 5C000000 		.section	.debug_macinfo,"",%progbits
+   8      02005600 
+   8      00000201 
+   8      FB0E0D00 
+   8      01010101 
+   9              	.Ldebug_macinfo0:
+  10              		.text
+  11              	.Ltext0:
+  12              		.file 1 "lcd/lcd_params.c"
+  13              		.section	.debug_macinfo
+  14 0000 03       		.byte	0x3
+  15 0001 00       		.uleb128 0x0
+  16 0002 01       		.uleb128 0x1
+  17 0003 01       		.byte	0x1
+  18 0004 00       		.uleb128 0x0
+  19 0005 5F5F5354 		.ascii	"__STDC__ 1\000"
+  19      44435F5F 
+  19      203100
+  20 0010 01       		.byte	0x1
+  21 0011 00       		.uleb128 0x0
+  22 0012 5F5F5354 		.ascii	"__STDC_HOSTED__ 1\000"
+  22      44435F48 
+  22      4F535445 
+  22      445F5F20 
+  22      3100
+  23 0024 01       		.byte	0x1
+  24 0025 00       		.uleb128 0x0
+  25 0026 5F5F474E 		.ascii	"__GNUC__ 4\000"
+  25      55435F5F 
+  25      203400
+  26 0031 01       		.byte	0x1
+  27 0032 00       		.uleb128 0x0
+  28 0033 5F5F474E 		.ascii	"__GNUC_MINOR__ 2\000"
+  28      55435F4D 
+  28      494E4F52 
+  28      5F5F2032 
+  28      00
+  29 0044 01       		.byte	0x1
+  30 0045 00       		.uleb128 0x0
+  31 0046 5F5F474E 		.ascii	"__GNUC_PATCHLEVEL__ 2\000"
+  31      55435F50 
+  31      41544348 
+  31      4C455645 
+  31      4C5F5F20 
+  32 005c 01       		.byte	0x1
+  33 005d 00       		.uleb128 0x0
+  34 005e 5F5F5349 		.ascii	"__SIZE_TYPE__ long unsigned int\000"
+  34      5A455F54 
+  34      5950455F 
+  34      5F206C6F 
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 2
+
+
+  34      6E672075 
+  35 007e 01       		.byte	0x1
+  36 007f 00       		.uleb128 0x0
+  37 0080 5F5F5054 		.ascii	"__PTRDIFF_TYPE__ long int\000"
+  37      52444946 
+  37      465F5459 
+  37      50455F5F 
+  37      206C6F6E 
+  38 009a 01       		.byte	0x1
+  39 009b 00       		.uleb128 0x0
+  40 009c 5F5F5743 		.ascii	"__WCHAR_TYPE__ int\000"
+  40      4841525F 
+  40      54595045 
+  40      5F5F2069 
+  40      6E7400
+  41 00af 01       		.byte	0x1
+  42 00b0 00       		.uleb128 0x0
+  43 00b1 5F5F5749 		.ascii	"__WINT_TYPE__ unsigned int\000"
+  43      4E545F54 
+  43      5950455F 
+  43      5F20756E 
+  43      7369676E 
+  44 00cc 01       		.byte	0x1
+  45 00cd 00       		.uleb128 0x0
+  46 00ce 5F5F494E 		.ascii	"__INTMAX_TYPE__ long long int\000"
+  46      544D4158 
+  46      5F545950 
+  46      455F5F20 
+  46      6C6F6E67 
+  47 00ec 01       		.byte	0x1
+  48 00ed 00       		.uleb128 0x0
+  49 00ee 5F5F5549 		.ascii	"__UINTMAX_TYPE__ long long unsigned int\000"
+  49      4E544D41 
+  49      585F5459 
+  49      50455F5F 
+  49      206C6F6E 
+  50 0116 01       		.byte	0x1
+  51 0117 00       		.uleb128 0x0
+  52 0118 5F5F4758 		.ascii	"__GXX_ABI_VERSION 1002\000"
+  52      585F4142 
+  52      495F5645 
+  52      5253494F 
+  52      4E203130 
+  53 012f 01       		.byte	0x1
+  54 0130 00       		.uleb128 0x0
+  55 0131 5F5F5553 		.ascii	"__USING_SJLJ_EXCEPTIONS__ 1\000"
+  55      494E475F 
+  55      534A4C4A 
+  55      5F455843 
+  55      45505449 
+  56 014d 01       		.byte	0x1
+  57 014e 00       		.uleb128 0x0
+  58 014f 5F5F5343 		.ascii	"__SCHAR_MAX__ 127\000"
+  58      4841525F 
+  58      4D41585F 
+  58      5F203132 
+  58      3700
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 3
+
+
+  59 0161 01       		.byte	0x1
+  60 0162 00       		.uleb128 0x0
+  61 0163 5F5F5348 		.ascii	"__SHRT_MAX__ 32767\000"
+  61      52545F4D 
+  61      41585F5F 
+  61      20333237 
+  61      363700
+  62 0176 01       		.byte	0x1
+  63 0177 00       		.uleb128 0x0
+  64 0178 5F5F494E 		.ascii	"__INT_MAX__ 2147483647\000"
+  64      545F4D41 
+  64      585F5F20 
+  64      32313437 
+  64      34383336 
+  65 018f 01       		.byte	0x1
+  66 0190 00       		.uleb128 0x0
+  67 0191 5F5F4C4F 		.ascii	"__LONG_MAX__ 2147483647L\000"
+  67      4E475F4D 
+  67      41585F5F 
+  67      20323134 
+  67      37343833 
+  68 01aa 01       		.byte	0x1
+  69 01ab 00       		.uleb128 0x0
+  70 01ac 5F5F4C4F 		.ascii	"__LONG_LONG_MAX__ 9223372036854775807LL\000"
+  70      4E475F4C 
+  70      4F4E475F 
+  70      4D41585F 
+  70      5F203932 
+  71 01d4 01       		.byte	0x1
+  72 01d5 00       		.uleb128 0x0
+  73 01d6 5F5F5743 		.ascii	"__WCHAR_MAX__ 2147483647\000"
+  73      4841525F 
+  73      4D41585F 
+  73      5F203231 
+  73      34373438 
+  74 01ef 01       		.byte	0x1
+  75 01f0 00       		.uleb128 0x0
+  76 01f1 5F5F4348 		.ascii	"__CHAR_BIT__ 8\000"
+  76      41525F42 
+  76      49545F5F 
+  76      203800
+  77 0200 01       		.byte	0x1
+  78 0201 00       		.uleb128 0x0
+  79 0202 5F5F494E 		.ascii	"__INTMAX_MAX__ 9223372036854775807LL\000"
+  79      544D4158 
+  79      5F4D4158 
+  79      5F5F2039 
+  79      32323333 
+  80 0227 01       		.byte	0x1
+  81 0228 00       		.uleb128 0x0
+  82 0229 5F5F464C 		.ascii	"__FLT_EVAL_METHOD__ 0\000"
+  82      545F4556 
+  82      414C5F4D 
+  82      4554484F 
+  82      445F5F20 
+  83 023f 01       		.byte	0x1
+  84 0240 00       		.uleb128 0x0
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 4
+
+
+  85 0241 5F5F4445 		.ascii	"__DEC_EVAL_METHOD__ 2\000"
+  85      435F4556 
+  85      414C5F4D 
+  85      4554484F 
+  85      445F5F20 
+  86 0257 01       		.byte	0x1
+  87 0258 00       		.uleb128 0x0
+  88 0259 5F5F464C 		.ascii	"__FLT_RADIX__ 2\000"
+  88      545F5241 
+  88      4449585F 
+  88      5F203200 
+  89 0269 01       		.byte	0x1
+  90 026a 00       		.uleb128 0x0
+  91 026b 5F5F464C 		.ascii	"__FLT_MANT_DIG__ 24\000"
+  91      545F4D41 
+  91      4E545F44 
+  91      49475F5F 
+  91      20323400 
+  92 027f 01       		.byte	0x1
+  93 0280 00       		.uleb128 0x0
+  94 0281 5F5F464C 		.ascii	"__FLT_DIG__ 6\000"
+  94      545F4449 
+  94      475F5F20 
+  94      3600
+  95 028f 01       		.byte	0x1
+  96 0290 00       		.uleb128 0x0
+  97 0291 5F5F464C 		.ascii	"__FLT_MIN_EXP__ (-125)\000"
+  97      545F4D49 
+  97      4E5F4558 
+  97      505F5F20 
+  97      282D3132 
+  98 02a8 01       		.byte	0x1
+  99 02a9 00       		.uleb128 0x0
+ 100 02aa 5F5F464C 		.ascii	"__FLT_MIN_10_EXP__ (-37)\000"
+ 100      545F4D49 
+ 100      4E5F3130 
+ 100      5F455850 
+ 100      5F5F2028 
+ 101 02c3 01       		.byte	0x1
+ 102 02c4 00       		.uleb128 0x0
+ 103 02c5 5F5F464C 		.ascii	"__FLT_MAX_EXP__ 128\000"
+ 103      545F4D41 
+ 103      585F4558 
+ 103      505F5F20 
+ 103      31323800 
+ 104 02d9 01       		.byte	0x1
+ 105 02da 00       		.uleb128 0x0
+ 106 02db 5F5F464C 		.ascii	"__FLT_MAX_10_EXP__ 38\000"
+ 106      545F4D41 
+ 106      585F3130 
+ 106      5F455850 
+ 106      5F5F2033 
+ 107 02f1 01       		.byte	0x1
+ 108 02f2 00       		.uleb128 0x0
+ 109 02f3 5F5F464C 		.ascii	"__FLT_MAX__ 3.40282347e+38F\000"
+ 109      545F4D41 
+ 109      585F5F20 
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 5
+
+
+ 109      332E3430 
+ 109      32383233 
+ 110 030f 01       		.byte	0x1
+ 111 0310 00       		.uleb128 0x0
+ 112 0311 5F5F464C 		.ascii	"__FLT_MIN__ 1.17549435e-38F\000"
+ 112      545F4D49 
+ 112      4E5F5F20 
+ 112      312E3137 
+ 112      35343934 
+ 113 032d 01       		.byte	0x1
+ 114 032e 00       		.uleb128 0x0
+ 115 032f 5F5F464C 		.ascii	"__FLT_EPSILON__ 1.19209290e-7F\000"
+ 115      545F4550 
+ 115      53494C4F 
+ 115      4E5F5F20 
+ 115      312E3139 
+ 116 034e 01       		.byte	0x1
+ 117 034f 00       		.uleb128 0x0
+ 118 0350 5F5F464C 		.ascii	"__FLT_DENORM_MIN__ 1.40129846e-45F\000"
+ 118      545F4445 
+ 118      4E4F524D 
+ 118      5F4D494E 
+ 118      5F5F2031 
+ 119 0373 01       		.byte	0x1
+ 120 0374 00       		.uleb128 0x0
+ 121 0375 5F5F464C 		.ascii	"__FLT_HAS_DENORM__ 1\000"
+ 121      545F4841 
+ 121      535F4445 
+ 121      4E4F524D 
+ 121      5F5F2031 
+ 122 038a 01       		.byte	0x1
+ 123 038b 00       		.uleb128 0x0
+ 124 038c 5F5F464C 		.ascii	"__FLT_HAS_INFINITY__ 1\000"
+ 124      545F4841 
+ 124      535F494E 
+ 124      46494E49 
+ 124      54595F5F 
+ 125 03a3 01       		.byte	0x1
+ 126 03a4 00       		.uleb128 0x0
+ 127 03a5 5F5F464C 		.ascii	"__FLT_HAS_QUIET_NAN__ 1\000"
+ 127      545F4841 
+ 127      535F5155 
+ 127      4945545F 
+ 127      4E414E5F 
+ 128 03bd 01       		.byte	0x1
+ 129 03be 00       		.uleb128 0x0
+ 130 03bf 5F5F4442 		.ascii	"__DBL_MANT_DIG__ 53\000"
+ 130      4C5F4D41 
+ 130      4E545F44 
+ 130      49475F5F 
+ 130      20353300 
+ 131 03d3 01       		.byte	0x1
+ 132 03d4 00       		.uleb128 0x0
+ 133 03d5 5F5F4442 		.ascii	"__DBL_DIG__ 15\000"
+ 133      4C5F4449 
+ 133      475F5F20 
+ 133      313500
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 6
+
+
+ 134 03e4 01       		.byte	0x1
+ 135 03e5 00       		.uleb128 0x0
+ 136 03e6 5F5F4442 		.ascii	"__DBL_MIN_EXP__ (-1021)\000"
+ 136      4C5F4D49 
+ 136      4E5F4558 
+ 136      505F5F20 
+ 136      282D3130 
+ 137 03fe 01       		.byte	0x1
+ 138 03ff 00       		.uleb128 0x0
+ 139 0400 5F5F4442 		.ascii	"__DBL_MIN_10_EXP__ (-307)\000"
+ 139      4C5F4D49 
+ 139      4E5F3130 
+ 139      5F455850 
+ 139      5F5F2028 
+ 140 041a 01       		.byte	0x1
+ 141 041b 00       		.uleb128 0x0
+ 142 041c 5F5F4442 		.ascii	"__DBL_MAX_EXP__ 1024\000"
+ 142      4C5F4D41 
+ 142      585F4558 
+ 142      505F5F20 
+ 142      31303234 
+ 143 0431 01       		.byte	0x1
+ 144 0432 00       		.uleb128 0x0
+ 145 0433 5F5F4442 		.ascii	"__DBL_MAX_10_EXP__ 308\000"
+ 145      4C5F4D41 
+ 145      585F3130 
+ 145      5F455850 
+ 145      5F5F2033 
+ 146 044a 01       		.byte	0x1
+ 147 044b 00       		.uleb128 0x0
+ 148 044c 5F5F4442 		.ascii	"__DBL_MAX__ 1.7976931348623157e+308\000"
+ 148      4C5F4D41 
+ 148      585F5F20 
+ 148      312E3739 
+ 148      37363933 
+ 149 0470 01       		.byte	0x1
+ 150 0471 00       		.uleb128 0x0
+ 151 0472 5F5F4442 		.ascii	"__DBL_MIN__ 2.2250738585072014e-308\000"
+ 151      4C5F4D49 
+ 151      4E5F5F20 
+ 151      322E3232 
+ 151      35303733 
+ 152 0496 01       		.byte	0x1
+ 153 0497 00       		.uleb128 0x0
+ 154 0498 5F5F4442 		.ascii	"__DBL_EPSILON__ 2.2204460492503131e-16\000"
+ 154      4C5F4550 
+ 154      53494C4F 
+ 154      4E5F5F20 
+ 154      322E3232 
+ 155 04bf 01       		.byte	0x1
+ 156 04c0 00       		.uleb128 0x0
+ 157 04c1 5F5F4442 		.ascii	"__DBL_DENORM_MIN__ 4.9406564584124654e-324\000"
+ 157      4C5F4445 
+ 157      4E4F524D 
+ 157      5F4D494E 
+ 157      5F5F2034 
+ 158 04ec 01       		.byte	0x1
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 7
+
+
+ 159 04ed 00       		.uleb128 0x0
+ 160 04ee 5F5F4442 		.ascii	"__DBL_HAS_DENORM__ 1\000"
+ 160      4C5F4841 
+ 160      535F4445 
+ 160      4E4F524D 
+ 160      5F5F2031 
+ 161 0503 01       		.byte	0x1
+ 162 0504 00       		.uleb128 0x0
+ 163 0505 5F5F4442 		.ascii	"__DBL_HAS_INFINITY__ 1\000"
+ 163      4C5F4841 
+ 163      535F494E 
+ 163      46494E49 
+ 163      54595F5F 
+ 164 051c 01       		.byte	0x1
+ 165 051d 00       		.uleb128 0x0
+ 166 051e 5F5F4442 		.ascii	"__DBL_HAS_QUIET_NAN__ 1\000"
+ 166      4C5F4841 
+ 166      535F5155 
+ 166      4945545F 
+ 166      4E414E5F 
+ 167 0536 01       		.byte	0x1
+ 168 0537 00       		.uleb128 0x0
+ 169 0538 5F5F4C44 		.ascii	"__LDBL_MANT_DIG__ 53\000"
+ 169      424C5F4D 
+ 169      414E545F 
+ 169      4449475F 
+ 169      5F203533 
+ 170 054d 01       		.byte	0x1
+ 171 054e 00       		.uleb128 0x0
+ 172 054f 5F5F4C44 		.ascii	"__LDBL_DIG__ 15\000"
+ 172      424C5F44 
+ 172      49475F5F 
+ 172      20313500 
+ 173 055f 01       		.byte	0x1
+ 174 0560 00       		.uleb128 0x0
+ 175 0561 5F5F4C44 		.ascii	"__LDBL_MIN_EXP__ (-1021)\000"
+ 175      424C5F4D 
+ 175      494E5F45 
+ 175      58505F5F 
+ 175      20282D31 
+ 176 057a 01       		.byte	0x1
+ 177 057b 00       		.uleb128 0x0
+ 178 057c 5F5F4C44 		.ascii	"__LDBL_MIN_10_EXP__ (-307)\000"
+ 178      424C5F4D 
+ 178      494E5F31 
+ 178      305F4558 
+ 178      505F5F20 
+ 179 0597 01       		.byte	0x1
+ 180 0598 00       		.uleb128 0x0
+ 181 0599 5F5F4C44 		.ascii	"__LDBL_MAX_EXP__ 1024\000"
+ 181      424C5F4D 
+ 181      41585F45 
+ 181      58505F5F 
+ 181      20313032 
+ 182 05af 01       		.byte	0x1
+ 183 05b0 00       		.uleb128 0x0
+ 184 05b1 5F5F4C44 		.ascii	"__LDBL_MAX_10_EXP__ 308\000"
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 8
+
+
+ 184      424C5F4D 
+ 184      41585F31 
+ 184      305F4558 
+ 184      505F5F20 
+ 185 05c9 01       		.byte	0x1
+ 186 05ca 00       		.uleb128 0x0
+ 187 05cb 5F5F4445 		.ascii	"__DECIMAL_DIG__ 17\000"
+ 187      43494D41 
+ 187      4C5F4449 
+ 187      475F5F20 
+ 187      313700
+ 188 05de 01       		.byte	0x1
+ 189 05df 00       		.uleb128 0x0
+ 190 05e0 5F5F4C44 		.ascii	"__LDBL_MAX__ 1.7976931348623157e+308L\000"
+ 190      424C5F4D 
+ 190      41585F5F 
+ 190      20312E37 
+ 190      39373639 
+ 191 0606 01       		.byte	0x1
+ 192 0607 00       		.uleb128 0x0
+ 193 0608 5F5F4C44 		.ascii	"__LDBL_MIN__ 2.2250738585072014e-308L\000"
+ 193      424C5F4D 
+ 193      494E5F5F 
+ 193      20322E32 
+ 193      32353037 
+ 194 062e 01       		.byte	0x1
+ 195 062f 00       		.uleb128 0x0
+ 196 0630 5F5F4C44 		.ascii	"__LDBL_EPSILON__ 2.2204460492503131e-16L\000"
+ 196      424C5F45 
+ 196      5053494C 
+ 196      4F4E5F5F 
+ 196      20322E32 
+ 197 0659 01       		.byte	0x1
+ 198 065a 00       		.uleb128 0x0
+ 199 065b 5F5F4C44 		.ascii	"__LDBL_DENORM_MIN__ 4.9406564584124654e-324L\000"
+ 199      424C5F44 
+ 199      454E4F52 
+ 199      4D5F4D49 
+ 199      4E5F5F20 
+ 200 0688 01       		.byte	0x1
+ 201 0689 00       		.uleb128 0x0
+ 202 068a 5F5F4C44 		.ascii	"__LDBL_HAS_DENORM__ 1\000"
+ 202      424C5F48 
+ 202      41535F44 
+ 202      454E4F52 
+ 202      4D5F5F20 
+ 203 06a0 01       		.byte	0x1
+ 204 06a1 00       		.uleb128 0x0
+ 205 06a2 5F5F4C44 		.ascii	"__LDBL_HAS_INFINITY__ 1\000"
+ 205      424C5F48 
+ 205      41535F49 
+ 205      4E46494E 
+ 205      4954595F 
+ 206 06ba 01       		.byte	0x1
+ 207 06bb 00       		.uleb128 0x0
+ 208 06bc 5F5F4C44 		.ascii	"__LDBL_HAS_QUIET_NAN__ 1\000"
+ 208      424C5F48 
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 9
+
+
+ 208      41535F51 
+ 208      55494554 
+ 208      5F4E414E 
+ 209 06d5 01       		.byte	0x1
+ 210 06d6 00       		.uleb128 0x0
+ 211 06d7 5F5F4445 		.ascii	"__DEC32_MANT_DIG__ 7\000"
+ 211      4333325F 
+ 211      4D414E54 
+ 211      5F444947 
+ 211      5F5F2037 
+ 212 06ec 01       		.byte	0x1
+ 213 06ed 00       		.uleb128 0x0
+ 214 06ee 5F5F4445 		.ascii	"__DEC32_MIN_EXP__ (-95)\000"
+ 214      4333325F 
+ 214      4D494E5F 
+ 214      4558505F 
+ 214      5F20282D 
+ 215 0706 01       		.byte	0x1
+ 216 0707 00       		.uleb128 0x0
+ 217 0708 5F5F4445 		.ascii	"__DEC32_MAX_EXP__ 96\000"
+ 217      4333325F 
+ 217      4D41585F 
+ 217      4558505F 
+ 217      5F203936 
+ 218 071d 01       		.byte	0x1
+ 219 071e 00       		.uleb128 0x0
+ 220 071f 5F5F4445 		.ascii	"__DEC32_MIN__ 1E-95DF\000"
+ 220      4333325F 
+ 220      4D494E5F 
+ 220      5F203145 
+ 220      2D393544 
+ 221 0735 01       		.byte	0x1
+ 222 0736 00       		.uleb128 0x0
+ 223 0737 5F5F4445 		.ascii	"__DEC32_MAX__ 9.999999E96DF\000"
+ 223      4333325F 
+ 223      4D41585F 
+ 223      5F20392E 
+ 223      39393939 
+ 224 0753 01       		.byte	0x1
+ 225 0754 00       		.uleb128 0x0
+ 226 0755 5F5F4445 		.ascii	"__DEC32_EPSILON__ 1E-6DF\000"
+ 226      4333325F 
+ 226      45505349 
+ 226      4C4F4E5F 
+ 226      5F203145 
+ 227 076e 01       		.byte	0x1
+ 228 076f 00       		.uleb128 0x0
+ 229 0770 5F5F4445 		.ascii	"__DEC32_DEN__ 0.000001E-95DF\000"
+ 229      4333325F 
+ 229      44454E5F 
+ 229      5F20302E 
+ 229      30303030 
+ 230 078d 01       		.byte	0x1
+ 231 078e 00       		.uleb128 0x0
+ 232 078f 5F5F4445 		.ascii	"__DEC64_MANT_DIG__ 16\000"
+ 232      4336345F 
+ 232      4D414E54 
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 10
+
+
+ 232      5F444947 
+ 232      5F5F2031 
+ 233 07a5 01       		.byte	0x1
+ 234 07a6 00       		.uleb128 0x0
+ 235 07a7 5F5F4445 		.ascii	"__DEC64_MIN_EXP__ (-383)\000"
+ 235      4336345F 
+ 235      4D494E5F 
+ 235      4558505F 
+ 235      5F20282D 
+ 236 07c0 01       		.byte	0x1
+ 237 07c1 00       		.uleb128 0x0
+ 238 07c2 5F5F4445 		.ascii	"__DEC64_MAX_EXP__ 384\000"
+ 238      4336345F 
+ 238      4D41585F 
+ 238      4558505F 
+ 238      5F203338 
+ 239 07d8 01       		.byte	0x1
+ 240 07d9 00       		.uleb128 0x0
+ 241 07da 5F5F4445 		.ascii	"__DEC64_MIN__ 1E-383DD\000"
+ 241      4336345F 
+ 241      4D494E5F 
+ 241      5F203145 
+ 241      2D333833 
+ 242 07f1 01       		.byte	0x1
+ 243 07f2 00       		.uleb128 0x0
+ 244 07f3 5F5F4445 		.ascii	"__DEC64_MAX__ 9.999999999999999E384DD\000"
+ 244      4336345F 
+ 244      4D41585F 
+ 244      5F20392E 
+ 244      39393939 
+ 245 0819 01       		.byte	0x1
+ 246 081a 00       		.uleb128 0x0
+ 247 081b 5F5F4445 		.ascii	"__DEC64_EPSILON__ 1E-15DD\000"
+ 247      4336345F 
+ 247      45505349 
+ 247      4C4F4E5F 
+ 247      5F203145 
+ 248 0835 01       		.byte	0x1
+ 249 0836 00       		.uleb128 0x0
+ 250 0837 5F5F4445 		.ascii	"__DEC64_DEN__ 0.000000000000001E-383DD\000"
+ 250      4336345F 
+ 250      44454E5F 
+ 250      5F20302E 
+ 250      30303030 
+ 251 085e 01       		.byte	0x1
+ 252 085f 00       		.uleb128 0x0
+ 253 0860 5F5F4445 		.ascii	"__DEC128_MANT_DIG__ 34\000"
+ 253      43313238 
+ 253      5F4D414E 
+ 253      545F4449 
+ 253      475F5F20 
+ 254 0877 01       		.byte	0x1
+ 255 0878 00       		.uleb128 0x0
+ 256 0879 5F5F4445 		.ascii	"__DEC128_MIN_EXP__ (-6143)\000"
+ 256      43313238 
+ 256      5F4D494E 
+ 256      5F455850 
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 11
+
+
+ 256      5F5F2028 
+ 257 0894 01       		.byte	0x1
+ 258 0895 00       		.uleb128 0x0
+ 259 0896 5F5F4445 		.ascii	"__DEC128_MAX_EXP__ 6144\000"
+ 259      43313238 
+ 259      5F4D4158 
+ 259      5F455850 
+ 259      5F5F2036 
+ 260 08ae 01       		.byte	0x1
+ 261 08af 00       		.uleb128 0x0
+ 262 08b0 5F5F4445 		.ascii	"__DEC128_MIN__ 1E-6143DL\000"
+ 262      43313238 
+ 262      5F4D494E 
+ 262      5F5F2031 
+ 262      452D3631 
+ 263 08c9 01       		.byte	0x1
+ 264 08ca 00       		.uleb128 0x0
+ 265 08cb 5F5F4445 		.ascii	"__DEC128_MAX__ 9.999999999999999999999999999999999E"
+ 265      43313238 
+ 265      5F4D4158 
+ 265      5F5F2039 
+ 265      2E393939 
+ 266 08fe 36313434 		.ascii	"6144DL\000"
+ 266      444C00
+ 267 0905 01       		.byte	0x1
+ 268 0906 00       		.uleb128 0x0
+ 269 0907 5F5F4445 		.ascii	"__DEC128_EPSILON__ 1E-33DL\000"
+ 269      43313238 
+ 269      5F455053 
+ 269      494C4F4E 
+ 269      5F5F2031 
+ 270 0922 01       		.byte	0x1
+ 271 0923 00       		.uleb128 0x0
+ 272 0924 5F5F4445 		.ascii	"__DEC128_DEN__ 0.000000000000000000000000000000001E"
+ 272      43313238 
+ 272      5F44454E 
+ 272      5F5F2030 
+ 272      2E303030 
+ 273 0957 2D363134 		.ascii	"-6143DL\000"
+ 273      33444C00 
+ 274 095f 01       		.byte	0x1
+ 275 0960 00       		.uleb128 0x0
+ 276 0961 5F5F5245 		.ascii	"__REGISTER_PREFIX__ \000"
+ 276      47495354 
+ 276      45525F50 
+ 276      52454649 
+ 276      585F5F20 
+ 277 0976 01       		.byte	0x1
+ 278 0977 00       		.uleb128 0x0
+ 279 0978 5F5F5553 		.ascii	"__USER_LABEL_PREFIX__ \000"
+ 279      45525F4C 
+ 279      4142454C 
+ 279      5F505245 
+ 279      4649585F 
+ 280 098f 01       		.byte	0x1
+ 281 0990 00       		.uleb128 0x0
+ 282 0991 5F5F5645 		.ascii	"__VERSION__ \"4.2.2\"\000"
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 12
+
+
+ 282      5253494F 
+ 282      4E5F5F20 
+ 282      22342E32 
+ 282      2E322200 
+ 283 09a5 01       		.byte	0x1
+ 284 09a6 00       		.uleb128 0x0
+ 285 09a7 5F5F474E 		.ascii	"__GNUC_GNU_INLINE__ 1\000"
+ 285      55435F47 
+ 285      4E555F49 
+ 285      4E4C494E 
+ 285      455F5F20 
+ 286 09bd 01       		.byte	0x1
+ 287 09be 00       		.uleb128 0x0
+ 288 09bf 5F5F4F50 		.ascii	"__OPTIMIZE_SIZE__ 1\000"
+ 288      54494D49 
+ 288      5A455F53 
+ 288      495A455F 
+ 288      5F203100 
+ 289 09d3 01       		.byte	0x1
+ 290 09d4 00       		.uleb128 0x0
+ 291 09d5 5F5F4F50 		.ascii	"__OPTIMIZE__ 1\000"
+ 291      54494D49 
+ 291      5A455F5F 
+ 291      203100
+ 292 09e4 01       		.byte	0x1
+ 293 09e5 00       		.uleb128 0x0
+ 294 09e6 5F5F4649 		.ascii	"__FINITE_MATH_ONLY__ 0\000"
+ 294      4E495445 
+ 294      5F4D4154 
+ 294      485F4F4E 
+ 294      4C595F5F 
+ 295 09fd 01       		.byte	0x1
+ 296 09fe 00       		.uleb128 0x0
+ 297 09ff 5F5F4348 		.ascii	"__CHAR_UNSIGNED__ 1\000"
+ 297      41525F55 
+ 297      4E534947 
+ 297      4E45445F 
+ 297      5F203100 
+ 298 0a13 01       		.byte	0x1
+ 299 0a14 00       		.uleb128 0x0
+ 300 0a15 5F5F6172 		.ascii	"__arm__ 1\000"
+ 300      6D5F5F20 
+ 300      3100
+ 301 0a1f 01       		.byte	0x1
+ 302 0a20 00       		.uleb128 0x0
+ 303 0a21 5F5F4150 		.ascii	"__APCS_32__ 1\000"
+ 303      43535F33 
+ 303      325F5F20 
+ 303      3100
+ 304 0a2f 01       		.byte	0x1
+ 305 0a30 00       		.uleb128 0x0
+ 306 0a31 5F5F4152 		.ascii	"__ARMEL__ 1\000"
+ 306      4D454C5F 
+ 306      5F203100 
+ 307 0a3d 01       		.byte	0x1
+ 308 0a3e 00       		.uleb128 0x0
+ 309 0a3f 5F5F534F 		.ascii	"__SOFTFP__ 1\000"
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 13
+
+
+ 309      46544650 
+ 309      5F5F2031 
+ 309      00
+ 310 0a4c 01       		.byte	0x1
+ 311 0a4d 00       		.uleb128 0x0
+ 312 0a4e 5F5F5448 		.ascii	"__THUMB_INTERWORK__ 1\000"
+ 312      554D425F 
+ 312      494E5445 
+ 312      52574F52 
+ 312      4B5F5F20 
+ 313 0a64 01       		.byte	0x1
+ 314 0a65 00       		.uleb128 0x0
+ 315 0a66 5F5F4152 		.ascii	"__ARM_ARCH_4T__ 1\000"
+ 315      4D5F4152 
+ 315      43485F34 
+ 315      545F5F20 
+ 315      3100
+ 316 0a78 01       		.byte	0x1
+ 317 0a79 00       		.uleb128 0x0
+ 318 0a7a 5F5F454C 		.ascii	"__ELF__ 1\000"
+ 318      465F5F20 
+ 318      3100
+ 319 0a84 01       		.byte	0x1
+ 320 0a85 00       		.uleb128 0x0
+ 321 0a86 5F5F5553 		.ascii	"__USES_INITFINI__ 1\000"
+ 321      45535F49 
+ 321      4E495446 
+ 321      494E495F 
+ 321      5F203100 
+ 322 0a9a 01       		.byte	0x1
+ 323 0a9b 00       		.uleb128 0x0
+ 324 0a9c 454C2031 		.ascii	"EL 1\000"
+ 324      00
+ 325 0aa1 01       		.byte	0x1
+ 326 0aa2 00       		.uleb128 0x0
+ 327 0aa3 47434320 		.ascii	"GCC 1\000"
+ 327      3100
+ 328 0aa9 01       		.byte	0x1
+ 329 0aaa 00       		.uleb128 0x0
+ 330 0aab 4C504332 		.ascii	"LPC2468 1\000"
+ 330      34363820 
+ 330      3100
+ 331              		.file 2 "lcd/lpc_lcd_params.h"
+ 332 0ab5 03       		.byte	0x3
+ 333 0ab6 0D       		.uleb128 0xd
+ 334 0ab7 02       		.uleb128 0x2
+ 335 0ab8 01       		.byte	0x1
+ 336 0ab9 18       		.uleb128 0x18
+ 337 0aba 4C50435F 		.ascii	"LPC_SHARP_LCD_PARAM_H \000"
+ 337      53484152 
+ 337      505F4C43 
+ 337      445F5041 
+ 337      52414D5F 
+ 338              		.file 3 "lcd/..\\swim\\lpc_types.h"
+ 339 0ad1 03       		.byte	0x3
+ 340 0ad2 1A       		.uleb128 0x1a
+ 341 0ad3 03       		.uleb128 0x3
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 14
+
+
+ 342 0ad4 01       		.byte	0x1
+ 343 0ad5 2B       		.uleb128 0x2b
+ 344 0ad6 4C50435F 		.ascii	"LPC_TYPES_H \000"
+ 344      54595045 
+ 344      535F4820 
+ 344      00
+ 345 0ae3 02       		.byte	0x2
+ 346 0ae4 63       		.uleb128 0x63
+ 347 0ae5 5F424954 		.ascii	"_BIT\000"
+ 347      00
+ 348 0aea 01       		.byte	0x1
+ 349 0aeb 65       		.uleb128 0x65
+ 350 0aec 5F424954 		.ascii	"_BIT(n) (((UNS_32)(1)) << (n))\000"
+ 350      286E2920 
+ 350      28282855 
+ 350      4E535F33 
+ 350      32292831 
+ 351 0b0b 02       		.byte	0x2
+ 352 0b0c 6B       		.uleb128 0x6b
+ 353 0b0d 5F534246 		.ascii	"_SBF\000"
+ 353      00
+ 354 0b12 01       		.byte	0x1
+ 355 0b13 6D       		.uleb128 0x6d
+ 356 0b14 5F534246 		.ascii	"_SBF(f,v) (((UNS_32)(v)) << (f))\000"
+ 356      28662C76 
+ 356      29202828 
+ 356      28554E53 
+ 356      5F333229 
+ 357 0b35 02       		.byte	0x2
+ 358 0b36 7C       		.uleb128 0x7c
+ 359 0b37 5F424954 		.ascii	"_BITMASK\000"
+ 359      4D41534B 
+ 359      00
+ 360 0b40 01       		.byte	0x1
+ 361 0b41 7E       		.uleb128 0x7e
+ 362 0b42 5F424954 		.ascii	"_BITMASK(field_width) ( _BIT(field_width) - 1)\000"
+ 362      4D41534B 
+ 362      28666965 
+ 362      6C645F77 
+ 362      69647468 
+ 363 0b71 01       		.byte	0x1
+ 364 0b72 8101     		.uleb128 0x81
+ 365 0b74 53554343 		.ascii	"SUCCESS 0\000"
+ 365      45535320 
+ 365      3000
+ 366 0b7e 01       		.byte	0x1
+ 367 0b7f 8501     		.uleb128 0x85
+ 368 0b81 46414C53 		.ascii	"FALSE (0==1)\000"
+ 368      45202830 
+ 368      3D3D3129 
+ 368      00
+ 369 0b8e 01       		.byte	0x1
+ 370 0b8f 8901     		.uleb128 0x89
+ 371 0b91 54525545 		.ascii	"TRUE (!(FALSE))\000"
+ 371      20282128 
+ 371      46414C53 
+ 371      45292900 
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 15
+
+
+ 372 0ba1 01       		.byte	0x1
+ 373 0ba2 8E01     		.uleb128 0x8e
+ 374 0ba4 4E554C4C 		.ascii	"NULL ((void*) 0)\000"
+ 374      20282876 
+ 374      6F69642A 
+ 374      29203029 
+ 374      00
+ 375 0bb5 01       		.byte	0x1
+ 376 0bb6 9201     		.uleb128 0x92
+ 377 0bb8 4E454C45 		.ascii	"NELEMENTS(array) (sizeof (array) / sizeof (array[0]"
+ 377      4D454E54 
+ 377      53286172 
+ 377      72617929 
+ 377      20287369 
+ 378 0beb 292900   		.ascii	"))\000"
+ 379 0bee 01       		.byte	0x1
+ 380 0bef 9501     		.uleb128 0x95
+ 381 0bf1 53544154 		.ascii	"STATIC static\000"
+ 381      49432073 
+ 381      74617469 
+ 381      6300
+ 382 0bff 01       		.byte	0x1
+ 383 0c00 9701     		.uleb128 0x97
+ 384 0c02 45585445 		.ascii	"EXTERN extern\000"
+ 384      524E2065 
+ 384      78746572 
+ 384      6E00
+ 385 0c10 01       		.byte	0x1
+ 386 0c11 9C01     		.uleb128 0x9c
+ 387 0c13 5F4E4F5F 		.ascii	"_NO_ERROR (INT_32)(0)\000"
+ 387      4552524F 
+ 387      52202849 
+ 387      4E545F33 
+ 387      32292830 
+ 388 0c29 01       		.byte	0x1
+ 389 0c2a 9E01     		.uleb128 0x9e
+ 390 0c2c 5F455252 		.ascii	"_ERROR (INT_32)(-1)\000"
+ 390      4F522028 
+ 390      494E545F 
+ 390      33322928 
+ 390      2D312900 
+ 391 0c40 01       		.byte	0x1
+ 392 0c41 A001     		.uleb128 0xa0
+ 393 0c43 4C50435F 		.ascii	"LPC_DEV_UNKNOWN (INT_32)(-2)\000"
+ 393      4445565F 
+ 393      554E4B4E 
+ 393      4F574E20 
+ 393      28494E54 
+ 394 0c60 01       		.byte	0x1
+ 395 0c61 A201     		.uleb128 0xa2
+ 396 0c63 4C50435F 		.ascii	"LPC_NOT_SUPPORTED (INT_32)(-3)\000"
+ 396      4E4F545F 
+ 396      53555050 
+ 396      4F525445 
+ 396      44202849 
+ 397 0c82 01       		.byte	0x1
+ 398 0c83 A401     		.uleb128 0xa4
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 16
+
+
+ 399 0c85 4C50435F 		.ascii	"LPC_NOT_OPEN (INT_32)(-4)\000"
+ 399      4E4F545F 
+ 399      4F50454E 
+ 399      2028494E 
+ 399      545F3332 
+ 400 0c9f 01       		.byte	0x1
+ 401 0ca0 A601     		.uleb128 0xa6
+ 402 0ca2 4C50435F 		.ascii	"LPC_IN_USE (INT_32)(-5)\000"
+ 402      494E5F55 
+ 402      53452028 
+ 402      494E545F 
+ 402      33322928 
+ 403 0cba 01       		.byte	0x1
+ 404 0cbb A801     		.uleb128 0xa8
+ 405 0cbd 4C50435F 		.ascii	"LPC_PIN_CONFLICT (INT_32)(-6)\000"
+ 405      50494E5F 
+ 405      434F4E46 
+ 405      4C494354 
+ 405      2028494E 
+ 406 0cdb 01       		.byte	0x1
+ 407 0cdc AA01     		.uleb128 0xaa
+ 408 0cde 4C50435F 		.ascii	"LPC_BAD_PARAMS (INT_32)(-7)\000"
+ 408      4241445F 
+ 408      50415241 
+ 408      4D532028 
+ 408      494E545F 
+ 409 0cfa 01       		.byte	0x1
+ 410 0cfb AC01     		.uleb128 0xac
+ 411 0cfd 4C50435F 		.ascii	"LPC_BAD_HANDLE (INT_32)(-8)\000"
+ 411      4241445F 
+ 411      48414E44 
+ 411      4C452028 
+ 411      494E545F 
+ 412 0d19 01       		.byte	0x1
+ 413 0d1a AE01     		.uleb128 0xae
+ 414 0d1c 4C50435F 		.ascii	"LPC_BAD_CLK (INT_32)(-9)\000"
+ 414      4241445F 
+ 414      434C4B20 
+ 414      28494E54 
+ 414      5F333229 
+ 415 0d35 01       		.byte	0x1
+ 416 0d36 B001     		.uleb128 0xb0
+ 417 0d38 4C50435F 		.ascii	"LPC_CANT_START (INT_32)(-10)\000"
+ 417      43414E54 
+ 417      5F535441 
+ 417      52542028 
+ 417      494E545F 
+ 418 0d55 01       		.byte	0x1
+ 419 0d56 B201     		.uleb128 0xb2
+ 420 0d58 4C50435F 		.ascii	"LPC_CANT_STOP (INT_32)(-11)\000"
+ 420      43414E54 
+ 420      5F53544F 
+ 420      50202849 
+ 420      4E545F33 
+ 421 0d74 01       		.byte	0x1
+ 422 0d75 B501     		.uleb128 0xb5
+ 423 0d77 534D415F 		.ascii	"SMA_DEV_UNKNOWN LPC_DEV_UNKNOWN\000"
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 17
+
+
+ 423      4445565F 
+ 423      554E4B4E 
+ 423      4F574E20 
+ 423      4C50435F 
+ 424 0d97 01       		.byte	0x1
+ 425 0d98 B601     		.uleb128 0xb6
+ 426 0d9a 534D415F 		.ascii	"SMA_NOT_SUPPORTED LPC_NOT_SUPPORTED\000"
+ 426      4E4F545F 
+ 426      53555050 
+ 426      4F525445 
+ 426      44204C50 
+ 427 0dbe 01       		.byte	0x1
+ 428 0dbf B701     		.uleb128 0xb7
+ 429 0dc1 534D415F 		.ascii	"SMA_NOT_OPEN LPC_NOT_OPEN\000"
+ 429      4E4F545F 
+ 429      4F50454E 
+ 429      204C5043 
+ 429      5F4E4F54 
+ 430 0ddb 01       		.byte	0x1
+ 431 0ddc B801     		.uleb128 0xb8
+ 432 0dde 534D415F 		.ascii	"SMA_IN_USE LPC_IN_USE\000"
+ 432      494E5F55 
+ 432      5345204C 
+ 432      50435F49 
+ 432      4E5F5553 
+ 433 0df4 01       		.byte	0x1
+ 434 0df5 B901     		.uleb128 0xb9
+ 435 0df7 534D415F 		.ascii	"SMA_PIN_CONFLICT LPC_PIN_CONFLICT\000"
+ 435      50494E5F 
+ 435      434F4E46 
+ 435      4C494354 
+ 435      204C5043 
+ 436 0e19 01       		.byte	0x1
+ 437 0e1a BA01     		.uleb128 0xba
+ 438 0e1c 534D415F 		.ascii	"SMA_BAD_PARAMS LPC_BAD_PARAMS\000"
+ 438      4241445F 
+ 438      50415241 
+ 438      4D53204C 
+ 438      50435F42 
+ 439 0e3a 01       		.byte	0x1
+ 440 0e3b BB01     		.uleb128 0xbb
+ 441 0e3d 534D415F 		.ascii	"SMA_BAD_HANDLE LPC_BAD_HANDLE\000"
+ 441      4241445F 
+ 441      48414E44 
+ 441      4C45204C 
+ 441      50435F42 
+ 442 0e5b 01       		.byte	0x1
+ 443 0e5c BC01     		.uleb128 0xbc
+ 444 0e5e 534D415F 		.ascii	"SMA_BAD_CLK LPC_BAD_CLK\000"
+ 444      4241445F 
+ 444      434C4B20 
+ 444      4C50435F 
+ 444      4241445F 
+ 445 0e76 01       		.byte	0x1
+ 446 0e77 BD01     		.uleb128 0xbd
+ 447 0e79 534D415F 		.ascii	"SMA_CANT_START LPC_CANT_START\000"
+ 447      43414E54 
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 18
+
+
+ 447      5F535441 
+ 447      5254204C 
+ 447      50435F43 
+ 448 0e97 01       		.byte	0x1
+ 449 0e98 BE01     		.uleb128 0xbe
+ 450 0e9a 534D415F 		.ascii	"SMA_CANT_STOP LPC_CANT_STOP\000"
+ 450      43414E54 
+ 450      5F53544F 
+ 450      50204C50 
+ 450      435F4341 
+ 451 0eb6 04       		.byte	0x4
+ 452 0eb7 04       		.byte	0x4
+ 453 0eb8 04       		.byte	0x4
+ 454              		.global	truly_tft_g240320ltsw_118w_e_portrait
+ 455              		.section	.rodata
+ 456              		.align	2
+ 457              		.type	truly_tft_g240320ltsw_118w_e_portrait, %object
+ 458              		.size	truly_tft_g240320ltsw_118w_e_portrait, 40
+ 459              	truly_tft_g240320ltsw_118w_e_portrait:
+ 460 0000 1E       		.byte	30
+ 461 0001 0A       		.byte	10
+ 462 0002 02       		.byte	2
+ 463 0003 00       		.space	1
+ 464 0004 F000     		.short	240
+ 465 0006 04       		.byte	4
+ 466 0007 02       		.byte	2
+ 467 0008 02       		.byte	2
+ 468 0009 00       		.space	1
+ 469 000a 4001     		.short	320
+ 470 000c 00       		.byte	0
+ 471 000d 01       		.byte	1
+ 472 000e 01       		.byte	1
+ 473 000f 01       		.byte	1
+ 474 0010 01       		.byte	1
+ 475 0011 10       		.byte	16
+ 476 0012 0000     		.space	2
+ 477 0014 003E4900 		.word	4800000
+ 478 0018 00000000 		.word	0
+ 479 001c 00       		.byte	0
+ 480 001d 00000000 		.space	11
+ 480      00000000 
+ 480      000000
+ 481              		.global	LCD_LTA057A347F_params16bit
+ 482              		.align	2
+ 483              		.type	LCD_LTA057A347F_params16bit, %object
+ 484              		.size	LCD_LTA057A347F_params16bit, 40
+ 485              	LCD_LTA057A347F_params16bit:
+ 486 0028 1E       		.byte	30
+ 487 0029 0A       		.byte	10
+ 488 002a 60       		.byte	96
+ 489 002b 00       		.space	1
+ 490 002c 4001     		.short	320
+ 491 002e 08       		.byte	8
+ 492 002f 02       		.byte	2
+ 493 0030 0F       		.byte	15
+ 494 0031 00       		.space	1
+ 495 0032 F000     		.short	240
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 19
+
+
+ 496 0034 00       		.byte	0
+ 497 0035 00       		.byte	0
+ 498 0036 00       		.byte	0
+ 499 0037 00       		.byte	0
+ 500 0038 00       		.byte	0
+ 501 0039 10       		.byte	16
+ 502 003a 0000     		.space	2
+ 503 003c 003E4900 		.word	4800000
+ 504 0040 00000000 		.word	0
+ 505 0044 00       		.byte	0
+ 506 0045 00000000 		.space	11
+ 506      00000000 
+ 506      000000
+ 507              		.text
+ 508              	.Letext0:
+ 509              		.section	.debug_info
+ 510 0000 2A020000 		.4byte	0x22a
+ 511 0004 0200     		.2byte	0x2
+ 512 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 513 000a 04       		.byte	0x4
+ 514 000b 01       		.uleb128 0x1
+ 515 000c 20000000 		.4byte	.LASF41
+ 516 0010 01       		.byte	0x1
+ 517 0011 8F010000 		.4byte	.LASF42
+ 518 0015 27010000 		.4byte	.LASF43
+ 519 0019 00000000 		.4byte	.Ltext0
+ 520 001d 00000000 		.4byte	.Letext0
+ 521 0021 00000000 		.4byte	.Ldebug_line0
+ 522 0025 00000000 		.4byte	.Ldebug_macinfo0
+ 523 0029 02       		.uleb128 0x2
+ 524 002a 01       		.byte	0x1
+ 525 002b 08       		.byte	0x8
+ 526 002c BE010000 		.4byte	.LASF0
+ 527 0030 02       		.uleb128 0x2
+ 528 0031 01       		.byte	0x1
+ 529 0032 08       		.byte	0x8
+ 530 0033 F4000000 		.4byte	.LASF1
+ 531 0037 02       		.uleb128 0x2
+ 532 0038 01       		.byte	0x1
+ 533 0039 06       		.byte	0x6
+ 534 003a A7020000 		.4byte	.LASF2
+ 535 003e 02       		.uleb128 0x2
+ 536 003f 02       		.byte	0x2
+ 537 0040 07       		.byte	0x7
+ 538 0041 69000000 		.4byte	.LASF3
+ 539 0045 02       		.uleb128 0x2
+ 540 0046 02       		.byte	0x2
+ 541 0047 05       		.byte	0x5
+ 542 0048 6E020000 		.4byte	.LASF4
+ 543 004c 02       		.uleb128 0x2
+ 544 004d 04       		.byte	0x4
+ 545 004e 07       		.byte	0x7
+ 546 004f B1010000 		.4byte	.LASF5
+ 547 0053 03       		.uleb128 0x3
+ 548 0054 04       		.byte	0x4
+ 549 0055 05       		.byte	0x5
+ 550 0056 696E7400 		.ascii	"int\000"
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 20
+
+
+ 551 005a 02       		.uleb128 0x2
+ 552 005b 08       		.byte	0x8
+ 553 005c 05       		.byte	0x5
+ 554 005d F7010000 		.4byte	.LASF6
+ 555 0061 02       		.uleb128 0x2
+ 556 0062 08       		.byte	0x8
+ 557 0063 07       		.byte	0x7
+ 558 0064 CA000000 		.4byte	.LASF7
+ 559 0068 04       		.uleb128 0x4
+ 560 0069 04       		.byte	0x4
+ 561 006a 02       		.byte	0x2
+ 562 006b 23       		.byte	0x23
+ 563 006c 95000000 		.4byte	0x95
+ 564 0070 05       		.uleb128 0x5
+ 565 0071 54465400 		.ascii	"TFT\000"
+ 566 0075 00       		.sleb128 0
+ 567 0076 06       		.uleb128 0x6
+ 568 0077 A1020000 		.4byte	.LASF8
+ 569 007b 01       		.sleb128 1
+ 570 007c 06       		.uleb128 0x6
+ 571 007d E1000000 		.4byte	.LASF9
+ 572 0081 02       		.sleb128 2
+ 573 0082 06       		.uleb128 0x6
+ 574 0083 78020000 		.4byte	.LASF10
+ 575 0087 03       		.sleb128 3
+ 576 0088 06       		.uleb128 0x6
+ 577 0089 D2010000 		.4byte	.LASF11
+ 578 008d 04       		.sleb128 4
+ 579 008e 06       		.uleb128 0x6
+ 580 008f 56010000 		.4byte	.LASF12
+ 581 0093 05       		.sleb128 5
+ 582 0094 00       		.byte	0x0
+ 583 0095 07       		.uleb128 0x7
+ 584 0096 82020000 		.4byte	.LASF37
+ 585 009a 02       		.byte	0x2
+ 586 009b 2A       		.byte	0x2a
+ 587 009c 68000000 		.4byte	0x68
+ 588 00a0 08       		.uleb128 0x8
+ 589 00a1 28       		.byte	0x28
+ 590 00a2 02       		.byte	0x2
+ 591 00a3 2E       		.byte	0x2e
+ 592 00a4 F9010000 		.4byte	0x1f9
+ 593 00a8 09       		.uleb128 0x9
+ 594 00a9 B2000000 		.4byte	.LASF13
+ 595 00ad 02       		.byte	0x2
+ 596 00ae 2F       		.byte	0x2f
+ 597 00af 30000000 		.4byte	0x30
+ 598 00b3 02       		.byte	0x2
+ 599 00b4 23       		.byte	0x23
+ 600 00b5 00       		.uleb128 0x0
+ 601 00b6 09       		.uleb128 0x9
+ 602 00b7 60020000 		.4byte	.LASF14
+ 603 00bb 02       		.byte	0x2
+ 604 00bc 31       		.byte	0x31
+ 605 00bd 30000000 		.4byte	0x30
+ 606 00c1 02       		.byte	0x2
+ 607 00c2 23       		.byte	0x23
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 21
+
+
+ 608 00c3 01       		.uleb128 0x1
+ 609 00c4 09       		.uleb128 0x9
+ 610 00c5 8E020000 		.4byte	.LASF15
+ 611 00c9 02       		.byte	0x2
+ 612 00ca 33       		.byte	0x33
+ 613 00cb 30000000 		.4byte	0x30
+ 614 00cf 02       		.byte	0x2
+ 615 00d0 23       		.byte	0x23
+ 616 00d1 02       		.uleb128 0x2
+ 617 00d2 09       		.uleb128 0x9
+ 618 00d3 48000000 		.4byte	.LASF16
+ 619 00d7 02       		.byte	0x2
+ 620 00d8 35       		.byte	0x35
+ 621 00d9 3E000000 		.4byte	0x3e
+ 622 00dd 02       		.byte	0x2
+ 623 00de 23       		.byte	0x23
+ 624 00df 04       		.uleb128 0x4
+ 625 00e0 09       		.uleb128 0x9
+ 626 00e1 5B010000 		.4byte	.LASF17
+ 627 00e5 02       		.byte	0x2
+ 628 00e6 37       		.byte	0x37
+ 629 00e7 30000000 		.4byte	0x30
+ 630 00eb 02       		.byte	0x2
+ 631 00ec 23       		.byte	0x23
+ 632 00ed 06       		.uleb128 0x6
+ 633 00ee 09       		.uleb128 0x9
+ 634 00ef 12000000 		.4byte	.LASF18
+ 635 00f3 02       		.byte	0x2
+ 636 00f4 39       		.byte	0x39
+ 637 00f5 30000000 		.4byte	0x30
+ 638 00f9 02       		.byte	0x2
+ 639 00fa 23       		.byte	0x23
+ 640 00fb 07       		.uleb128 0x7
+ 641 00fc 09       		.uleb128 0x9
+ 642 00fd 12020000 		.4byte	.LASF19
+ 643 0101 02       		.byte	0x2
+ 644 0102 3B       		.byte	0x3b
+ 645 0103 30000000 		.4byte	0x30
+ 646 0107 02       		.byte	0x2
+ 647 0108 23       		.byte	0x23
+ 648 0109 08       		.uleb128 0x8
+ 649 010a 09       		.uleb128 0x9
+ 650 010b 7F010000 		.4byte	.LASF20
+ 651 010f 02       		.byte	0x2
+ 652 0110 3D       		.byte	0x3d
+ 653 0111 3E000000 		.4byte	0x3e
+ 654 0115 02       		.byte	0x2
+ 655 0116 23       		.byte	0x23
+ 656 0117 0A       		.uleb128 0xa
+ 657 0118 09       		.uleb128 0x9
+ 658 0119 9D000000 		.4byte	.LASF21
+ 659 011d 02       		.byte	0x2
+ 660 011e 3F       		.byte	0x3f
+ 661 011f 30000000 		.4byte	0x30
+ 662 0123 02       		.byte	0x2
+ 663 0124 23       		.byte	0x23
+ 664 0125 0C       		.uleb128 0xc
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 22
+
+
+ 665 0126 09       		.uleb128 0x9
+ 666 0127 8A000000 		.4byte	.LASF22
+ 667 012b 02       		.byte	0x2
+ 668 012c 41       		.byte	0x41
+ 669 012d 30000000 		.4byte	0x30
+ 670 0131 02       		.byte	0x2
+ 671 0132 23       		.byte	0x23
+ 672 0133 0D       		.uleb128 0xd
+ 673 0134 09       		.uleb128 0x9
+ 674 0135 05020000 		.4byte	.LASF23
+ 675 0139 02       		.byte	0x2
+ 676 013a 43       		.byte	0x43
+ 677 013b 30000000 		.4byte	0x30
+ 678 013f 02       		.byte	0x2
+ 679 0140 23       		.byte	0x23
+ 680 0141 0E       		.uleb128 0xe
+ 681 0142 09       		.uleb128 0x9
+ 682 0143 E7000000 		.4byte	.LASF24
+ 683 0147 02       		.byte	0x2
+ 684 0148 44       		.byte	0x44
+ 685 0149 30000000 		.4byte	0x30
+ 686 014d 02       		.byte	0x2
+ 687 014e 23       		.byte	0x23
+ 688 014f 0F       		.uleb128 0xf
+ 689 0150 09       		.uleb128 0x9
+ 690 0151 00000000 		.4byte	.LASF25
+ 691 0155 02       		.byte	0x2
+ 692 0156 45       		.byte	0x45
+ 693 0157 30000000 		.4byte	0x30
+ 694 015b 02       		.byte	0x2
+ 695 015c 23       		.byte	0x23
+ 696 015d 10       		.uleb128 0x10
+ 697 015e 09       		.uleb128 0x9
+ 698 015f E8010000 		.4byte	.LASF26
+ 699 0163 02       		.byte	0x2
+ 700 0164 47       		.byte	0x47
+ 701 0165 30000000 		.4byte	0x30
+ 702 0169 02       		.byte	0x2
+ 703 016a 23       		.byte	0x23
+ 704 016b 11       		.uleb128 0x11
+ 705 016c 09       		.uleb128 0x9
+ 706 016d 7C000000 		.4byte	.LASF27
+ 707 0171 02       		.byte	0x2
+ 708 0172 49       		.byte	0x49
+ 709 0173 4C000000 		.4byte	0x4c
+ 710 0177 02       		.byte	0x2
+ 711 0178 23       		.byte	0x23
+ 712 0179 14       		.uleb128 0x14
+ 713 017a 09       		.uleb128 0x9
+ 714 017b B3020000 		.4byte	.LASF28
+ 715 017f 02       		.byte	0x2
+ 716 0180 4A       		.byte	0x4a
+ 717 0181 95000000 		.4byte	0x95
+ 718 0185 02       		.byte	0x2
+ 719 0186 23       		.byte	0x23
+ 720 0187 18       		.uleb128 0x18
+ 721 0188 09       		.uleb128 0x9
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 23
+
+
+ 722 0189 BF000000 		.4byte	.LASF29
+ 723 018d 02       		.byte	0x2
+ 724 018e 4B       		.byte	0x4b
+ 725 018f 30000000 		.4byte	0x30
+ 726 0193 02       		.byte	0x2
+ 727 0194 23       		.byte	0x23
+ 728 0195 1C       		.uleb128 0x1c
+ 729 0196 09       		.uleb128 0x9
+ 730 0197 58000000 		.4byte	.LASF30
+ 731 019b 02       		.byte	0x2
+ 732 019c 50       		.byte	0x50
+ 733 019d 30000000 		.4byte	0x30
+ 734 01a1 02       		.byte	0x2
+ 735 01a2 23       		.byte	0x23
+ 736 01a3 1D       		.uleb128 0x1d
+ 737 01a4 09       		.uleb128 0x9
+ 738 01a5 A0010000 		.4byte	.LASF31
+ 739 01a9 02       		.byte	0x2
+ 740 01aa 52       		.byte	0x52
+ 741 01ab 30000000 		.4byte	0x30
+ 742 01af 02       		.byte	0x2
+ 743 01b0 23       		.byte	0x23
+ 744 01b1 1E       		.uleb128 0x1e
+ 745 01b2 09       		.uleb128 0x9
+ 746 01b3 12010000 		.4byte	.LASF32
+ 747 01b7 02       		.byte	0x2
+ 748 01b8 54       		.byte	0x54
+ 749 01b9 30000000 		.4byte	0x30
+ 750 01bd 02       		.byte	0x2
+ 751 01be 23       		.byte	0x23
+ 752 01bf 1F       		.uleb128 0x1f
+ 753 01c0 09       		.uleb128 0x9
+ 754 01c1 25020000 		.4byte	.LASF33
+ 755 01c5 02       		.byte	0x2
+ 756 01c6 56       		.byte	0x56
+ 757 01c7 30000000 		.4byte	0x30
+ 758 01cb 02       		.byte	0x2
+ 759 01cc 23       		.byte	0x23
+ 760 01cd 20       		.uleb128 0x20
+ 761 01ce 09       		.uleb128 0x9
+ 762 01cf C3010000 		.4byte	.LASF34
+ 763 01d3 02       		.byte	0x2
+ 764 01d4 58       		.byte	0x58
+ 765 01d5 30000000 		.4byte	0x30
+ 766 01d9 02       		.byte	0x2
+ 767 01da 23       		.byte	0x23
+ 768 01db 21       		.uleb128 0x21
+ 769 01dc 09       		.uleb128 0x9
+ 770 01dd 02010000 		.4byte	.LASF35
+ 771 01e1 02       		.byte	0x2
+ 772 01e2 59       		.byte	0x59
+ 773 01e3 30000000 		.4byte	0x30
+ 774 01e7 02       		.byte	0x2
+ 775 01e8 23       		.byte	0x23
+ 776 01e9 22       		.uleb128 0x22
+ 777 01ea 09       		.uleb128 0x9
+ 778 01eb 68010000 		.4byte	.LASF36
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 24
+
+
+ 779 01ef 02       		.byte	0x2
+ 780 01f0 5C       		.byte	0x5c
+ 781 01f1 3E000000 		.4byte	0x3e
+ 782 01f5 02       		.byte	0x2
+ 783 01f6 23       		.byte	0x23
+ 784 01f7 24       		.uleb128 0x24
+ 785 01f8 00       		.byte	0x0
+ 786 01f9 07       		.uleb128 0x7
+ 787 01fa DC010000 		.4byte	.LASF38
+ 788 01fe 02       		.byte	0x2
+ 789 01ff 5D       		.byte	0x5d
+ 790 0200 A0000000 		.4byte	0xa0
+ 791 0204 0A       		.uleb128 0xa
+ 792 0205 3A020000 		.4byte	.LASF39
+ 793 0209 01       		.byte	0x1
+ 794 020a 10       		.byte	0x10
+ 795 020b 16020000 		.4byte	0x216
+ 796 020f 01       		.byte	0x1
+ 797 0210 05       		.byte	0x5
+ 798 0211 03       		.byte	0x3
+ 799 0212 00000000 		.4byte	truly_tft_g240320ltsw_118w_e_portrait
+ 800 0216 0B       		.uleb128 0xb
+ 801 0217 F9010000 		.4byte	0x1f9
+ 802 021b 0A       		.uleb128 0xa
+ 803 021c 2C000000 		.4byte	.LASF40
+ 804 0220 01       		.byte	0x1
+ 805 0221 26       		.byte	0x26
+ 806 0222 16020000 		.4byte	0x216
+ 807 0226 01       		.byte	0x1
+ 808 0227 05       		.byte	0x5
+ 809 0228 03       		.byte	0x3
+ 810 0229 00000000 		.4byte	LCD_LTA057A347F_params16bit
+ 811 022d 00       		.byte	0x0
+ 812              		.section	.debug_abbrev
+ 813 0000 01       		.uleb128 0x1
+ 814 0001 11       		.uleb128 0x11
+ 815 0002 01       		.byte	0x1
+ 816 0003 25       		.uleb128 0x25
+ 817 0004 0E       		.uleb128 0xe
+ 818 0005 13       		.uleb128 0x13
+ 819 0006 0B       		.uleb128 0xb
+ 820 0007 03       		.uleb128 0x3
+ 821 0008 0E       		.uleb128 0xe
+ 822 0009 1B       		.uleb128 0x1b
+ 823 000a 0E       		.uleb128 0xe
+ 824 000b 11       		.uleb128 0x11
+ 825 000c 01       		.uleb128 0x1
+ 826 000d 12       		.uleb128 0x12
+ 827 000e 01       		.uleb128 0x1
+ 828 000f 10       		.uleb128 0x10
+ 829 0010 06       		.uleb128 0x6
+ 830 0011 43       		.uleb128 0x43
+ 831 0012 06       		.uleb128 0x6
+ 832 0013 00       		.byte	0x0
+ 833 0014 00       		.byte	0x0
+ 834 0015 02       		.uleb128 0x2
+ 835 0016 24       		.uleb128 0x24
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 25
+
+
+ 836 0017 00       		.byte	0x0
+ 837 0018 0B       		.uleb128 0xb
+ 838 0019 0B       		.uleb128 0xb
+ 839 001a 3E       		.uleb128 0x3e
+ 840 001b 0B       		.uleb128 0xb
+ 841 001c 03       		.uleb128 0x3
+ 842 001d 0E       		.uleb128 0xe
+ 843 001e 00       		.byte	0x0
+ 844 001f 00       		.byte	0x0
+ 845 0020 03       		.uleb128 0x3
+ 846 0021 24       		.uleb128 0x24
+ 847 0022 00       		.byte	0x0
+ 848 0023 0B       		.uleb128 0xb
+ 849 0024 0B       		.uleb128 0xb
+ 850 0025 3E       		.uleb128 0x3e
+ 851 0026 0B       		.uleb128 0xb
+ 852 0027 03       		.uleb128 0x3
+ 853 0028 08       		.uleb128 0x8
+ 854 0029 00       		.byte	0x0
+ 855 002a 00       		.byte	0x0
+ 856 002b 04       		.uleb128 0x4
+ 857 002c 04       		.uleb128 0x4
+ 858 002d 01       		.byte	0x1
+ 859 002e 0B       		.uleb128 0xb
+ 860 002f 0B       		.uleb128 0xb
+ 861 0030 3A       		.uleb128 0x3a
+ 862 0031 0B       		.uleb128 0xb
+ 863 0032 3B       		.uleb128 0x3b
+ 864 0033 0B       		.uleb128 0xb
+ 865 0034 01       		.uleb128 0x1
+ 866 0035 13       		.uleb128 0x13
+ 867 0036 00       		.byte	0x0
+ 868 0037 00       		.byte	0x0
+ 869 0038 05       		.uleb128 0x5
+ 870 0039 28       		.uleb128 0x28
+ 871 003a 00       		.byte	0x0
+ 872 003b 03       		.uleb128 0x3
+ 873 003c 08       		.uleb128 0x8
+ 874 003d 1C       		.uleb128 0x1c
+ 875 003e 0D       		.uleb128 0xd
+ 876 003f 00       		.byte	0x0
+ 877 0040 00       		.byte	0x0
+ 878 0041 06       		.uleb128 0x6
+ 879 0042 28       		.uleb128 0x28
+ 880 0043 00       		.byte	0x0
+ 881 0044 03       		.uleb128 0x3
+ 882 0045 0E       		.uleb128 0xe
+ 883 0046 1C       		.uleb128 0x1c
+ 884 0047 0D       		.uleb128 0xd
+ 885 0048 00       		.byte	0x0
+ 886 0049 00       		.byte	0x0
+ 887 004a 07       		.uleb128 0x7
+ 888 004b 16       		.uleb128 0x16
+ 889 004c 00       		.byte	0x0
+ 890 004d 03       		.uleb128 0x3
+ 891 004e 0E       		.uleb128 0xe
+ 892 004f 3A       		.uleb128 0x3a
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 26
+
+
+ 893 0050 0B       		.uleb128 0xb
+ 894 0051 3B       		.uleb128 0x3b
+ 895 0052 0B       		.uleb128 0xb
+ 896 0053 49       		.uleb128 0x49
+ 897 0054 13       		.uleb128 0x13
+ 898 0055 00       		.byte	0x0
+ 899 0056 00       		.byte	0x0
+ 900 0057 08       		.uleb128 0x8
+ 901 0058 13       		.uleb128 0x13
+ 902 0059 01       		.byte	0x1
+ 903 005a 0B       		.uleb128 0xb
+ 904 005b 0B       		.uleb128 0xb
+ 905 005c 3A       		.uleb128 0x3a
+ 906 005d 0B       		.uleb128 0xb
+ 907 005e 3B       		.uleb128 0x3b
+ 908 005f 0B       		.uleb128 0xb
+ 909 0060 01       		.uleb128 0x1
+ 910 0061 13       		.uleb128 0x13
+ 911 0062 00       		.byte	0x0
+ 912 0063 00       		.byte	0x0
+ 913 0064 09       		.uleb128 0x9
+ 914 0065 0D       		.uleb128 0xd
+ 915 0066 00       		.byte	0x0
+ 916 0067 03       		.uleb128 0x3
+ 917 0068 0E       		.uleb128 0xe
+ 918 0069 3A       		.uleb128 0x3a
+ 919 006a 0B       		.uleb128 0xb
+ 920 006b 3B       		.uleb128 0x3b
+ 921 006c 0B       		.uleb128 0xb
+ 922 006d 49       		.uleb128 0x49
+ 923 006e 13       		.uleb128 0x13
+ 924 006f 38       		.uleb128 0x38
+ 925 0070 0A       		.uleb128 0xa
+ 926 0071 00       		.byte	0x0
+ 927 0072 00       		.byte	0x0
+ 928 0073 0A       		.uleb128 0xa
+ 929 0074 34       		.uleb128 0x34
+ 930 0075 00       		.byte	0x0
+ 931 0076 03       		.uleb128 0x3
+ 932 0077 0E       		.uleb128 0xe
+ 933 0078 3A       		.uleb128 0x3a
+ 934 0079 0B       		.uleb128 0xb
+ 935 007a 3B       		.uleb128 0x3b
+ 936 007b 0B       		.uleb128 0xb
+ 937 007c 49       		.uleb128 0x49
+ 938 007d 13       		.uleb128 0x13
+ 939 007e 3F       		.uleb128 0x3f
+ 940 007f 0C       		.uleb128 0xc
+ 941 0080 02       		.uleb128 0x2
+ 942 0081 0A       		.uleb128 0xa
+ 943 0082 00       		.byte	0x0
+ 944 0083 00       		.byte	0x0
+ 945 0084 0B       		.uleb128 0xb
+ 946 0085 26       		.uleb128 0x26
+ 947 0086 00       		.byte	0x0
+ 948 0087 49       		.uleb128 0x49
+ 949 0088 13       		.uleb128 0x13
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 27
+
+
+ 950 0089 00       		.byte	0x0
+ 951 008a 00       		.byte	0x0
+ 952 008b 00       		.byte	0x0
+ 953              		.section	.debug_pubnames,"",%progbits
+ 954 0000 58000000 		.4byte	0x58
+ 955 0004 0200     		.2byte	0x2
+ 956 0006 00000000 		.4byte	.Ldebug_info0
+ 957 000a 2E020000 		.4byte	0x22e
+ 958 000e 04020000 		.4byte	0x204
+ 959 0012 7472756C 		.ascii	"truly_tft_g240320ltsw_118w_e_portrait\000"
+ 959      795F7466 
+ 959      745F6732 
+ 959      34303332 
+ 959      306C7473 
+ 960 0038 1B020000 		.4byte	0x21b
+ 961 003c 4C43445F 		.ascii	"LCD_LTA057A347F_params16bit\000"
+ 961      4C544130 
+ 961      35374133 
+ 961      3437465F 
+ 961      70617261 
+ 962 0058 00000000 		.4byte	0x0
+ 963              		.section	.debug_macinfo
+ 964 0eb9 00       		.byte	0x0
+ 965              		.section	.debug_str,"MS",%progbits,1
+ 966              	.LASF25:
+ 967 0000 61635F62 		.ascii	"ac_bias_frequency\000"
+ 967      6961735F 
+ 967      66726571 
+ 967      75656E63 
+ 967      7900
+ 968              	.LASF18:
+ 969 0012 765F6672 		.ascii	"v_front_porch\000"
+ 969      6F6E745F 
+ 969      706F7263 
+ 969      6800
+ 970              	.LASF41:
+ 971 0020 474E5520 		.ascii	"GNU C 4.2.2\000"
+ 971      4320342E 
+ 971      322E3200 
+ 972              	.LASF40:
+ 973 002c 4C43445F 		.ascii	"LCD_LTA057A347F_params16bit\000"
+ 973      4C544130 
+ 973      35374133 
+ 973      3437465F 
+ 973      70617261 
+ 974              	.LASF16:
+ 975 0048 70697865 		.ascii	"pixels_per_line\000"
+ 975      6C735F70 
+ 975      65725F6C 
+ 975      696E6500 
+ 976              	.LASF30:
+ 977 0058 68727466 		.ascii	"hrtft_cls_enable\000"
+ 977      745F636C 
+ 977      735F656E 
+ 977      61626C65 
+ 977      00
+ 978              	.LASF3:
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 28
+
+
+ 979 0069 73686F72 		.ascii	"short unsigned int\000"
+ 979      7420756E 
+ 979      7369676E 
+ 979      65642069 
+ 979      6E7400
+ 980              	.LASF27:
+ 981 007c 6F707469 		.ascii	"optimal_clock\000"
+ 981      6D616C5F 
+ 981      636C6F63 
+ 981      6B00
+ 982              	.LASF22:
+ 983 008a 696E7665 		.ascii	"invert_panel_clock\000"
+ 983      72745F70 
+ 983      616E656C 
+ 983      5F636C6F 
+ 983      636B00
+ 984              	.LASF21:
+ 985 009d 696E7665 		.ascii	"invert_output_enable\000"
+ 985      72745F6F 
+ 985      75747075 
+ 985      745F656E 
+ 985      61626C65 
+ 986              	.LASF13:
+ 987 00b2 685F6261 		.ascii	"h_back_porch\000"
+ 987      636B5F70 
+ 987      6F726368 
+ 987      00
+ 988              	.LASF29:
+ 989 00bf 6475616C 		.ascii	"dual_panel\000"
+ 989      5F70616E 
+ 989      656C00
+ 990              	.LASF7:
+ 991 00ca 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 991      206C6F6E 
+ 991      6720756E 
+ 991      7369676E 
+ 991      65642069 
+ 992              	.LASF9:
+ 993 00e1 48525446 		.ascii	"HRTFT\000"
+ 993      5400
+ 994              	.LASF24:
+ 995 00e7 696E7665 		.ascii	"invert_vsync\000"
+ 995      72745F76 
+ 995      73796E63 
+ 995      00
+ 996              	.LASF1:
+ 997 00f4 756E7369 		.ascii	"unsigned char\000"
+ 997      676E6564 
+ 997      20636861 
+ 997      7200
+ 998              	.LASF35:
+ 999 0102 68727466 		.ascii	"hrtft_spl_delay\000"
+ 999      745F7370 
+ 999      6C5F6465 
+ 999      6C617900 
+ 1000              	.LASF32:
+ 1001 0112 68727466 		.ascii	"hrtft_lp_to_ps_delay\000"
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 29
+
+
+ 1001      745F6C70 
+ 1001      5F746F5F 
+ 1001      70735F64 
+ 1001      656C6179 
+ 1002              	.LASF43:
+ 1003 0127 2F637967 		.ascii	"/cygdrive/c/Workspace/Kode/ea2478_test3/source\000"
+ 1003      64726976 
+ 1003      652F632F 
+ 1003      576F726B 
+ 1003      73706163 
+ 1004              	.LASF12:
+ 1005 0156 4353544E 		.ascii	"CSTN\000"
+ 1005      00
+ 1006              	.LASF17:
+ 1007 015b 765F6261 		.ascii	"v_back_porch\000"
+ 1007      636B5F70 
+ 1007      6F726368 
+ 1007      00
+ 1008              	.LASF36:
+ 1009 0168 68727466 		.ascii	"hrtft_spl_to_cls_delay\000"
+ 1009      745F7370 
+ 1009      6C5F746F 
+ 1009      5F636C73 
+ 1009      5F64656C 
+ 1010              	.LASF20:
+ 1011 017f 6C696E65 		.ascii	"lines_per_panel\000"
+ 1011      735F7065 
+ 1011      725F7061 
+ 1011      6E656C00 
+ 1012              	.LASF42:
+ 1013 018f 6C63642F 		.ascii	"lcd/lcd_params.c\000"
+ 1013      6C63645F 
+ 1013      70617261 
+ 1013      6D732E63 
+ 1013      00
+ 1014              	.LASF31:
+ 1015 01a0 68727466 		.ascii	"hrtft_sps_enable\000"
+ 1015      745F7370 
+ 1015      735F656E 
+ 1015      61626C65 
+ 1015      00
+ 1016              	.LASF5:
+ 1017 01b1 756E7369 		.ascii	"unsigned int\000"
+ 1017      676E6564 
+ 1017      20696E74 
+ 1017      00
+ 1018              	.LASF0:
+ 1019 01be 63686172 		.ascii	"char\000"
+ 1019      00
+ 1020              	.LASF34:
+ 1021 01c3 68727466 		.ascii	"hrtft_lp_delay\000"
+ 1021      745F6C70 
+ 1021      5F64656C 
+ 1021      617900
+ 1022              	.LASF11:
+ 1023 01d2 4D4F4E4F 		.ascii	"MONO_8BIT\000"
+ 1023      5F384249 
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 30
+
+
+ 1023      5400
+ 1024              	.LASF38:
+ 1025 01dc 4C43445F 		.ascii	"LCD_PARAM_T\000"
+ 1025      50415241 
+ 1025      4D5F5400 
+ 1026              	.LASF26:
+ 1027 01e8 62697473 		.ascii	"bits_per_pixel\000"
+ 1027      5F706572 
+ 1027      5F706978 
+ 1027      656C00
+ 1028              	.LASF6:
+ 1029 01f7 6C6F6E67 		.ascii	"long long int\000"
+ 1029      206C6F6E 
+ 1029      6720696E 
+ 1029      7400
+ 1030              	.LASF23:
+ 1031 0205 696E7665 		.ascii	"invert_hsync\000"
+ 1031      72745F68 
+ 1031      73796E63 
+ 1031      00
+ 1032              	.LASF19:
+ 1033 0212 765F7379 		.ascii	"v_sync_pulse_width\000"
+ 1033      6E635F70 
+ 1033      756C7365 
+ 1033      5F776964 
+ 1033      746800
+ 1034              	.LASF33:
+ 1035 0225 68727466 		.ascii	"hrtft_polarity_delay\000"
+ 1035      745F706F 
+ 1035      6C617269 
+ 1035      74795F64 
+ 1035      656C6179 
+ 1036              	.LASF39:
+ 1037 023a 7472756C 		.ascii	"truly_tft_g240320ltsw_118w_e_portrait\000"
+ 1037      795F7466 
+ 1037      745F6732 
+ 1037      34303332 
+ 1037      306C7473 
+ 1038              	.LASF14:
+ 1039 0260 685F6672 		.ascii	"h_front_porch\000"
+ 1039      6F6E745F 
+ 1039      706F7263 
+ 1039      6800
+ 1040              	.LASF4:
+ 1041 026e 73686F72 		.ascii	"short int\000"
+ 1041      7420696E 
+ 1041      7400
+ 1042              	.LASF10:
+ 1043 0278 4D4F4E4F 		.ascii	"MONO_4BIT\000"
+ 1043      5F344249 
+ 1043      5400
+ 1044              	.LASF37:
+ 1045 0282 4C43445F 		.ascii	"LCD_PANEL_T\000"
+ 1045      50414E45 
+ 1045      4C5F5400 
+ 1046              	.LASF15:
+ 1047 028e 685F7379 		.ascii	"h_sync_pulse_width\000"
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 31
+
+
+ 1047      6E635F70 
+ 1047      756C7365 
+ 1047      5F776964 
+ 1047      746800
+ 1048              	.LASF8:
+ 1049 02a1 41445446 		.ascii	"ADTFT\000"
+ 1049      5400
+ 1050              	.LASF2:
+ 1051 02a7 7369676E 		.ascii	"signed char\000"
+ 1051      65642063 
+ 1051      68617200 
+ 1052              	.LASF28:
+ 1053 02b3 6C63645F 		.ascii	"lcd_panel_type\000"
+ 1053      70616E65 
+ 1053      6C5F7479 
+ 1053      706500
+ 1054              		.ident	"GCC: (GNU) 4.2.2"
+ARM GAS  /cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s 			page 32
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lcd_params.c
+/cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s:14     .debug_macinfo:00000000 $d
+/cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s:459    .rodata:00000000 truly_tft_g240320ltsw_118w_e_portrait
+/cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s:460    .rodata:00000000 $d
+/cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s:485    .rodata:00000028 LCD_LTA057A347F_params16bit
+/cygdrive/c/DOCUME~1/morten/LOCALS~1/Temp/ccitlKqn.s:510    .debug_info:00000000 $d
+
+NO UNDEFINED SYMBOLS

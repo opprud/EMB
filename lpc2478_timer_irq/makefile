@@ -1,5 +1,5 @@
 PRG            = tmr_irq
-OBJ            = boot.o VIClowlevel.o irq.o extint.o framework.o timer.o main.o
+OBJ            = boot.o VIClowlevel.o irq.o framework.o timer.o main.o
 OPTIMIZE       = -g
 # USE_THUMB_MODE = YES
 

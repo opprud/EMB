@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WishboneShellTest/App/rom.lds&apos; to &apos;rom.ld&apos;" description="Rename resource &apos;rom.lds&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="App/rom.lds" name="rom.ld" stamp="1358858152857" updateReferences="true"/>
+</session>

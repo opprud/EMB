@@ -1,0 +1,31 @@
+
+**** Build of configuration Debug for project lpc2478_uboot ****
+
+make all 
+Building file: ../tools/updater/cmd_flash.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tools/updater/cmd_flash.d" -MT"tools/updater/cmd_flash.d" -o"tools/updater/cmd_flash.o" "../tools/updater/cmd_flash.c"
+cygwin warning:
+  MS-DOS style path detected: C:\Workspace\EMB\lpc2478_uboot\Debug
+  Preferred POSIX equivalent is: /cygdrive/c/Workspace/EMB/lpc2478_uboot/Debug
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+../tools/updater/cmd_flash.c:27:20: warning: common.h: No such file or directory
+../tools/updater/cmd_flash.c:28:21: warning: command.h: No such file or directory
+../tools/updater/cmd_flash.c:29:19: warning: flash.h: No such file or directory
+Finished building: ../tools/updater/cmd_flash.c
+ 
+Building file: ../tools/updater/ctype.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tools/updater/ctype.d" -MT"tools/updater/ctype.d" -o"tools/updater/ctype.o" "../tools/updater/ctype.c"
+../tools/updater/ctype.c:30:25: warning: linux/ctype.h: No such file or directory
+../tools/updater/ctype.c:33: error: ‘_C’ undeclared here (not in a function)
+../tools/updater/ctype.c:34: error: ‘_S’ undeclared here (not in a function)
+../tools/updater/ctype.c:37: error: ‘_SP’ undeclared here (not in a function)
+../tools/updater/ctype.c:37: error: ‘_P’ undeclared here (not in a function)
+../tools/updater/ctype.c:39: error: ‘_D’ undeclared here (not in a function)
+../tools/updater/ctype.c:41: error: ‘_U’ undeclared here (not in a function)
+../tools/updater/ctype.c:41: error: ‘_X’ undeclared here (not in a function)
+../tools/updater/ctype.c:45: error: ‘_L’ undeclared here (not in a function)
+make: *** [tools/updater/ctype.o] Error 1

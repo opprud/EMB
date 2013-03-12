@@ -15,21 +15,21 @@
  */
 #include <stdio.h>
 /* LCD includes */
-#include "drivers\swim\lpc_types.h"
-#include "drivers\swim\lpc_swim.h"
-#include "drivers\swim\lpc_swim_font.h"
-#include "drivers\swim\lpc_swim.h"
-#include "drivers\swim\lpc_rom8x16.h"
-#include "drivers\swim\lpc_winfreesystem14x16.h"
-#include "drivers\swim\lpc_x6x13.h"
-#include "drivers\lcd\lpc_lcd_params.h"      /* LCD panel parameters */
-#include "drivers\lcd\lcd_driver.h"
-#include "drivers\touch.h"
-#include "drivers\timer_delay.h"
-#include "drivers\spi.h"
-#include "drivers\lcd\ex_sdram.h"
+#include "drivers/swim/lpc_types.h"
+#include "drivers/swim/lpc_swim.h"
+#include "drivers/swim/lpc_swim_font.h"
+#include "drivers/swim/lpc_swim.h"
+#include "drivers/swim/lpc_rom8x16.h"
+#include "drivers/swim/lpc_winfreesystem14x16.h"
+#include "drivers/swim/lpc_x6x13.h"
+#include "drivers/lcd/lpc_lcd_params.h"      /* LCD panel parameters */
+#include "drivers/lcd/lcd_driver.h"
+#include "drivers/touch.h"
+#include "drivers/timer_delay.h"
+#include "drivers/spi.h"
+#include "drivers/lcd/ex_sdram.h"
 #include "type.h"
-#include "img\crsr.h"
+#include "img/crsr.h"
 
 /******************************************************************************
  * Defines, macros, and typedefs

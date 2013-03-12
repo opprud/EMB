@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830356078
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830356125
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830356125
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830356125
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830356171
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830356171
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1280830406453
+opened,editor,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.editor",1280830406734
+activated,editor,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.editor",1280830406781
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280830410906
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1280830415984
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280830418359
+activated,editor,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.editor",1280830425390
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280830429671
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1280830431140
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431359
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431390
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431390
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431406
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431546
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431578
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431578
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431593
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431671
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830431671
+activated,editor,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.editor",1280830437671
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.findNext",1280830456671
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.findNext",1280830458562
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830474140
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830509375
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830514046
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830516468
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280830529031
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280830533187
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830550328
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280830566078
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830570375
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830575734
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830583609
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830587875
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830591187
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830597328
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830599250
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280830608062
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830609921
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830611328
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830614671
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830615593
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830616281
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830616781
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830617609
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830632796
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280830636593
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830637781
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638281
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638312
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638343
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638375
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638421
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638453
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638484
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638515
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638546
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638578
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638609
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638656
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638687
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638718
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638750
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638781
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638828
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638843
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638875
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830638906
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830639046
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1280830640828
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1280830641250
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830643546
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830649890
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830659421
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830667312
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280830670312
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830672000
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830677312
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830690468
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830695140
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830696625
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830699562
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830700875
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1280830706796
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280830709421
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280830712140
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280830712328
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1280830721468
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280830721640
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1280830723500
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280830723718
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830740531
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830763937
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280830770046
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830785062
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.select.lineEnd",1280830789203
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1280830794921
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.select.lineStart",1280830796640
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280830797562
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280830798531
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280830800093
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830817953
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830819734
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830821015
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830821593
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830823468
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830823484
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830823593
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830857671
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830869890
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830870875
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830872015
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830885515
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830898375
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830925687
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830934218
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830950500
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830955531
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830960625
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830972312
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830976281
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830985234
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830993296
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830996328
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830997109
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830997640
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830999281
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831001218
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831002109
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831002875
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831007187
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831009015
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831010562
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831010750
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831010906
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831013875
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831014656
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831015453
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831016093
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831016843
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831018062
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831029843
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831036750
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831038812
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831041234
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831049468
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831055859
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831056484
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831058421
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831059812
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831061109
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831068000
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831069437
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831074000
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831078000
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831079343
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831080843
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831081515
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831086000
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831092187
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831092937
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831099375
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831103406
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831104453
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831105484
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1280831128296
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128406
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128515
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128515
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128562
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128859
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128890
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128890
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128890
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128921
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831128921
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831135203
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831575500
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831581984
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831582625
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831583484
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831633359
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831647000
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280831652218
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831661796
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831675875
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280831718453
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1280831741218
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741328
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741421
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741421
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741468
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741625
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741640
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741640
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741656
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741671
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831741671
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831743796
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831772890
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831777875
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280831800296
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1280831818093
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1280831821093
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1280831821390
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1280831821578
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1280831821750
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1280831821921
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.moveLineDown",1280831822140
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1280831825343
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1280831826843
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831827296
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831828875
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831829906
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831830656
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831831843
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1280831835000
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1280831839125
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831846437
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831848671
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831851125
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831853718
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1280831859750
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.asm.AsmEditor",1280831878453
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280831886734
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1280831922093
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922218
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922312
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922312
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922375
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922421
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922437
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922437
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922453
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922468
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280831922468
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280831948281
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280832664234
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280832666078
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280832667921
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280832671218
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280832675078
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.asm.AsmEditor",1280832679546
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280832690718

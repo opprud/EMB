@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<preprocessedCompilationUnits>
+    <version>1</version>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/vital2000/memory_b.vhdl</uri>
+        <designUnits>
+            <packageBody lib="ieee" name="Vital_Memory"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="IEEE" name="STD_LOGIC_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="IEEE" name="Vital_Timing"/>
+            <primaryUnit lib="STD" name="TEXTIO"/>
+            <primaryUnit lib="ieee" name="Vital_Memory"/>
+            <primaryUnit lib="IEEE" name="Vital_Primitives"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/vital2000/timing_p.vhdl</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="VITAL_Timing"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="IEEE" name="Std_Logic_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/vital2000/timing_b.vhdl</uri>
+        <designUnits>
+            <packageBody lib="ieee" name="VITAL_Timing"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="ieee" name="VITAL_Timing"/>
+            <primaryUnit lib="STD" name="TEXTIO"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/vital2000/prmtvs_p.vhdl</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="VITAL_Primitives"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="IEEE" name="Std_Logic_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="IEEE" name="VITAL_Timing"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/vital2000/prmtvs_b.vhdl</uri>
+        <designUnits>
+            <packageBody lib="ieee" name="VITAL_Primitives"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="STD" name="TEXTIO"/>
+            <primaryUnit lib="ieee" name="VITAL_Primitives"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+    <preprocessedCompilationUnit>
+        <uri>resource:/com/sigasi/vhdl/vital2000/memory_p.vhdl</uri>
+        <designUnits>
+            <primaryUnit lib="ieee" name="Vital_Memory"/>
+        </designUnits>
+        <designUnitDependencies>
+            <primaryUnit lib="IEEE" name="STD_LOGIC_1164"/>
+            <primaryUnit lib="std" name="standard"/>
+            <primaryUnit lib="IEEE" name="Vital_Timing"/>
+            <primaryUnit lib="STD" name="TEXTIO"/>
+            <primaryUnit lib="IEEE" name="Vital_Primitives"/>
+        </designUnitDependencies>
+    </preprocessedCompilationUnit>
+</preprocessedCompilationUnits>

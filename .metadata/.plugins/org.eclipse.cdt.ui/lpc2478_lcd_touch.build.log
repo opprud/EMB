@@ -1,0 +1,74 @@
+
+**** Build of configuration Default for project lpc2478_lcd_touch ****
+
+make all 
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -D__ASSEMBLY__  -Drom -c -o obj/rom_boot.o boot.S
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_main.o main.c
+In file included from main.c:12:0:
+drivers/uart.h:31:6: warning: conflicting types for built-in function 'putchar'
+main.c: In function 'main':
+main.c:54:2: warning: implicit declaration of function 'enableIRQ'
+main.c:54:2: warning: nested extern declaration of 'enableIRQ'
+main.c:27:6: warning: unused variable 'seconds_last'
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_framework.o platform/framework.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_uart.o drivers/uart.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_rprintf.o platform/rprintf.c
+In file included from drivers/uart.c:16:0:
+drivers/uart.h:31:6: warning: conflicting types for built-in function 'putchar'
+drivers/uart.c: In function 'putchar':
+drivers/uart.c:63:2: warning: 'return' with a value, in function returning void
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_irq.o platform/irq.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_VIClowlevel.o platform/VIClowlevel.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_rtc.o drivers/rtc.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_timer_delay.o drivers/timer_delay.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_touch.o drivers/touch.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_spi.o drivers/spi.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_calibrate.o drivers/calibrate.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_syscalls.o platform/syscalls.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_colors.o drivers/swim/lpc_colors.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_fonts.o drivers/swim/lpc_fonts.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_helvr10.o drivers/swim/lpc_helvr10.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_rom8x16.o drivers/swim/lpc_rom8x16.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_rom8x8.o drivers/swim/lpc_rom8x8.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_swim_font.o drivers/swim/lpc_swim_font.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_swim_image.o drivers/swim/lpc_swim_image.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_swim.o drivers/swim/lpc_swim.c
+drivers/swim/lpc_swim.c: In function 'swim_window_open_p':
+drivers/swim/lpc_swim.c:255:5: warning: cast discards qualifiers from pointer target type
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_winfreesystem14x16.o drivers/swim/lpc_winfreesystem14x16.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_x5x7.o drivers/swim/lpc_x5x7.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lpc_x6x13.o drivers/swim/lpc_x6x13.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_ex_sdram.o drivers/lcd/ex_sdram.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lcd_driver.o drivers/lcd/lcd_driver.c
+drivers/lcd/lcd_driver.c: In function 'lcd_ioctl':
+drivers/lcd/lcd_driver.c:556:12: warning: assignment makes pointer from integer without a cast
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_lcd_params.o drivers/lcd/lcd_params.c
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type -g -O0 -Iplatform -Idrivers -mcpu=arm7tdmi -Dlpc2478 -DTRACE_LEVEL=5 -Drom -c -o obj/rom_calib_app.o calib_app.c
+In file included from drivers/touch.h:17:0,
+                 from calib_app.c:18:
+platform/type.h:11:0: warning: "TRUE" redefined
+drivers/swim/lpc_types.h:137:0: note: this is the location of the previous definition
+platform/type.h:12:0: warning: "FALSE" redefined
+drivers/swim/lpc_types.h:133:0: note: this is the location of the previous definition
+platform/type.h:13:0: warning: "NULL" redefined
+/Users/MortenOJ/sat/lib/gcc/arm-none-eabi/4.5.2/include/stddef.h:400:0: note: this is the location of the previous definition
+/Users/MortenOJ/sat/bin/arm-none-eabi-gcc -g -O0 -mcpu=arm7tdmi -nostartfiles -Wall -Wcast-align -lgcc  -T"platform/2468_rom.ld" -o ././swim-ea_oem-lpc2478-rom.elf obj/rom_boot.o obj/rom_main.o obj/rom_framework.o obj/rom_uart.o obj/rom_rprintf.o obj/rom_irq.o obj/rom_VIClowlevel.o obj/rom_rtc.o obj/rom_timer_delay.o obj/rom_touch.o obj/rom_spi.o obj/rom_calibrate.o obj/rom_syscalls.o obj/rom_lpc_colors.o obj/rom_lpc_fonts.o obj/rom_lpc_helvr10.o obj/rom_lpc_rom8x16.o obj/rom_lpc_rom8x8.o obj/rom_lpc_swim_font.o obj/rom_lpc_swim_image.o obj/rom_lpc_swim.o obj/rom_lpc_winfreesystem14x16.o obj/rom_lpc_x5x7.o obj/rom_lpc_x6x13.o obj/rom_ex_sdram.o obj/rom_lcd_driver.o obj/rom_lcd_params.o obj/rom_calib_app.o
+calib_app.c: In function 'init_lcd':
+calib_app.c:96:2: warning: cast discards qualifiers from pointer target type
+calib_app.c:111:2: warning: cast discards qualifiers from pointer target type
+calib_app.c: In function 'open_lcd':
+calib_app.c:129:2: warning: passing argument 3 of 'lcd_ioctl' makes integer from pointer without a cast
+drivers/lcd/lcd_driver.h:119:6: note: expected 'long int' but argument is of type 'short unsigned int (*)(short unsigned int)'
+/Users/MortenOJ/sat/lib/gcc/arm-none-eabi/4.5.2/libgcc.a(unwind-arm.o): In function `get_eit_entry':
+/Users/MortenOJ/workspace/tools/build/arm-none-eabi/libgcc/../../../gcc-4.5.2/libgcc/../gcc/config/arm/unwind-arm.c:614: undefined reference to `__exidx_start'
+/Users/MortenOJ/workspace/tools/build/arm-none-eabi/libgcc/../../../gcc-4.5.2/libgcc/../gcc/config/arm/unwind-arm.c:614: undefined reference to `__exidx_end'
+/Users/MortenOJ/sat/lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/libg.a(lib_a-abort.o): In function `abort':
+/Users/MortenOJ/workspace/tools/build/arm-none-eabi/newlib/libc/stdlib/../../../../../gcc-4.5.2/newlib/libc/stdlib/abort.c:63: undefined reference to `_exit'
+/Users/MortenOJ/sat/lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/libg.a(lib_a-signalr.o): In function `_kill_r':
+/Users/MortenOJ/workspace/tools/build/arm-none-eabi/newlib/libc/reent/../../../../../gcc-4.5.2/newlib/libc/reent/signalr.c:61: undefined reference to `_kill'
+/Users/MortenOJ/sat/lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/libg.a(lib_a-signalr.o): In function `_getpid_r':
+/Users/MortenOJ/workspace/tools/build/arm-none-eabi/newlib/libc/reent/../../../../../gcc-4.5.2/newlib/libc/reent/signalr.c:96: undefined reference to `_getpid'
+collect2: ld returned 1 exit status
+make: *** [rom] Error 1
+
+**** Build Finished ****

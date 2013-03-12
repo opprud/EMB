@@ -11,6 +11,7 @@
 CHIP  = lpc2478
 CPU   = arm7tdmi
 BOARD = ea_oem
+TARGET = libswim.a
 
 # Trace level used for compilation
 # (can be overriden by adding TRACE_LEVEL=#number to the command-line)
@@ -32,7 +33,8 @@ PLATFORM = ../../platform
 DRIVERS = drivers
 
 # Output file basename
-OUTPUT = rtc-$(BOARD)-$(CHIP)
+#OUTPUT = rtc-$(BOARD)-$(CHIP)
+OUTPUT = libswim
 
 # Compile for all memories available on the board (this sets $(MEMORIES))
 include $(PLATFORM)/board.mak
@@ -48,10 +50,14 @@ OBJ = obj
 CROSS_COMPILE = arm-none-eabi-
 
 # Compilation tools
+RM = rm -f
+AR = $(CROSS_COMPILE)ar
 CC = $(CROSS_COMPILE)gcc
 SIZE = $(CROSS_COMPILE)size
 STRIP = $(CROSS_COMPILE)strip
 OBJCOPY = $(CROSS_COMPILE)objcopy
+RANLIB = $(CROSS_COMPILE)ranlib
+
 
 # Flags
 INCLUDES  = -I$(PLATFORM)
@@ -72,7 +78,7 @@ LDFLAGS = -g $(OPTIMIZATION) -mcpu=$(CPU) -nostartfiles -Wall -Wcast-align
 #BOARDS = $(LPC_LIB)/boards
 
 # Libary dirs
-LIBS    = drivers/swim/libswim_arm.a
+#LIBS    = drivers/swim/libswim_arm.a
 
 
 #VPATH += $(UTILITY)
@@ -104,12 +110,11 @@ ASM_OBJECTS =
 OUTPUT := $(BIN)/$(OUTPUT)
 OUTPUT := $(BIN)/$(OUTPUT)
 
+
+
 #-------------------------------------------------------------------------------
 #		Rules
 #-------------------------------------------------------------------------------
-#$(CC) $(LDFLAGS) -T"$(LPC_LIB)/boards/$(BOARD)/$(CHIP)/$$@.lds" -o $(OUTPUT)-$$@.elf $$^
-
-#all: $(BIN) $(OBJ) $(MEMORIES)
 all: $(BIN) $(OBJ) $(MEMORIES) $(LIBS)
 
 $(BIN) $(OBJ):
@@ -130,9 +135,22 @@ $$(C_OBJECTS_$(1)): $(OBJ)/$(1)_%.o: %.c Makefile $(OBJ) $(BIN)
 
 $$(ASM_OBJECTS_$(1)): $(OBJ)/$(1)_%.o: %.S Makefile $(OBJ) $(BIN)
 	$(CC) $(ASFLAGS) -D$(1) -c -o $$@ $$<
-
-debug_$(1): $(1)
-	perl ../resources/gdb/debug.pl $(OUTPUT)-$(1).elf
+	
+#----------------------------------------------------------------------
+# BUILD RULES FOR LIBRARY
+#----------------------------------------------------------------------
+$(TARGET): $(OBJ) $(LIBS)
+	$(AR) cr $@ $(OBJ)
+ifdef LIBS
+	set -x ; \
+	for lib in $(LIBS) ; do \
+	  contents=`$(AR) t $$lib` ; \
+	  $(AR) x $$lib ; \
+	  $(AR) r $@ $$contents ; \
+	  $(RM) $$contents ; \
+	done
+endif
+	$(RANLIB) $@
 
 endef
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;lpc2468_blink&apos;" deleteContents="false" description="Delete resource &apos;lpc2468_blink&apos;" element1="/lpc2468_blink" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1314768891671"/>
+</session>

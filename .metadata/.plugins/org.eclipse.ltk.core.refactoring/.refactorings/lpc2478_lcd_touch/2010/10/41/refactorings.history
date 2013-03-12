@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lpc2478_lcd_touch/calib_app&apos; to &apos;calib_app.h&apos;" description="Rename resource &apos;calib_app&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="calib_app" name="calib_app.h" stamp="1286875765933" updateReferences="true"/>
+</session>

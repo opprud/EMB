@@ -1,6 +1,6 @@
 PRG            = irq
 OBJ            = boot.o VIClowlevel.o main.o
-OPTIMIZE       = -g
+OPTIMIZE       = -g -o0
 # USE_THUMB_MODE = YES
 
 LDSCRIPT       = 2468_rom.ld
@@ -9,11 +9,16 @@ LIBS           =
 
 
 # You should not have to change anything below here.
+# CROSS compile added to set correc t path on MAC
+CROSS_COMPILE = /Users/MortenOJ/sat/bin/
 
-CC             = arm-none-eabi-gcc
-OBJCOPY        = arm-none-eabi-objcopy
-OBJDUMP        = arm-none-eabi-objdump
-ARCH           = arm-none-eabi-ar
+
+# You should not have to change anything below here.
+CC             = $(CROSS_COMPILE)/arm-none-eabi-gcc
+OBJCOPY        = $(CROSS_COMPILE)/arm-none-eabi-objcopy
+OBJDUMP        = $(CROSS_COMPILE)/arm-none-eabi-objdump
+ARCH           = $(CROSS_COMPILE)/arm-none-eabi-ar
+
 
 CFLAGS=-Wall -I. $(DEBUG) -mcpu=arm7tdmi -nostartfiles -T$(LDSCRIPT) \
 		-Wcast-align $(OPTIMIZE) $(DEFS)

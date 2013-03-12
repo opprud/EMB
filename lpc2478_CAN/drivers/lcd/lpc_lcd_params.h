@@ -23,7 +23,7 @@
 #ifndef LPC_SHARP_LCD_PARAM_H
 #define LPC_SHARP_LCD_PARAM_H
 
-#include "..\swim\lpc_types.h"
+#include "../swim/lpc_types.h"
 
 #if defined (__cplusplus)
 extern "C"

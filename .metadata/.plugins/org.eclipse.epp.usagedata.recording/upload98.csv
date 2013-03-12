@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.editors",1284620400421
+started,bundle,org.eclipse.update.configurator,3.3.0.v20090312,"org.eclipse.update.configurator",1284620400421
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1284620400437
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1284620400437
+started,bundle,org.eclipse.cdt.cross.arm.gnu,0.5.3.200904072239,"org.eclipse.cdt.cross.arm.gnu",1284620400437
+started,bundle,org.eclipse.jdt.core.manipulation,1.3.0.v20090603,"org.eclipse.jdt.core.manipulation",1284620400437
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1284620400437
+started,bundle,org.eclipse.cdt.core.lrparser,5.1.0.200909110608,"org.eclipse.cdt.core.lrparser",1284620400437
+started,bundle,com.cea.papyrus.diagraminterchange2,1.12.3.200912231359,"com.cea.papyrus.diagraminterchange2",1284620400437
+started,bundle,com.cea.papyrus.ocl.validator,1.12.3.200912231359,"com.cea.papyrus.ocl.validator",1284620400437
+started,bundle,com.cea.papyrus.validation,1.12.3.200912231359,"com.cea.papyrus.validation",1284620400437
+started,bundle,org.eclipse.draw2d,3.5.2.v20091126-1908,"org.eclipse.draw2d",1284620400437
+started,bundle,org.eclipse.emf.common,2.5.0.v200906151043,"org.eclipse.emf.common",1284620400437
+started,bundle,org.eclipse.emf.ecore,2.5.0.v200906151043,"org.eclipse.emf.ecore",1284620400453
+started,bundle,org.eclipse.emf.ecore.xmi,2.5.0.v200906151043,"org.eclipse.emf.ecore.xmi",1284620400453
+started,bundle,org.eclipse.emf.validation,1.3.0.v200901271722,"org.eclipse.emf.validation",1284620400468
+started,bundle,org.eclipse.epp.usagedata.gathering,1.1.1.R201001291118,"org.eclipse.epp.usagedata.gathering",1284620400468
+started,bundle,org.eclipse.epp.usagedata.recording,1.1.1.R201001291118,"org.eclipse.epp.usagedata.recording",1284620400468
+started,bundle,org.eclipse.jdt.core,3.5.2.v_981_R35x,"org.eclipse.jdt.core",1284620400468
+started,bundle,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui",1284620400484
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.bugzilla.core",1284620400484
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.bugzilla.ui",1284620400484
+started,bundle,org.eclipse.mylyn.commons.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.commons.ui",1284620400484
+started,bundle,org.eclipse.mylyn.context.core,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.context.core",1284620400484
+started,bundle,org.eclipse.mylyn.context.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.context.ui",1284620400500
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.monitor.ui",1284620400500
+started,bundle,org.eclipse.mylyn.tasks.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.tasks.ui",1284620400515
+started,bundle,org.eclipse.mylyn.team.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.team.ui",1284620400515
+started,bundle,org.eclipse.team.cvs.ui,3.3.202.r35x_20090930-0800,"org.eclipse.team.cvs.ui",1284620400531
+started,bundle,org.eclipse.uml2.uml,3.0.1.v200908281330,"org.eclipse.uml2.uml",1284620400531
+started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.101.R35x_v20090807-1100,"org.eclipse.equinox.simpleconfigurator",1284620400531
+started,bundle,com.collabnet.subversion.merge,2.0.1,"com.collabnet.subversion.merge",1284620400546
+started,bundle,com.ibm.icu,4.0.1.v20090822,"com.ibm.icu",1284620400546
+started,bundle,org.eclipse.cdt.core,5.1.2.201002161416,"org.eclipse.cdt.core",1284620400546
+started,bundle,org.eclipse.cdt.core.lrparser.xlc,5.1.0.201002161416,"org.eclipse.cdt.core.lrparser.xlc",1284620400546
+started,bundle,org.eclipse.cdt.core.tests,5.1.2.201002161416,"org.eclipse.cdt.core.tests",1284620400562
+started,bundle,org.eclipse.cdt.make.core,6.0.0.201002161416,"org.eclipse.cdt.make.core",1284620400562
+started,bundle,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.ui",1284620400562
+started,bundle,org.eclipse.cdt.managedbuilder.core,6.0.0.201002161416,"org.eclipse.cdt.managedbuilder.core",1284620400562
+started,bundle,org.eclipse.cdt.managedbuilder.core.tests,5.0.100.201002161416,"org.eclipse.cdt.managedbuilder.core.tests",1284620400593
+started,bundle,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui",1284620400593
+started,bundle,org.eclipse.cdt.ui.tests,5.1.0.201002161416,"org.eclipse.cdt.ui.tests",1284620400609
+started,bundle,org.eclipse.compare,3.5.2.r35x_20100113-0800,"org.eclipse.compare",1284620400609
+started,bundle,org.eclipse.core.contenttype,3.4.1.R35x_v20090826-0451,"org.eclipse.core.contenttype",1284620400609
+started,bundle,org.eclipse.core.databinding.observable,1.2.0.M20090902-0800,"org.eclipse.core.databinding.observable",1284620400609
+started,bundle,org.eclipse.core.expressions,3.4.101.R35x_v20100209,"org.eclipse.core.expressions",1284620400609
+started,bundle,org.eclipse.core.filesystem,1.2.1.R35x_v20091203-1235,"org.eclipse.core.filesystem",1284620400609
+started,bundle,org.eclipse.core.net,1.2.1.r35x_20090812-1200,"org.eclipse.core.net",1284620400609
+started,bundle,org.eclipse.core.resources,3.5.2.R35x_v20091203-1235,"org.eclipse.core.resources",1284620400609
+started,bundle,org.eclipse.debug.core,3.5.1.v20091103_r352,"org.eclipse.debug.core",1284620400609
+started,bundle,org.eclipse.ecf,3.0.0.v20090831-1906,"org.eclipse.ecf",1284620400609
+started,bundle,org.eclipse.ecf.filetransfer,3.0.0.v20090831-1906,"org.eclipse.ecf.filetransfer",1284620400609
+started,bundle,org.eclipse.ecf.identity,3.0.0.v20090831-1906,"org.eclipse.ecf.identity",1284620400609
+started,bundle,org.eclipse.ecf.provider.filetransfer,3.0.1.v20090831-1906,"org.eclipse.ecf.provider.filetransfer",1284620400625
+started,bundle,org.eclipse.ecf.provider.filetransfer.httpclient,3.0.1.v20090831-1906,"org.eclipse.ecf.provider.filetransfer.httpclient",1284620400625
+started,bundle,org.eclipse.equinox.app,1.2.1.R35x_v20091203,"org.eclipse.equinox.app",1284620400625
+started,bundle,org.eclipse.equinox.common,3.5.1.R35x_v20090807-1100,"org.eclipse.equinox.common",1284620400625
+started,bundle,org.eclipse.equinox.ds,1.1.1.R35x_v20090806,"org.eclipse.equinox.ds",1284620400625
+started,bundle,org.eclipse.equinox.frameworkadmin.equinox,1.0.101.R35x_v20091214,"org.eclipse.equinox.frameworkadmin.equinox",1284620400625
+started,bundle,org.eclipse.equinox.p2.core,1.0.101.R35x_v20090819,"org.eclipse.equinox.p2.core",1284620400625
+started,bundle,org.eclipse.equinox.p2.director,1.0.101.R35x_v20100112,"org.eclipse.equinox.p2.director",1284620400640
+started,bundle,org.eclipse.equinox.p2.engine,1.0.102.R35x_v20091117,"org.eclipse.equinox.p2.engine",1284620400640
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.0.101.R35x_v20090812,"org.eclipse.equinox.p2.metadata.repository",1284620400640
+started,bundle,org.eclipse.equinox.p2.repository,1.0.1.R35x_v20100105,"org.eclipse.equinox.p2.repository",1284620400640
+started,bundle,org.eclipse.equinox.preferences,3.2.301.R35x_v20091117,"org.eclipse.equinox.preferences",1284620400640
+started,bundle,org.eclipse.equinox.simpleconfigurator.manipulator,1.0.101.R35x_v20100209,"org.eclipse.equinox.simpleconfigurator.manipulator",1284620400640
+started,bundle,org.eclipse.help,3.4.1.v20090805_35x,"org.eclipse.help",1284620400656
+started,bundle,org.eclipse.jface,3.5.2.M20100120-0800,"org.eclipse.jface",1284620400656
+started,bundle,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search",1284620400656
+started,bundle,org.eclipse.team.core,3.5.1.r35x_20100113-0800,"org.eclipse.team.core",1284620400656
+started,bundle,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui",1284620400671
+started,bundle,org.eclipse.ui.forms,3.4.1.v20090714_35x,"org.eclipse.ui.forms",1284620400671
+started,bundle,org.eclipse.ui.ide,3.5.2.M20100113-0800,"org.eclipse.ui.ide",1284620400671
+started,bundle,org.eclipse.ui.navigator,3.4.2.M20100120-0800,"org.eclipse.ui.navigator",1284620400687
+started,bundle,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.resources",1284620400687
+started,bundle,org.eclipse.ui.net,1.2.1.r35x_20090812-1200,"org.eclipse.ui.net",1284620400687
+started,bundle,org.eclipse.ui.views,3.4.1.M20090826-0800,"org.eclipse.ui.views",1284620400687
+started,bundle,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"org.eclipse.ui.workbench",1284620400687
+started,bundle,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.workbench.texteditor",1284620400687
+started,bundle,org.tigris.subversion.clientadapter,1.6.10,"org.tigris.subversion.clientadapter",1284620400687
+started,bundle,org.tigris.subversion.subclipse.core,1.6.10,"org.tigris.subversion.subclipse.core",1284620400687
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.10,"org.tigris.subversion.subclipse.ui",1284620400718
+os,sysinfo,,,"win32",1284620400718
+arch,sysinfo,,,"x86",1284620400718
+ws,sysinfo,,,"win32",1284620400718
+locale,sysinfo,,,"da_DK",1284620400718
+processors,sysinfo,,,"2",1284620400718
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1284620400718
+java.runtime.version,sysinfo,,,"1.6.0_18-b07",1284620400718
+java.specification.name,sysinfo,,,"Java Platform API Specification",1284620400718
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1284620400718
+java.specification.version,sysinfo,,,"1.6",1284620400718
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1284620400718
+java.version,sysinfo,,,"1.6.0_18",1284620400718
+java.vm.info,sysinfo,,,"mixed mode, sharing",1284620400718
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1284620400718
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1284620400718
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1284620400718
+java.vm.specification.version,sysinfo,,,"1.0",1284620400718
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1284620400718
+java.vm.version,sysinfo,,,"16.0-b13",1284620400718
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1284620401984
+error,log,,,"Plug-in org.antlr.eclipse.ui was unable to load class org.antlr.eclipse.ui.AntlrLabelDecorator.",1284620402062
+stopped,bundle,org.antlr.eclipse.ui,4.1.1,"org.antlr.eclipse.ui",1284620402265
+started,bundle,org.gna.eclox.core,0.8.0,"org.gna.eclox.core",1284620402265
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.refresh",1284620407250
+started,bundle,org.tigris.subversion.clientadapter.svnkit,1.6.4,"org.tigris.subversion.clientadapter.svnkit",1284620407843
+started,bundle,org.tigris.subversion.clientadapter.javahl,1.6.9.3,"org.tigris.subversion.clientadapter.javahl",1284620407906
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284620410375
+activated,view,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.ui.views.MakeView",1284620423359
+started,bundle,org.eclipse.cdt.errorparsers.xlc,5.0.100.201002161416,"org.eclipse.cdt.errorparsers.xlc",1284620432046
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1284620440171
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1284620442218
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284620442546
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284620442578
+activated,view,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.ui.views.MakeView",1284620444218
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284620446031
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284620476312
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284620502421
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284620503171
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284620503828
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621018687
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621019812
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621021046
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1284621023671
+opened,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621028171
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621028218
+opened,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621041000
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621041046
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621051406
+closed,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621051453
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1284621056625
+opened,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621056890
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621056937
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621081093
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621103890
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621276781
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1284621326062
+error,log,,,"Ignoring template 'constant' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'signal' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'std_logic' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'std_logic_vector' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'conv_std_logic_vector' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'others' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'process(clk)' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'process(clk,rst)' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'if' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'if-else' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'for' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'assert' since it has no id.",1284621331687
+error,log,,,"Ignoring template 'case' since it has no id.",1284621331703
+error,log,,,"Ignoring template 'statemachine' since it has no id.",1284621331703
+error,log,,,"Ignoring template 'statemachine with reset' since it has no id.",1284621331703
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621332125
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621337078
+opened,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621337218
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621337250
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1284621338250
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621341343
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621344640
+opened,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621344765
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621344812
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621350078
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.cut",1284621356734
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621358031
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621359515
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621361906
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.cut",1284621365203
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621366437
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621368156
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1284621372421
+opened,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621375093
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621375140
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621379359
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621382828
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621384625
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621387671
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621390593
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621392781
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621406531
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621407343
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621408750
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621411093
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621415218
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621416484
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1284621418312
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621419093
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621421265
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621423140
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621423921
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621425171
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.saveAll",1284621440625
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621443906
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1284621453765
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621456406
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621457390
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621460640
+closed,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621460640
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621461781
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621508375
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1284621549593
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1284621550281
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.select.lineEnd",1284621554484
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621555125
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621558609
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621563671
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621564468
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621566421
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621567218
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621568546
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621572984
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1284621574140
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.select.lineEnd",1284621574343
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621574984
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621576218
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621577953
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineStart",1284621581843
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.goto.lineEnd",1284621582093
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.select.lineStart",1284621583671
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.delete",1284621584890
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1284621589234
+opened,editor,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.editor",1284621590046
+activated,editor,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.editor",1284621590093
+error,log,,,"Cannot find builtin/gnu.mk",1284621591453
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.saveAll",1284621602625
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621604781
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621611765
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621614156
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1284621616265
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621619765
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.paste",1284621622140
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.save",1284621623000
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621624375
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621631312
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1284621632953
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.edit.text.select.lineStart",1284621636843
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621658218
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1284621662234
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718
+no handler,command,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui.edit.text.java.source.quickMenu",1284621677718

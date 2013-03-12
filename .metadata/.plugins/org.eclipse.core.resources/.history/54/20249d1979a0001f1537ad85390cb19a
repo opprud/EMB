@@ -1,0 +1,78 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../makefile.init
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include subdir.mk
+-include objects.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+ifneq ($(strip $(ASM_DEPS)),)
+-include $(ASM_DEPS)
+endif
+ifneq ($(strip $(S_UPPER_DEPS)),)
+-include $(S_UPPER_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+SECONDARY_FLASH += \
+lpc2468_blink.hex \
+
+SECONDARY_LIST += \
+lpc2468_blink.lst \
+
+SECONDARY_SIZE += \
+lpc2468_blink.siz \
+
+
+# All Target
+all: lpc2468_blink.elf secondary-outputs
+
+# Tool invocations
+lpc2468_blink.elf: $(OBJS) $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Invoking: ARM Windows GCC C Linker'
+	arm-elf-gcc -nodefaultlibs -Wl,-Map,lpc2468_blink.map -mcpu=cortex-m3 -mthumb -g3 -gdwarf-2 -o"lpc2468_blink.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+lpc2468_blink.hex: lpc2468_blink.elf
+	@echo 'Invoking: ARM Windows GNU Create Flash Image'
+	arm-elf-objcopy -O ihex lpc2468_blink.elf "lpc2468_blink.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+lpc2468_blink.lst: lpc2468_blink.elf
+	@echo 'Invoking: ARM Windows GNU Create Listing'
+	arm-elf-objdump -h -S lpc2468_blink.elf >"lpc2468_blink.lst"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+lpc2468_blink.siz: lpc2468_blink.elf
+	@echo 'Invoking: ARM Windows GNU Print Size'
+	arm-elf-size  --format=berkeley lpc2468_blink.elf
+	@echo 'Finished building: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) $(SECONDARY_SIZE)$(OBJS)$(C_DEPS)$(ASM_DEPS)$(SECONDARY_FLASH)$(EXECUTABLES)$(SECONDARY_LIST)$(S_UPPER_DEPS) lpc2468_blink.elf
+	-@echo ' '
+
+secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_LIST) $(SECONDARY_SIZE)
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include ../makefile.targets

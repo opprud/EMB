@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;lpc2478_lcd_touch/calib_app.h&apos;" deleteContents="false" description="Delete resource &apos;lpc2478_lcd_touch/calib_app.h&apos;" element1="/lpc2478_lcd_touch/calib_app.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1286875772995"/>
+</session>

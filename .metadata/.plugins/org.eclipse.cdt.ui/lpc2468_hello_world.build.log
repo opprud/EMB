@@ -1,0 +1,6 @@
+14:49:56 **** Incremental Build of configuration Default for project lpc2468_hello_world ****
+make all 
+make: Nothing to be done for `all'.
+
+14:49:56 Build Finished (took 72ms)
+
