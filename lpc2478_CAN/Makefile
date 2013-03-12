@@ -47,22 +47,43 @@ OBJ = obj
 #-------------------------------------------------------------------------------
 
 # Tool suffix when cross-compiling
-CROSS_COMPILE = arm-none-eabi-
-
+CROSS_COMPILE = /Users/MortenOJ/sat/bin
+#CROSS_COMPILE = /opt/mine/arm-none-eabi/arm-none-eabi/bin/
 # Compilation tools
-CC = $(CROSS_COMPILE)gcc
-SIZE = $(CROSS_COMPILE)size
-STRIP = $(CROSS_COMPILE)strip
-OBJCOPY = $(CROSS_COMPILE)objcopy
+#CC             = $(CROSS_COMPILE)gcc
+#OBJCOPY        = $(CROSS_COMPILE)objcopy
+#OBJDUMP        = $(CROSS_COMPILE)objdump
+#ARCH           = $(CROSS_COMPILE)ar
+
+CC             = $(CROSS_COMPILE)/arm-none-eabi-gcc
+OBJCOPY        = $(CROSS_COMPILE)/arm-none-eabi-objcopy
+OBJDUMP        = $(CROSS_COMPILE)/arm-none-eabi-objdump
+ARCH           = $(CROSS_COMPILE)/arm-none-eabi-ar
+
+#CC = $(CROSS_COMPILE)gcc
+#SIZE = $(CROSS_COMPILE)size
+#STRIP = $(CROSS_COMPILE)strip
+#OBJCOPY = $(CROSS_COMPILE)objcopy
 
 # Flags
 INCLUDES  = -I$(PLATFORM)
 INCLUDES += -I$(DRIVERS)
 
+#removed to fit on MAC
+# Added -mapcs-stack-check for sucessfull return from IRQ functions
+#CFLAGS  = -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type
+#CFLAGS += -mapcs-stack-check
+#CFLAGS += -g $(OPTIMIZATION) $(INCLUDES) -mcpu=$(CPU) -D$(CHIP) -DTRACE_LEVEL=$(TRACE_LEVEL)
+#ASFLAGS = -g $(OPTIMIZATION) $(INCLUDES) -mcpu=$(CPU) -D$(CHIP) -D__ASSEMBLY__ 
+#LDFLAGS = -g $(OPTIMIZATION) -mcpu=$(CPU) -nostartfiles -Wall -Wcast-align -lgcc
+
 CFLAGS  = -Wall -Wcast-align -Wcast-qual -Wimplicit -Wnested-externs -Wpointer-arith -Wswitch -Wreturn-type
 CFLAGS += -g $(OPTIMIZATION) $(INCLUDES) -mcpu=$(CPU) -D$(CHIP) -DTRACE_LEVEL=$(TRACE_LEVEL)
+
 ASFLAGS = -g $(OPTIMIZATION) $(INCLUDES) -mcpu=$(CPU) -D$(CHIP) -D__ASSEMBLY__ 
 LDFLAGS = -g $(OPTIMIZATION) -mcpu=$(CPU) -nostartfiles -Wall -Wcast-align -lgcc 
+
+
 
 #-------------------------------------------------------------------------------
 #		Files

@@ -1,0 +1,8 @@
+vhdl work "../src/def_p.vhd"
+vhdl work "../src/wb_master.vhd"
+vhdl work "../src/cpuinterface.vhd"
+vhdl work "../src/WBO.vhd"
+vhdl work "../src/Syscon.vhd"
+vhdl work "../src/Intercon.vhd"
+vhdl work "../src/host.vhd"
+vhdl work "../src/wrapper.vhd"

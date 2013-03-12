@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WB_shell/HDL/doxyfile&apos; to &apos;olll_doxyfile&apos;" description="Rename resource &apos;doxyfile&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HDL/doxyfile" name="olll_doxyfile" stamp="1298553286484" updateReferences="true"/>
+</session>

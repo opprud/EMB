@@ -1,0 +1,104 @@
+;
+; Example for flash declaration of Philips LPC2xxx internal flash.
+;
+; CPU-Type  FlashSize  FlashType  UserFlash  RamSize
+;              (KB)                 (KB)      (KB)
+; ------------------------------------------------------
+; LPC2468      512.       2.        500.       64.
+; 
+; Supported flash types:
+;
+; FlashType  SmallBlock  MainBlock  BootFlash  Alignment 
+; ------------------------------------------------------
+;     0.        no processor internal flash
+;     1.        8 kB       64 kB      8 kB      512 B    
+;     2.        4 kB       32 kB     12 kB      256 B    
+;     3.        4 kB       32 kB      8 kB      256 B    
+;
+; HINTS:
+;
+;   Flash module input clock has to be set with FLASH.CLOCK command.
+;   This example script is setting flash.clock to 10MHz. Please adjust 
+;   the value to your requirements. Flash.clock has to match System 
+;   Clock Frequency (CCLK)
+;
+;   Boot flash cannot be programmed or erased with builtin flash 
+;   algorithm. 
+;
+;   Data has to be loaded to flash in multiples of alignment size to 
+;   alignment boundaries. This can be done with download via virtual 
+;   memory or using option /ALIGN <value> for download command or 
+;   executing flash programming using FLASH.AUTO.
+;
+;   Vector table checksum generation is done by script, so that it 
+;   can be used or switched off, as needed.
+;
+; WRD - 21.01.2005
+;
+
+;========================================================================
+; Set configuration values out of the CPU table above. If your CPU 
+; derivate is not listed please check the data sheet for matching 
+; flash configuration.
+
+local &CpuType
+local &FlashSize
+local &FlashType
+local &RAMSize
+local &filename
+
+; Example for LPC2106
+&CpuType="LPC2468"
+&FlashSize=512.
+&FlashType=2.
+&RAMSize=64.
+
+;========================================================================
+; Start debugging
+
+SYStem.RESet
+SYStem.CPU &CpuType
+SYStem.JtagClock RTCK
+SYStem.Option ResBreak OFF
+SYStem.Option NOIRCHECK ON
+SYStem.Option BUGFIXV4 ON
+SYStem.Up
+;sys.mode.attach
+
+symbol.reset
+
+&filename="../swim-ea_oem-lpc2478-rom.elf"
+;y.SOURCEPATH.SETRECURSEDIR ../startup
+;y.SOURCEPATH.SETRECURSEDIR ../source
+
+
+data.load &filename /nocode
+
+map.bonchip 0x80000000--0x801FFFFF
+map.bonchip 0x00000000--0x0007FFFF
+
+
+
+IF RUN()
+(
+ BREAK
+)
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

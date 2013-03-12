@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Workspace/EMB/WB_shell/HDL/ise/Wrapper.xst" -ofn "C:/Workspace/EMB/WB_shell/HDL/ise/Wrapper.syr" 
+xst -intstyle ise -ifn "C:/Workspace/EMB/WB_shell/HDL/ise/Wrapper.xst" -ofn "C:/Workspace/EMB/WB_shell/HDL/ise/Wrapper.syr" 
+xst -intstyle ise -ifn "C:/Workspace/EMB/WB_shell/HDL/ise/Wrapper.xst" -ofn "C:/Workspace/EMB/WB_shell/HDL/ise/Wrapper.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Workspace/EMB/WB_shell/HDL/src/wb_shell.ucf -p xa3s400a-ftg256-4 Wrapper_cs.ngc Wrapper.ngd  
+map -intstyle ise -p xa3s400a-ftg256-4 -cm area -ir off -pr off -c 100 -o Wrapper_map.ncd Wrapper.ngd Wrapper.pcf 
+par -w -intstyle ise -ol high -t 1 Wrapper_map.ncd Wrapper.ncd Wrapper.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Wrapper.twx Wrapper.ncd -o Wrapper.twr Wrapper.pcf 
+bitgen -intstyle ise -f Wrapper.ut Wrapper.ncd 

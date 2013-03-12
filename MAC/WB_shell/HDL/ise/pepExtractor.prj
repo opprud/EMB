@@ -1,0 +1,5 @@
+work	"../src/Intercon.vhd"
+work	"../src/Syscon.vhd"
+work	"../src/WBO.vhd"
+work	"../src/def_p.vhd"
+work	"../src/wrapper.vhd"

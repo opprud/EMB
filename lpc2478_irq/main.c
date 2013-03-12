@@ -9,6 +9,9 @@
 #include "lpc2468.h"
 #include "VIClowlevel.h"
 
+/*profiling*/
+#include "simple_profiler.h"
+
 /* global variables */
 int i;
 
@@ -18,8 +21,10 @@ void IRQ_Routine(void) __attribute__ ((interrupt("IRQ")));
 /*
  * This is our IRQ routine
  */
-void IRQ_Routine(void)
-{
+void IRQ_Routine(void) {
+	//SET
+	PROF_SET = PROF_PIN_1;
+
 	/*clear pending INT0 interrupts*/
 	EXTINT = 1;
 
@@ -29,13 +34,16 @@ void IRQ_Routine(void)
 
 	/* ack. interrupt */
 	VICVectAddr = 0;
+
+	//CLR
+	PROF_CLR = PROF_PIN_1;
+
 }
 
 /* main loop
  * basic CPU initialization is done here.
  */
-int main(void)
-{
+int main(void) {
 	int c;
 	/* Flash memory setup */
 	MEMMAP = 1;
@@ -52,17 +60,21 @@ int main(void)
 	EXTINT = 1;
 
 	/* init the VIC to EINT0, at vector 14 */
-	VICVectAddr14 = (unsigned) IRQ_Routine;
+	VICVectAddr14 =	(unsigned) IRQ_Routine;
 	/*priority 2, rather high*/
 	VICVectCntl14 = 0x00000002;
 	/*enable EINT0 interrupt*/
 	VICIntEnable = (1 << 14);
 
+	/* Setup profiling pins to outputs */
+	PROF_DIR = PROF_PIN_MASK;
+
 	enableIRQ();
 
 	/*waste time...*/
 	while (1)
+	{
 		c++;
-
+	}
 	return 0;
 }

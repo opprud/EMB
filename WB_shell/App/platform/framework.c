@@ -185,10 +185,14 @@ void lowLevelInit(void)
 	 *  */
 	EMC_STA_CFG2 = 0x00000081;
 
-	EMC_STA_WAITWEN2  = 0x2;
-	EMC_STA_WAITOEN2  = 0x1;
-	EMC_STA_WAITRD2   = 0x03;
+	//READ timing
+	EMC_STA_WAITOEN2  = 0;//0x1;
+	EMC_STA_WAITRD2   = 8;//0x03;
+
+	// Write timing
+	EMC_STA_WAITWEN2  = 0;//0x2;
+	EMC_STA_WAITWR2   = 0x8;
+
 	EMC_STA_WAITPAGE2 = 0x1f;
-	EMC_STA_WAITWR2   = 0x1f;
 	EMC_STA_WAITTURN2 = 0xf;
 }

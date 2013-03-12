@@ -1,0 +1,8 @@
+vhdl work "C:\Workspace\EMB\WB_shell\HDL\src\def_p.vhd"
+vhdl work "C:\Workspace\EMB\WB_shell\HDL\src\wb_master.vhd"
+vhdl work "C:\Workspace\EMB\WB_shell\HDL\src\cpuinterface.vhd"
+vhdl work "C:\Workspace\EMB\WB_shell\HDL\src\WBO.vhd"
+vhdl work "C:\Workspace\EMB\WB_shell\HDL\src\Syscon.vhd"
+vhdl work "C:\Workspace\EMB\WB_shell\HDL\src\Intercon.vhd"
+vhdl work "C:\Workspace\EMB\WB_shell\HDL\src\host.vhd"
+vhdl work "C:\Workspace\EMB\WB_shell\HDL\src\wrapper.vhd"

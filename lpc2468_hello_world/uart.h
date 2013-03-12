@@ -8,6 +8,12 @@
 #define ULCR_PAR_NO   0x00
 #define ULCR_STOP_1   0x00
 
+//bit definitions in UnIIR registers in the UART
+#define UIIR_RLS   0x06
+#define UIIR_RDA   0x04
+#define UIIR_CTI   0x0C
+#define UIIR_THRE  0x02
+
 //define for determning the correct uart clock division factor
 //Note that the expressions should always be constants and fully evaluated at
 //compile time, else a lot of code will be generated.

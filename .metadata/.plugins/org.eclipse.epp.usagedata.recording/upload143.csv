@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100011392
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1288100019517
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1288100021470
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1288100025720
+started,bundle,org.eclipse.equinox.p2.updatesite,1.0.100.v20090525,"org.eclipse.equinox.p2.updatesite",1288100028158
+started,bundle,org.eclipse.equinox.p2.publisher,1.0.0.v20090527-1812,"org.eclipse.equinox.p2.publisher",1288100028189
+error,log,,,"Unable to load the repository http://opensource.zylin.com/zylincdt",1288100028658
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1288100048017
+started,bundle,org.eclipse.equinox.p2.artifact.repository,1.0.101.R35x_v20090721,"org.eclipse.equinox.p2.artifact.repository",1288100102627
+started,bundle,org.eclipse.equinox.p2.touchpoint.eclipse,1.0.101.R35x_20090820-1821,"org.eclipse.equinox.p2.touchpoint.eclipse",1288100109362
+started,bundle,org.eclipse.equinox.p2.touchpoint.natives,1.0.101.R35x_v20090806,"org.eclipse.equinox.p2.touchpoint.natives",1288100110862
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100282129
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.install",1288100282191
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100286238
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100350457
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.install",1288100350519
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100350801
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100412691
+started,bundle,org.eclipse.equinox.security.ui,1.0.100.v20090520-1800,"org.eclipse.equinox.security.ui",1288100412832
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100412863
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100416816
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100419863
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100422051
+closed,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1288100422207
+stopped,bundle,com.zylin.embeddedcdt,4.9.1,"com.zylin.embeddedcdt",1288100422863
