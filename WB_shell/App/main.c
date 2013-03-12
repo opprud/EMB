@@ -18,6 +18,14 @@
 
 #define FPGA_RESET		(1<<19)
 
+typedef enum
+{
+	CNT_UP,
+	CNT_DWN,
+	PWM_UP,
+	PWM_DWN
+}cmd_t;
+
 /* main loop
  * basic CPU initialization is done here.
  */
@@ -26,7 +34,9 @@ int main(void)
 	short Sval;
 	long  Lval;
 	short count = 0;
+	short pwm = 0x8000;
 	int pressed, released;
+	cmd_t cmd;
 
 	/* init low level stuff */
 	lowLevelInit();
@@ -61,35 +71,55 @@ int main(void)
 		while (1)
 		{
 
-			/* count button press/releases */
+			/* detect button press/releases */
 			if (pressed & released)
 			{
-				count++;
+				/* evaluate command */
+				switch (cmd) {
+					case CNT_UP:
+						count++;
+						break;
+					case CNT_DWN:
+						count--;
+						break;
+					case PWM_UP:
+						pwm += 0x1000;
+						break;
+					case PWM_DWN:
+						pwm -= 0x1000;
+						break;
+					default:
+						break;
+				}
 				pressed=0;
 				released=0;
 			}
 
 			switch (readKeys())
 			{
+				/*WBO_REG1 is LED outputs*/
 				case UP:
 					WBO_REG1 = count;
+					cmd = CNT_UP;
 					pressed = 1;
 					break;
 				case DOWN:
-					WBO_REG2 = count;
+					WBO_REG1 = count;
+					cmd = CNT_DWN;
 					pressed = 1;
 					break;
+				/*WBO_REG2 is LED PWM*/
 				case LEFT:
-					WBO_REG1 = 0x0002;
+					WBO_REG2 = pwm;
 					pressed = 1;
 					break;
 				case RIGHT:
-					WBO_REG1 = 0x0004;
+					WBO_REG2 = pwm;
 					pressed = 1;
 					break;
 				case CENTER:
 					WBO_REG1 = 0x0000;
-					WBO_REG2 = 0x0000;
+					WBO_REG2 = 0x8000;
 					break;
 				default :
 					released = 1;

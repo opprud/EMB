@@ -1,0 +1,608 @@
+Release 12.1 - xst M.53d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Wrapper.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Wrapper.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Wrapper"
+Output Format                      : NGC
+Target Device                      : xa3s400a-4-ftg256
+
+---- Source Options
+Top Module Name                    : Wrapper
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Wrapper.lso
+Keep Hierarchy                     : YES
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Workspace/EMB/WB_shell/HDL/src/def_p.vhd" in Library work.
+Compiling vhdl file "C:/Workspace/EMB/WB_shell/HDL/src/cpuinterface.vhd" in Library work.
+Architecture rtl of Entity cpuinterface is up to date.
+Compiling vhdl file "C:/Workspace/EMB/WB_shell/HDL/src/wb_master.vhd" in Library work.
+Architecture rtl of Entity wb_master is up to date.
+Compiling vhdl file "C:/Workspace/EMB/WB_shell/HDL/src/host.vhd" in Library work.
+Architecture rtl of Entity host is up to date.
+Compiling vhdl file "C:/Workspace/EMB/WB_shell/HDL/src/Intercon.vhd" in Library work.
+Architecture rtl of Entity intercon is up to date.
+Compiling vhdl file "C:/Workspace/EMB/WB_shell/HDL/src/Syscon.vhd" in Library work.
+Architecture rtl of Entity syscon is up to date.
+Compiling vhdl file "C:/Workspace/EMB/WB_shell/HDL/src/WBO.vhd" in Library work.
+Entity <wbo> compiled.
+Entity <wbo> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Workspace/EMB/WB_shell/HDL/src/wrapper.vhd" in Library work.
+Architecture rtl of Entity wrapper is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Wrapper> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <host> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <Intercon> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <Syscon> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <WBO> in library <work> (architecture <RTL>).
+
+Analyzing hierarchy for entity <CpuInterface> in library <work> (architecture <RTL>) with generics.
+	AddrWidth = 10
+	DataWidth = 16
+
+Analyzing hierarchy for entity <WB_Master> in library <work> (architecture <RTL>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Wrapper> in library <work> (Architecture <rtl>).
+Entity <Wrapper> analyzed. Unit <Wrapper> generated.
+
+Analyzing Entity <host> in library <work> (Architecture <RTL>).
+Entity <host> analyzed. Unit <host> generated.
+
+Analyzing generic Entity <CpuInterface> in library <work> (Architecture <RTL>).
+	AddrWidth = 10
+	DataWidth = 16
+Entity <CpuInterface> analyzed. Unit <CpuInterface> generated.
+
+Analyzing Entity <WB_Master> in library <work> (Architecture <RTL>).
+INFO:Xst:2679 - Register <cti_o> in unit <WB_Master> has a constant value of 000 during circuit operation. The register is replaced by logic.
+Entity <WB_Master> analyzed. Unit <WB_Master> generated.
+
+Analyzing Entity <Intercon> in library <work> (Architecture <RTL>).
+Entity <Intercon> analyzed. Unit <Intercon> generated.
+
+Analyzing Entity <Syscon> in library <work> (Architecture <RTL>).
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "CLKIN_PERIOD =  10.0000000000000000" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_Sys> in unit <Syscon>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_Sys> in unit <Syscon>.
+Entity <Syscon> analyzed. Unit <Syscon> generated.
+
+Analyzing Entity <WBO> in library <work> (Architecture <RTL>).
+Entity <WBO> analyzed. Unit <WBO> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Intercon>.
+    Related source file is "C:/Workspace/EMB/WB_shell/HDL/src/Intercon.vhd".
+WARNING:Xst:646 - Signal <adr_s<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <s>.
+    Found 1-bit register for signal <err_s>.
+    Found 8-bit up counter for signal <Timer>.
+    Found 1-bit register for signal <Timer_en<0>>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <Intercon> synthesized.
+
+
+Synthesizing Unit <WBO>.
+    Related source file is "C:/Workspace/EMB/WB_shell/HDL/src/WBO.vhd".
+    Found 16-bit register for signal <Q>.
+    Found 16-bit xor2 for signal <Q$xor0000> created at line 66.
+    Found 16-bit register for signal <r1>.
+    Found 16-bit register for signal <r2>.
+    Summary:
+	inferred  48 D-type flip-flop(s).
+Unit <WBO> synthesized.
+
+
+Synthesizing Unit <CpuInterface>.
+    Related source file is "C:/Workspace/EMB/WB_shell/HDL/src/cpuinterface.vhd".
+    Found 10-bit register for signal <A_o>.
+    Found 16-bit register for signal <D_o>.
+    Found 1-bit register for signal <Rd_o>.
+    Found 10-bit register for signal <A_r>.
+    Found 16-bit register for signal <D_r>.
+    Found 1-bit register for signal <Rd_r>.
+    Found 1-bit register for signal <Wr_r>.
+    Found 1-bit register for signal <Wr_rr>.
+    Summary:
+	inferred  56 D-type flip-flop(s).
+Unit <CpuInterface> synthesized.
+
+
+Synthesizing Unit <WB_Master>.
+    Related source file is "C:/Workspace/EMB/WB_shell/HDL/src/wb_master.vhd".
+WARNING:Xst:647 - Input <rty_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_0> for signal <cs_wb_cycle>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk_i                     (rising_edge)        |
+    | Reset              | rst_i                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit register for signal <adr_o>.
+    Found 1-bit register for signal <stb_o>.
+    Found 1-bit register for signal <cyc_o_s>.
+    Found 16-bit register for signal <dat_o_s>.
+    Found 1-bit register for signal <we_o_s>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  29 D-type flip-flop(s).
+Unit <WB_Master> synthesized.
+
+
+Synthesizing Unit <host>.
+    Related source file is "C:/Workspace/EMB/WB_shell/HDL/src/host.vhd".
+WARNING:Xst:646 - Signal <WR_Ack> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <RD_Ack> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Err> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <host> synthesized.
+
+
+Synthesizing Unit <Syscon>.
+    Related source file is "C:/Workspace/EMB/WB_shell/HDL/src/Syscon.vhd".
+    Found 1-bit register for signal <rst_o>.
+    Found 1-bit register for signal <rst_r>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Syscon> synthesized.
+
+
+Synthesizing Unit <Wrapper>.
+    Related source file is "C:/Workspace/EMB/WB_shell/HDL/src/wrapper.vhd".
+WARNING:Xst:646 - Signal <stb_i<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <stb_i<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <s_dat_o<2>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <s_dat_o<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+WARNING:Xst:653 - Signal <rty_o<2>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <rty_o<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <err_o<2>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <err_o<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <cti_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ack_o<2>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <ack_o<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <Port_o_int<15:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CpuD_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit tristate buffer for signal <CpuD>.
+    Summary:
+	inferred  16 Tristate(s).
+Unit <Wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 20
+ 1-bit register                                        : 11
+ 10-bit register                                       : 3
+ 16-bit register                                       : 6
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
+# Xors                                                 : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Host1/WB_Master/cs_wb_cycle/FSM> on signal <cs_wb_cycle[1:2]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 00
+ wb_write | 01
+ wb_read  | 11
+ wait_end | 10
+----------------------
+INFO:Xst:2261 - The FF/Latch <cyc_o_s> in Unit <WB_Master> is equivalent to the following FF/Latch, which will be removed : <stb_o> 
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 137
+ Flip-Flops                                            : 137
+# Xors                                                 : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <stb_o> in Unit <WB_Master> is equivalent to the following FF/Latch, which will be removed : <cyc_o_s> 
+INFO:Xst:2261 - The FF/Latch <cs_wb_cycle_FSM_FFd2> in Unit <WB_Master> is equivalent to the following FF/Latch, which will be removed : <stb_o> 
+
+Optimizing unit <Wrapper> ...
+
+Optimizing unit <Intercon> ...
+
+Optimizing unit <WBO> ...
+
+Optimizing unit <CpuInterface> ...
+
+Optimizing unit <WB_Master> ...
+
+Optimizing unit <Syscon> ...
+
+Optimizing unit <host> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Wrapper, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 145
+ Flip-Flops                                            : 145
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Wrapper.ngr
+Top Level Output File Name         : Wrapper
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 109
+#      GND                         : 3
+#      INV                         : 8
+#      LUT1                        : 7
+#      LUT2                        : 25
+#      LUT2_L                      : 1
+#      LUT3                        : 20
+#      LUT3_L                      : 1
+#      LUT4                        : 24
+#      LUT4_L                      : 2
+#      MUXCY                       : 7
+#      MUXF5                       : 1
+#      VCC                         : 2
+#      XORCY                       : 8
+# FlipFlops/Latches                : 145
+#      FD                          : 27
+#      FDE                         : 32
+#      FDR                         : 15
+#      FDRE                        : 62
+#      FDRSE                       : 2
+#      FDS                         : 1
+#      FDSE                        : 6
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 37
+#      IBUF                        : 14
+#      IBUFG                       : 1
+#      IOBUF                       : 16
+#      OBUF                        : 6
+# DCMs                             : 1
+#      DCM                         : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa3s400aftg256-4 
+
+ Number of Slices:                      107  out of   3584     2%  
+ Number of Slice Flip Flops:            145  out of   7168     2%  
+ Number of 4 input LUTs:                 88  out of   7168     1%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    195    18%  
+ Number of GCLKs:                         1  out of     24     4%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | DCM_Sys:CLKFX          | 145   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 26.364ns (Maximum Frequency: 37.931MHz)
+   Minimum input arrival time before clock: 4.301ns
+   Maximum output required time after clock: 7.407ns
+   Maximum combinational path delay: 7.500ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 26.364ns (frequency: 37.931MHz)
+  Total number of paths / destination ports: 1089 / 300
+-------------------------------------------------------------------------
+Delay:               6.591ns (Levels of Logic = 6)
+  Source:            Host1/WB_Master/adr_o_9 (FF)
+  Destination:       S1/r1_0 (FF)
+  Source Clock:      Clock rising 4.0X
+  Destination Clock: Clock rising 4.0X
+
+  Data Path: Host1/WB_Master/adr_o_9 to S1/r1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            19   0.591   1.165  adr_o_9 (adr_o_9)
+     end scope: 'WB_Master'
+     end scope: 'Host1'
+     begin scope: 'Intercon1'
+     LUT3:I1->O            2   0.643   0.479  stb_o_1_mux00011 (stb_o<1>)
+     end scope: 'Intercon1'
+     begin scope: 'S1'
+     LUT3:I2->O           18   0.648   1.071  r1_not0001211 (Q_not0001)
+     LUT4:I3->O           16   0.648   1.034  r2_not00011 (r2_not0001)
+     FDE:CE                    0.312          r2_0
+    ----------------------------------------
+    Total                      6.591ns (2.842ns logic, 3.749ns route)
+                                       (43.1% logic, 56.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.301ns (Levels of Logic = 4)
+  Source:            nCpuRd_i (PAD)
+  Destination:       Host1/CPU/Rd_r (FF)
+  Destination Clock: Clock rising 4.0X
+
+  Data Path: nCpuRd_i to Host1/CPU/Rd_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.849   0.447  nCpuRd_i_IBUF (nCpuRd_i_IBUF)
+     INV:I->O              1   0.648   0.420  CpuRd_i1_INV_0 (CpuRd_i)
+     begin scope: 'Host1'
+     begin scope: 'CPU'
+     INV:I->O              1   0.648   0.420  CpuRd_i_inv1_INV_0 (CpuRd_i_inv)
+     FDR:R                     0.869          Rd_r
+    ----------------------------------------
+    Total                      4.301ns (3.014ns logic, 1.287ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 52 / 20
+-------------------------------------------------------------------------
+Offset:              7.407ns (Levels of Logic = 7)
+  Source:            Host1/WB_Master/adr_o_8 (FF)
+  Destination:       CpuD<15> (PAD)
+  Source Clock:      Clock rising 4.0X
+
+  Data Path: Host1/WB_Master/adr_o_8 to CpuD<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            19   0.591   1.228  adr_o_8 (adr_o_8)
+     end scope: 'WB_Master'
+     end scope: 'Host1'
+     begin scope: 'Intercon1'
+     LUT3:I0->O            1   0.648   0.420  m_dat_o<9>1 (m_dat_o<9>)
+     end scope: 'Intercon1'
+     begin scope: 'Host1'
+     begin scope: 'WB_Master'
+     end scope: 'WB_Master'
+     begin scope: 'CPU'
+     end scope: 'CPU'
+     end scope: 'Host1'
+     IOBUF:I->IO               4.520          CpuD_9_IOBUF (CpuD<9>)
+    ----------------------------------------
+    Total                      7.407ns (5.759ns logic, 1.648ns route)
+                                       (77.8% logic, 22.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 33 / 17
+-------------------------------------------------------------------------
+Delay:               7.500ns (Levels of Logic = 3)
+  Source:            nCpuCs_i (PAD)
+  Destination:       CpuD<15> (PAD)
+
+  Data Path: nCpuCs_i to CpuD<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.849   0.674  nCpuCs_i_IBUF (Dbus_En_OBUF)
+     LUT2:I0->O           16   0.648   1.034  CpuD_and0000_inv1 (CpuD_and0000_inv)
+     IOBUF:T->IO               4.295          CpuD_15_IOBUF (CpuD<15>)
+    ----------------------------------------
+    Total                      7.500ns (5.792ns logic, 1.708ns route)
+                                       (77.2% logic, 22.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.78 secs
+ 
+--> 
+
+Total memory usage is 158132 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

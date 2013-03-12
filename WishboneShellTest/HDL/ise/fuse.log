@@ -1,0 +1,49 @@
+Running: C:\Xilinx\12.1\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Workspace/EMB/WB_shell/HDL/ise/tb_bfm_isim_beh.exe -prj C:/Workspace/EMB/WB_shell/HDL/ise/tb_bfm_beh.prj work.tb_bfm 
+ISim M.53d (signature 0xb869381d)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../sim/def_p.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../src/wb_master.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../src/cpuinterface.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../src/WBO.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../src/Syscon.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../src/Intercon.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../src/host.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../sim/txt_util.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../src/wrapper.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../sim/arm_emc_package.vhd" into library work
+Parsing VHDL file "C:/Workspace/EMB/WB_shell/HDL/ise/../sim/tb_ARM_BFM.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 66308 KB
+Fuse CPU Usage: 296 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package textio from library std
+Using precompiled package vital_timing from library ieee
+Using precompiled package vital_primitives from library ieee
+Compiling package txt_util
+Compiling package arm_emc_package
+Compiling package def_pkg
+Compiling package vcomponents
+Compiling architecture rtl of entity cpuinterface [\CpuInterface(10,16)\]
+Compiling architecture rtl of entity wb_master [wb_master_default]
+Compiling architecture rtl of entity host [host_default]
+Compiling architecture rtl of entity intercon [\Intercon(2,0)\]
+Compiling package vpkg
+Compiling architecture dcm_clock_divide_by_2_v of entity dcm_clock_divide_by_2 [dcm_clock_divide_by_2_default]
+Compiling architecture dcm_maximum_period_check_v of entity dcm_maximum_period_check [\dcm_maximum_period_check("CLKIN...]
+Compiling architecture dcm_maximum_period_check_v of entity dcm_maximum_period_check [\dcm_maximum_period_check("PSCLK...]
+Compiling architecture dcm_clock_lost_v of entity dcm_clock_lost [dcm_clock_lost_default]
+Compiling architecture dcm_v of entity dcm [\DCM(2.0,1,4,false,10.0,"NONE","...]
+Compiling architecture rtl of entity syscon [syscon_default]
+Compiling architecture rtl of entity wbo [wbo_default]
+Compiling architecture rtl of entity wrapper [wrapper_default]
+Compiling architecture tb of entity tb_bfm
+Time Resolution for simulation is 1ps.
+Waiting for 15 sub-compilation(s) to finish...
+Compiled 35 VHDL Units
+Built simulation executable C:/Workspace/EMB/WB_shell/HDL/ise/tb_bfm_isim_beh.exe
+Fuse Memory Usage: 84872 KB
+Fuse CPU Usage: 452 ms

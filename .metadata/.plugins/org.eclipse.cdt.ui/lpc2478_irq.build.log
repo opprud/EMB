@@ -1,0 +1,10 @@
+09:36:17 **** Build of configuration Default for project lpc2478_irq ****
+make hex 
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -c -Wa boot.s -o boot.o
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -c -Wall -I.  -mcpu=arm7tdmi -nostartfiles -T2468_rom.ld -Wcast-align -g -o0  VIClowlevel.c -o VIClowlevel.o
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -c -Wall -I.  -mcpu=arm7tdmi -nostartfiles -T2468_rom.ld -Wcast-align -g -o0  main.c -o main.o
+/Users/MortenOJ/sat/bin//arm-none-eabi-gcc -Wall -I.  -mcpu=arm7tdmi -nostartfiles -T2468_rom.ld -Wcast-align -g -o0    boot.o VIClowlevel.o main.o -o irq.elf
+/Users/MortenOJ/sat/bin//arm-none-eabi-objcopy -O ihex irq.elf irq.hex
+
+09:36:19 Build Finished (took 2s.319ms)
+

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xilinx="http://www.xilinx.com" >
+   <spirit:vendor>xilinx.com</spirit:vendor>
+   <spirit:library>CoreGen</spirit:library>
+   <spirit:name>coregen</spirit:name>
+   <spirit:version>1.0</spirit:version>
+   <spirit:componentInstances>
+      <spirit:componentInstance>
+         <spirit:instanceName>ila_pro_0</spirit:instanceName>
+         <spirit:displayName></spirit:displayName>
+         <spirit:description></spirit:description>
+         <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="chipscope_ila" spirit:version="1.03.a" />
+         <spirit:configurableElementValues>
+            <spirit:configurableElementValue spirit:referenceId="parameter_enable_storage_qualification">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_1">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_2">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_3">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_data_same_as_trigger">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_4">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_5">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_10">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_6">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_11">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_7">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_12">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_8">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_13">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_9">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_14">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_15">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_16">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sample_data_depth">512</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_10">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_11">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_12">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_13">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_14">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_15">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_16">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_10">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_11">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_12">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_enable_trigger_output_port">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_13">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_14">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_15">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_1">10</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_16">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_2">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_3">8</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_4">4</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_5">9</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_6">10</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_7">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_8">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_trigger_port_width_9">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_max_sequence_levels">16</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_1">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_2">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_3">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_4">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_5">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_6">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_7">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_8">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_sample_on">Rising</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_exclude_from_data_storage_9">false</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_1">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_2">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_3">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_4">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_5">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_6">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_7">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_8">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_type_9">basic</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_data_port_width">0</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_number_of_trigger_ports">6</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_use_rpms">true</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_1">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_2">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_3">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_4">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_5">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_6">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_7">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_8">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_9">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_10">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_11">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_10">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_12">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_11">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_13">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_12">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_14">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_13">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_15">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_14">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_match_units_16">1</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_15">Disabled</spirit:configurableElementValue>
+            <spirit:configurableElementValue spirit:referenceId="parameter_counter_width_16">Disabled</spirit:configurableElementValue>
+         </spirit:configurableElementValues>
+         <spirit:vendorExtensions>
+            <xilinx:instanceProperties>
+             <xilinx:projectOptions>
+               <xilinx:projectName>coregen</xilinx:projectName>
+               <xilinx:outputDirectory>./</xilinx:outputDirectory>
+               <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+               <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+             </xilinx:projectOptions>
+             <xilinx:part>
+               <xilinx:device>xc3s50a</xilinx:device>
+               <xilinx:deviceFamily>spartan3a</xilinx:deviceFamily>
+               <xilinx:package>tq144</xilinx:package>
+               <xilinx:speedGrade>-5</xilinx:speedGrade>
+             </xilinx:part>
+             <xilinx:flowOptions>
+               <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+               <xilinx:designEntry>VHDL</xilinx:designEntry>
+               <xilinx:asySymbol>false</xilinx:asySymbol>
+               <xilinx:flowVendor>Other</xilinx:flowVendor>
+               <xilinx:addPads>false</xilinx:addPads>
+               <xilinx:removeRPMs>false</xilinx:removeRPMs>
+               <xilinx:createNDF>false</xilinx:createNDF>
+               <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+               <xilinx:formalVerification>false</xilinx:formalVerification>
+             </xilinx:flowOptions>
+             <xilinx:simulationOptions>
+               <xilinx:simulationModel>Structural</xilinx:simulationModel>
+               <xilinx:simulationLanguage>VHDL</xilinx:simulationLanguage>
+               <xilinx:foundationSym>false</xilinx:foundationSym>
+             </xilinx:simulationOptions>
+           </xilinx:instanceProperties>
+            <xilinx:generationHistory>
+               <xilinx:fileSet>
+                  <xilinx:name>implementation_netlist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0.cdc</xilinx:name>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:24 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x29768A79</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0.ngc</xilinx:name>
+                     <xilinx:userFileType>ngc</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:24 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x872E1D82</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0.vhd</xilinx:name>
+                     <xilinx:userFileType>vhdl</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:20 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xF4C7B3D2</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0.vho</xilinx:name>
+                     <xilinx:userFileType>vho</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:20 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x7F98AB27</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>instantiation_template_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0.vho</xilinx:name>
+                     <xilinx:userFileType>vho</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:25 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x3AEDC587</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>xco_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0.xco</xilinx:name>
+                     <xilinx:userFileType>xco</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:25 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x608B698D</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>xmdf_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0_xmdf.tcl</xilinx:name>
+                     <xilinx:userFileType>tclXmdf</xilinx:userFileType>
+                     <xilinx:userFileType>tcl</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:25 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xA0DF2D11</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>ise_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./_xmsgs/pn_parser.xmsgs</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>unknown</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:28 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x75E30928</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0.gise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>gise</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:28 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x97EC87C1</xilinx:checkSum>
+                  </xilinx:file>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0.xise</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>xise</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:28 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x5C169736</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>deliver_readme_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0_readme.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txtReadme</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:28 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0xB2E58703</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+               <xilinx:fileSet>
+                  <xilinx:name>flist_generator</xilinx:name>
+                  <xilinx:file>
+                     <xilinx:name>./ila_pro_0_flist.txt</xilinx:name>
+                     <xilinx:userFileType>ignore</xilinx:userFileType>
+                     <xilinx:userFileType>txtFlist</xilinx:userFileType>
+                     <xilinx:userFileType>txt</xilinx:userFileType>
+                     <xilinx:timeStamp>Wed Apr 27 07:15:28 GMT 2011</xilinx:timeStamp>
+                     <xilinx:checkSum>0x815C4AB0</xilinx:checkSum>
+                  </xilinx:file>
+               </xilinx:fileSet>
+            </xilinx:generationHistory>
+         </spirit:vendorExtensions>
+      </spirit:componentInstance>
+   </spirit:componentInstances>
+   <spirit:description></spirit:description>
+   <spirit:vendorExtensions>
+      <xilinx:instanceProperties>
+       <xilinx:projectOptions>
+         <xilinx:projectName>coregen</xilinx:projectName>
+         <xilinx:outputDirectory>./</xilinx:outputDirectory>
+         <xilinx:workingDirectory>./tmp/</xilinx:workingDirectory>
+         <xilinx:subWorkingDirectory>./tmp/_cg</xilinx:subWorkingDirectory>
+       </xilinx:projectOptions>
+       <xilinx:part>
+         <xilinx:device>xc5vlx20t</xilinx:device>
+         <xilinx:deviceFamily>virtex5</xilinx:deviceFamily>
+         <xilinx:package>ff323</xilinx:package>
+         <xilinx:speedGrade>-2</xilinx:speedGrade>
+       </xilinx:part>
+       <xilinx:flowOptions>
+         <xilinx:busFormat>BusFormatAngleBracketNotRipped</xilinx:busFormat>
+         <xilinx:designEntry>VHDL</xilinx:designEntry>
+         <xilinx:asySymbol>true</xilinx:asySymbol>
+         <xilinx:flowVendor>Other</xilinx:flowVendor>
+         <xilinx:addPads>false</xilinx:addPads>
+         <xilinx:removeRPMs>false</xilinx:removeRPMs>
+         <xilinx:createNDF>false</xilinx:createNDF>
+         <xilinx:implementationFileType>Ngc</xilinx:implementationFileType>
+         <xilinx:formalVerification>false</xilinx:formalVerification>
+       </xilinx:flowOptions>
+       <xilinx:simulationOptions>
+         <xilinx:simulationModel>Behavioral</xilinx:simulationModel>
+         <xilinx:simulationLanguage>VHDL</xilinx:simulationLanguage>
+         <xilinx:foundationSym>false</xilinx:foundationSym>
+       </xilinx:simulationOptions>
+     </xilinx:instanceProperties>
+   </spirit:vendorExtensions>
+</spirit:design>

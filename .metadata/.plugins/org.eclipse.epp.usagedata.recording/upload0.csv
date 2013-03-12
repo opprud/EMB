@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,perspective,org.eclipse.cdt.ui,,"org.eclipse.cdt.ui.CPerspective",1280821301734
+started,bundle,org.eclipse.osgi,3.5.2.R35x_v20100126,"org.eclipse.osgi",1280821301734
+started,bundle,org.eclipse.core.filebuffers,3.5.0.v20090526-2000,"org.eclipse.core.filebuffers",1280821301734
+started,bundle,org.eclipse.core.jobs,3.4.100.v20090429-1800,"org.eclipse.core.jobs",1280821301734
+started,bundle,org.eclipse.core.runtime,3.5.0.v20090525,"org.eclipse.core.runtime",1280821301734
+started,bundle,org.eclipse.core.runtime.compatibility,3.2.0.v20090413,"org.eclipse.core.runtime.compatibility",1280821301734
+started,bundle,org.eclipse.core.runtime.compatibility.auth,3.2.100.v20090413,"org.eclipse.core.runtime.compatibility.auth",1280821301734
+started,bundle,org.eclipse.equinox.frameworkadmin,1.0.100.v20090520-1905,"org.eclipse.equinox.frameworkadmin",1280821301734
+started,bundle,org.eclipse.equinox.p2.directorywatcher,1.0.100.v20090525,"org.eclipse.equinox.p2.directorywatcher",1280821301734
+started,bundle,org.eclipse.equinox.p2.exemplarysetup,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.exemplarysetup",1280821301734
+started,bundle,org.eclipse.equinox.p2.garbagecollector,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.garbagecollector",1280821301734
+started,bundle,org.eclipse.equinox.p2.reconciler.dropins,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.reconciler.dropins",1280821301734
+started,bundle,org.eclipse.equinox.p2.ui.sdk.scheduler,1.0.0.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.scheduler",1280821301734
+started,bundle,org.eclipse.equinox.p2.updatechecker,1.1.0.v20090520-1905,"org.eclipse.equinox.p2.updatechecker",1280821301734
+started,bundle,org.eclipse.equinox.registry,3.4.100.v20090520-1800,"org.eclipse.equinox.registry",1280821301734
+started,bundle,org.eclipse.equinox.security,1.0.100.v20090520-1800,"org.eclipse.equinox.security",1280821301734
+started,bundle,org.eclipse.equinox.util,1.0.100.v20090520-1800,"org.eclipse.equinox.util",1280821301734
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1280821301734
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.0.v20090513-2000,"org.eclipse.ltk.core.refactoring",1280821301734
+started,bundle,org.eclipse.mylyn.commons.net,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.commons.net",1280821301734
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1280821301734
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1280821301734
+started,bundle,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console",1280821301734
+started,bundle,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.editors",1280821301750
+started,bundle,org.eclipse.ui.intro.universal,3.2.300.v20090526,"org.eclipse.ui.intro.universal",1280821301750
+started,bundle,org.eclipse.update.configurator,3.3.0.v20090312,"org.eclipse.update.configurator",1280821301750
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1280821301750
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1280821301750
+started,bundle,org.eclipse.jdt.core.manipulation,1.3.0.v20090603,"org.eclipse.jdt.core.manipulation",1280821301750
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1280821301750
+started,bundle,org.eclipse.cdt.embsysregview,0.1.0,"org.eclipse.cdt.embsysregview",1280821301750
+started,bundle,com.cea.papyrus.diagraminterchange2,1.12.3.200912231359,"com.cea.papyrus.diagraminterchange2",1280821301750
+started,bundle,com.cea.papyrus.ocl.validator,1.12.3.200912231359,"com.cea.papyrus.ocl.validator",1280821301750
+started,bundle,com.cea.papyrus.validation,1.12.3.200912231359,"com.cea.papyrus.validation",1280821301750
+started,bundle,org.eclipse.draw2d,3.5.2.v20091126-1908,"org.eclipse.draw2d",1280821301750
+started,bundle,org.eclipse.emf.common,2.5.0.v200906151043,"org.eclipse.emf.common",1280821301750
+started,bundle,org.eclipse.emf.ecore,2.5.0.v200906151043,"org.eclipse.emf.ecore",1280821301750
+started,bundle,org.eclipse.emf.ecore.xmi,2.5.0.v200906151043,"org.eclipse.emf.ecore.xmi",1280821301750
+started,bundle,org.eclipse.emf.validation,1.3.0.v200901271722,"org.eclipse.emf.validation",1280821301750
+started,bundle,org.eclipse.epp.usagedata.gathering,1.1.1.R201001291118,"org.eclipse.epp.usagedata.gathering",1280821301750
+started,bundle,org.eclipse.epp.usagedata.recording,1.1.1.R201001291118,"org.eclipse.epp.usagedata.recording",1280821301750
+started,bundle,org.eclipse.jdt.core,3.5.2.v_981_R35x,"org.eclipse.jdt.core",1280821301750
+started,bundle,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui",1280821301750
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.bugzilla.core",1280821301750
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.bugzilla.ui",1280821301750
+started,bundle,org.eclipse.mylyn.commons.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.commons.ui",1280821301765
+started,bundle,org.eclipse.mylyn.context.core,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.context.core",1280821301765
+started,bundle,org.eclipse.mylyn.context.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.context.ui",1280821301765
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.monitor.ui",1280821301765
+started,bundle,org.eclipse.mylyn.tasks.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.tasks.ui",1280821301765
+started,bundle,org.eclipse.mylyn.team.ui,3.2.3.v20100217-0100-e3x,"org.eclipse.mylyn.team.ui",1280821301765
+started,bundle,org.eclipse.team.cvs.ui,3.3.202.r35x_20090930-0800,"org.eclipse.team.cvs.ui",1280821301765
+started,bundle,org.eclipse.uml2.uml,3.0.1.v200908281330,"org.eclipse.uml2.uml",1280821301765
+started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.101.R35x_v20090807-1100,"org.eclipse.equinox.simpleconfigurator",1280821301765
+started,bundle,com.collabnet.subversion.merge,2.0.1,"com.collabnet.subversion.merge",1280821301765
+started,bundle,com.ibm.icu,4.0.1.v20090822,"com.ibm.icu",1280821301765
+started,bundle,org.eclipse.cdt.core,5.1.2.201002161416,"org.eclipse.cdt.core",1280821301765
+started,bundle,org.eclipse.cdt.core.tests,5.1.2.201002161416,"org.eclipse.cdt.core.tests",1280821301765
+started,bundle,org.eclipse.cdt.debug.core,6.0.0.201002161416,"org.eclipse.cdt.debug.core",1280821301765
+started,bundle,org.eclipse.cdt.debug.mi.core,6.0.0.201002161416,"org.eclipse.cdt.debug.mi.core",1280821301812
+started,bundle,org.eclipse.cdt.make.ui,6.0.1.201002161416,"org.eclipse.cdt.make.ui",1280821301812
+started,bundle,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui",1280821301812
+started,bundle,org.eclipse.cdt.ui.tests,5.1.0.201002161416,"org.eclipse.cdt.ui.tests",1280821301812
+started,bundle,org.eclipse.compare,3.5.2.r35x_20100113-0800,"org.eclipse.compare",1280821301828
+started,bundle,org.eclipse.core.contenttype,3.4.1.R35x_v20090826-0451,"org.eclipse.core.contenttype",1280821301828
+started,bundle,org.eclipse.core.databinding.observable,1.2.0.M20090902-0800,"org.eclipse.core.databinding.observable",1280821301828
+started,bundle,org.eclipse.core.expressions,3.4.101.R35x_v20100209,"org.eclipse.core.expressions",1280821301828
+started,bundle,org.eclipse.core.filesystem,1.2.1.R35x_v20091203-1235,"org.eclipse.core.filesystem",1280821301828
+started,bundle,org.eclipse.core.net,1.2.1.r35x_20090812-1200,"org.eclipse.core.net",1280821301828
+started,bundle,org.eclipse.core.resources,3.5.2.R35x_v20091203-1235,"org.eclipse.core.resources",1280821301828
+started,bundle,org.eclipse.debug.core,3.5.1.v20091103_r352,"org.eclipse.debug.core",1280821301828
+started,bundle,org.eclipse.ecf,3.0.0.v20090831-1906,"org.eclipse.ecf",1280821301828
+started,bundle,org.eclipse.ecf.filetransfer,3.0.0.v20090831-1906,"org.eclipse.ecf.filetransfer",1280821301828
+started,bundle,org.eclipse.ecf.identity,3.0.0.v20090831-1906,"org.eclipse.ecf.identity",1280821301828
+started,bundle,org.eclipse.ecf.provider.filetransfer,3.0.1.v20090831-1906,"org.eclipse.ecf.provider.filetransfer",1280821301828
+started,bundle,org.eclipse.ecf.provider.filetransfer.httpclient,3.0.1.v20090831-1906,"org.eclipse.ecf.provider.filetransfer.httpclient",1280821301828
+started,bundle,org.eclipse.equinox.app,1.2.1.R35x_v20091203,"org.eclipse.equinox.app",1280821301828
+started,bundle,org.eclipse.equinox.common,3.5.1.R35x_v20090807-1100,"org.eclipse.equinox.common",1280821301828
+started,bundle,org.eclipse.equinox.ds,1.1.1.R35x_v20090806,"org.eclipse.equinox.ds",1280821301828
+started,bundle,org.eclipse.equinox.frameworkadmin.equinox,1.0.101.R35x_v20091214,"org.eclipse.equinox.frameworkadmin.equinox",1280821301828
+started,bundle,org.eclipse.equinox.p2.core,1.0.101.R35x_v20090819,"org.eclipse.equinox.p2.core",1280821301828
+started,bundle,org.eclipse.equinox.p2.director,1.0.101.R35x_v20100112,"org.eclipse.equinox.p2.director",1280821301843
+started,bundle,org.eclipse.equinox.p2.engine,1.0.102.R35x_v20091117,"org.eclipse.equinox.p2.engine",1280821301843
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.0.101.R35x_v20090812,"org.eclipse.equinox.p2.metadata.repository",1280821301843
+started,bundle,org.eclipse.equinox.p2.repository,1.0.1.R35x_v20100105,"org.eclipse.equinox.p2.repository",1280821301843
+started,bundle,org.eclipse.equinox.preferences,3.2.301.R35x_v20091117,"org.eclipse.equinox.preferences",1280821301843
+started,bundle,org.eclipse.equinox.simpleconfigurator.manipulator,1.0.101.R35x_v20100209,"org.eclipse.equinox.simpleconfigurator.manipulator",1280821301843
+started,bundle,org.eclipse.help,3.4.1.v20090805_35x,"org.eclipse.help",1280821301843
+started,bundle,org.eclipse.jface,3.5.2.M20100120-0800,"org.eclipse.jface",1280821301843
+started,bundle,org.eclipse.team.core,3.5.1.r35x_20100113-0800,"org.eclipse.team.core",1280821301843
+started,bundle,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui",1280821301843
+started,bundle,org.eclipse.ui.forms,3.4.1.v20090714_35x,"org.eclipse.ui.forms",1280821301843
+started,bundle,org.eclipse.ui.ide,3.5.2.M20100113-0800,"org.eclipse.ui.ide",1280821301843
+started,bundle,org.eclipse.ui.intro,3.3.2.v20100111_35x,"org.eclipse.ui.intro",1280821301843
+started,bundle,org.eclipse.ui.navigator,3.4.2.M20100120-0800,"org.eclipse.ui.navigator",1280821301843
+started,bundle,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.resources",1280821301859
+started,bundle,org.eclipse.ui.net,1.2.1.r35x_20090812-1200,"org.eclipse.ui.net",1280821301859
+started,bundle,org.eclipse.ui.views,3.4.1.M20090826-0800,"org.eclipse.ui.views",1280821301859
+started,bundle,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"org.eclipse.ui.workbench",1280821301859
+started,bundle,org.eclipse.ui.workbench.texteditor,3.5.1.r352_v20100105,"org.eclipse.ui.workbench.texteditor",1280821301859
+started,bundle,org.tigris.subversion.clientadapter,1.6.10,"org.tigris.subversion.clientadapter",1280821301859
+started,bundle,org.tigris.subversion.subclipse.core,1.6.10,"org.tigris.subversion.subclipse.core",1280821301859
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.10,"org.tigris.subversion.subclipse.ui",1280821301859
+os,sysinfo,,,"win32",1280821301859
+arch,sysinfo,,,"x86",1280821301859
+ws,sysinfo,,,"win32",1280821301859
+locale,sysinfo,,,"da_DK",1280821301859
+processors,sysinfo,,,"2",1280821301859
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1280821301859
+java.runtime.version,sysinfo,,,"1.6.0_18-b07",1280821301859
+java.specification.name,sysinfo,,,"Java Platform API Specification",1280821301859
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1280821301859
+java.specification.version,sysinfo,,,"1.6",1280821301859
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1280821301859
+java.version,sysinfo,,,"1.6.0_18",1280821301859
+java.vm.info,sysinfo,,,"mixed mode, sharing",1280821301859
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1280821301859
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1280821301859
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1280821301859
+java.vm.specification.version,sysinfo,,,"1.0",1280821301859
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1280821301859
+java.vm.version,sysinfo,,,"16.0-b13",1280821301859
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821306281
+started,bundle,org.eclipse.cdt.managedbuilder.ui,5.1.0.201002161416,"org.eclipse.cdt.managedbuilder.ui",1280821311109
+started,bundle,org.eclipse.cdt.managedbuilder.core,6.0.0.201002161416,"org.eclipse.cdt.managedbuilder.core",1280821311140
+started,bundle,org.eclipse.cdt.managedbuilder.core.tests,5.0.100.201002161416,"org.eclipse.cdt.managedbuilder.core.tests",1280821311296
+started,bundle,org.eclipse.cdt.core.lrparser,5.1.0.200909110608,"org.eclipse.cdt.core.lrparser",1280821311421
+started,bundle,org.eclipse.cdt.core.lrparser.xlc,5.1.0.201002161416,"org.eclipse.cdt.core.lrparser.xlc",1280821311656
+started,bundle,org.eclipse.cdt.managedbuilder.gnu.ui,5.0.100.201002161416,"org.eclipse.cdt.managedbuilder.gnu.ui",1280821311671
+started,bundle,org.eclipse.cdt.build.crossgcc,1.0.0.201002161416,"org.eclipse.cdt.build.crossgcc",1280821311734
+started,bundle,org.eclipse.cdt.managedbuilder.ui.tests,5.0.100.201002161416,"org.eclipse.cdt.managedbuilder.ui.tests",1280821311875
+started,bundle,org.eclipse.cdt.managedbuilder.xlc.ui,6.0.0.201002161416,"org.eclipse.cdt.managedbuilder.xlc.ui",1280821311890
+started,bundle,org.eclipse.cdt.managedbuilder.xlupc.ui,1.0.0.201002161416,"org.eclipse.cdt.managedbuilder.xlupc.ui",1280821311906
+started,bundle,org.eclipse.core.variables,3.2.200.v20090521,"org.eclipse.core.variables",1280821320421
+started,bundle,org.eclipse.cdt.make.core,6.0.0.201002161416,"org.eclipse.cdt.make.core",1280821320437
+started,bundle,org.eclipse.cdt.cross.arm.gnu,0.5.3.200904072239,"org.eclipse.cdt.cross.arm.gnu",1280821320531
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320546
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320609
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320609
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320625
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320640
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320640
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320859
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320875
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320875
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320890
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320921
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821320921
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821321000
+started,bundle,org.tigris.subversion.clientadapter.svnkit,1.6.4,"org.tigris.subversion.clientadapter.svnkit",1280821321453
+started,bundle,org.tigris.subversion.clientadapter.javahl,1.6.9.3,"org.tigris.subversion.clientadapter.javahl",1280821321468
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.gnu.ui.GprofAppCalculator.",1280821321718
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.gnu.ui.ProfAppCalculator.",1280821321718
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.ManagedGCCScannerInfoConsoleParser.",1280821321812
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821321812
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.ManagedGCCScannerInfoConsoleParser.",1280821321812
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821321812
+opened,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1280821321875
+stopped,bundle,org.antlr.eclipse.ui,4.1.1,"org.antlr.eclipse.ui",1280821322078
+error,log,,,"Plug-in org.antlr.eclipse.ui was unable to load class org.antlr.eclipse.ui.AntlrLabelDecorator.",1280821322078
+started,bundle,com.android.ide.eclipse.ddms,0.9.6.v201002051504-24846,"com.android.ide.eclipse.ddms",1280821322843
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821323250
+started,bundle,com.android.ide.eclipse.adt,0.9.6.v201002051504-24846,"com.android.ide.eclipse.adt",1280821323265
+started,bundle,org.gna.eclox.core,0.8.0,"org.gna.eclox.core",1280821323312
+started,bundle,org.eclipse.ltk.ui.refactoring,3.4.101.r352_v20100209,"org.eclipse.ltk.ui.refactoring",1280821323375
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323671
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323703
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323703
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323718
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323875
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323906
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323906
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323906
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323937
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280821323937
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821325484
+started,bundle,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search",1280821329265
+started,bundle,org.eclipse.compare.core,3.5.0.I20090430-0408,"org.eclipse.compare.core",1280821329703
+opened,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1280821329750
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1280821330250
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1280821335687
+closed,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.CEditor",1280821335687
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821339703
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821349281
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.file.properties",1280821349312
+opened,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.asm.AsmEditor",1280821351968
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.asm.AsmEditor",1280821352015
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821369218
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821935406
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821943703
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821963468
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280821972718
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280822046109
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280822054062
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280822857656
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.undo",1280822865765
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280822924265
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280822996671
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823009125
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823022796
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823025734
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823117437
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823120843
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823303562
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823319765
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823383218
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823399750
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823873609
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823880500
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823900250
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280823900968
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280824287562
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280824287875
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280825829515
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280825850250
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280825892203
+executed,command,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui.edit.copy",1280825898187
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280825898656
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280825921468
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280825922187
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826705640
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826716609
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826721312
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826724156
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826727781
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826730484
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826737187
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1280826742015
+opened,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280826742343
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280826742375
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826758343
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826769609
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.asm.AsmEditor",1280826771921
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280826775062
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280828325656
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280828327546
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280828335953
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280828337015
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280828338312
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280828351156
+activated,editor,org.eclipse.cdt.ui,5.1.2.201002161416,"org.eclipse.cdt.ui.editor.asm.AsmEditor",1280828353578
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280828387062
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830352703
+deactivated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830354500
+activated,workbench,org.eclipse.ui.workbench,3.5.2.M20100113-0800,"",1280830355687
+activated,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1280830355718
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830355828
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830355859
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830355859
+error,log,,,"Plug-in org.eclipse.cdt.cross.arm.gnu was unable to load class org.eclipse.cdt.managedbuilder.internal.scannerconfig.DefaultGnuWinScannerInfoCollector.",1280830355906

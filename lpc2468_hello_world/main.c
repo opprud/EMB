@@ -1,5 +1,5 @@
 /**********************************
- * Small LED flash program
+ * Uart test program
  * Author  : MOJ@hih.au.dk
  * Date    : July 27, 2010
  *********************************/
@@ -8,7 +8,7 @@
 #include "uart.h"
 
 /* Constant that gives app. 500msec delay, when using IRC as clock source */
-#define DELAY_SEC	160000
+#define DELAY_SEC	1600000
 
 /* init GPIO for LED, set P2.10 as output */
 static void ledInit(){
@@ -40,7 +40,7 @@ void delay(int d){
 int main(void)
 {
 	char c = 0;
-	char str[40] = {"Hello EMB world, from EA2478 \n"};
+	char str[50] = {"Hello EMB world, from EA2478, MOJ Jan. 21 2013.\n"};
 
 	/* init low level stuff */
 	lowLevelInit();

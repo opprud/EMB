@@ -1,0 +1,6 @@
+#Mon Apr 30 17:59:18 CEST 2012
+chip=lpc24xx
+architecture=armv7
+eclipse.preferences.version=1
+board=---  none ---
+vendor=NXP

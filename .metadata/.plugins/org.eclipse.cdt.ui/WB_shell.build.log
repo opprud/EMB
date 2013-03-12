@@ -1,0 +1,6 @@
+14:49:55 **** Incremental Build of configuration Default for project WB_shell ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+14:49:56 Build Finished (took 130ms)
+
